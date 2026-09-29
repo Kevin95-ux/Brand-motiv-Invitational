@@ -1,0 +1,8072 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 1st Annual Motiv Brands Invitational | Bali Hai, Las Vegas</title>
+<meta name="description" content="An invitation-only Bali Hai experience combining championship golf, 27 planned prizes and the official Motiv Brands launch celebration. Presented by Lead Generation World.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://invitational.motivbrands.co/">
+<meta name="theme-color" content="#00040b">
+<link rel="icon" href="assets/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Motiv Brands Invitational">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://invitational.motivbrands.co/">
+<meta property="og:title" content="The 1st Annual Motiv Brands Invitational | Bali Hai, Las Vegas">
+<meta property="og:description" content="An invitation-only Bali Hai experience combining championship golf, 27 planned prizes and the official Motiv Brands launch celebration. Presented by Lead Generation World.">
+<meta property="og:image" content="https://invitational.motivbrands.co/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 1st Annual Motiv Brands Invitational, Bali Hai Golf Club, Las Vegas.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The 1st Annual Motiv Brands Invitational | Bali Hai, Las Vegas">
+<meta name="twitter:description" content="An invitation-only Bali Hai experience combining championship golf, 27 planned prizes and the official Motiv Brands launch celebration. Presented by Lead Generation World.">
+<meta name="twitter:image" content="https://invitational.motivbrands.co/assets/og-image.png">
+
+<style>
+  /* ---- build-time header fixes -------------------------------------- */
+
+  /* The glass header is 0.91/0.84 alpha, so it takes its colour from what
+     sits behind it. In GHL that was a dark page; as a standalone document
+     the white <body> showed through and the bar read mid-grey. Giving the
+     header itself a dark base restores the intended near-black navy. */
+  #motiv-invitational-header-v182 {
+    background: #00040b;
+  }
+
+  /* "Back to Event Details" was invisible on the sponsorship page. Its own
+     rule is .spt-back-link (0,1,0) but "#motiv-sponsorship-top a { color:
+     inherit }" scores (1,0,1) and wins, so the link inherited --spt-ink,
+     a dark navy, on a dark header. These selectors score (1,1,0) and take
+     it back. The registration page escapes the same bug only because its
+     block colour happens to be white. */
+  #motiv-sponsorship-top .spt-back-link,
+  #motiv-sponsorship-top .spt-back-link span,
+  #motiv-sponsorship-top .spt-back-link svg,
+  #motiv-registration-top .mrt-back-link,
+  #motiv-registration-top .mrt-back-link span,
+  #motiv-registration-top .mrt-back-link svg {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  #motiv-sponsorship-top .spt-back-link:hover,
+  #motiv-sponsorship-top .spt-back-link:hover span,
+  #motiv-sponsorship-top .spt-back-link:hover svg,
+  #motiv-registration-top .mrt-back-link:hover,
+  #motiv-registration-top .mrt-back-link:hover span,
+  #motiv-registration-top .mrt-back-link:hover svg {
+    color: #83df59;
+  }
+
+  /* Larger brand mark across the event headers, per request.
+     These are ID-scoped on purpose: this <style> sits in <head> while each
+     block ships its own <style> later in the body, so a plain class selector
+     would lose the "later rule wins" tie-break. */
+  #motiv-invitational-header-v182 .mih-brand-image-shell {
+    width: 58px;
+    height: 58px;
+  }
+
+  #motiv-invitational-header-v182 .mih-brand-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  #motiv-sponsorship-top .spt-brand-image-shell,
+  #motiv-registration-top .mrt-brand-image-shell,
+  #motiv-registration-confirmation .rc-brand-image-shell,
+  #motiv-sponsorship-confirmation .sc-brand-image-shell {
+    width: 54px;
+    height: 54px;
+  }
+
+  #motiv-sponsorship-top .spt-brand-image,
+  #motiv-registration-top .mrt-brand-image,
+  #motiv-registration-confirmation .rc-brand-image,
+  #motiv-sponsorship-confirmation .sc-brand-image {
+    width: 38px;
+    height: 38px;
+  }
+
+  @media (max-width: 700px) {
+    #motiv-invitational-header-v182 .mih-brand-image-shell {
+      width: 48px;
+      height: 48px;
+    }
+
+    #motiv-invitational-header-v182 .mih-brand-image {
+      width: 34px;
+      height: 34px;
+    }
+  }
+</style>
+
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #ffffff; }
+</style>
+</head>
+<body>
+<!--
+===============================================================================
+MOTIV BRANDS INVITATIONAL
+ENTERPRISE EVENT HEADER
+
+VERSION: 1.8.3
+UPDATED: AUGUST 12, 2026
+
+CHANGE LOG (1.8.2 -> 1.8.3)
+-------------------------------------------------------------------------------
+- All CTA button labels changed from "Register Now" to "Request an Invitation"
+  to match the updated body copy and page-wide CTA language.
+
+DESIGN BASELINE
+-------------------------------------------------------------------------------
+This revision restores the approved header treatment originally used when the
+Invitational header and landing-page experience were designed together.
+
+BODY ANCHORS
+-------------------------------------------------------------------------------
+Overview:            #motiv-invitational-v1100
+Bali Hai:            #miCourseExperience
+Prizes:              #miPrizeExperience
+Launch Celebration:  #miLaunchTitle
+Registration:        #miRegistration
+===============================================================================
+-->
+
+<header
+  id="motiv-invitational-header-v182"
+  class="mih-event-header"
+  data-mih-header
+>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+
+    #motiv-invitational-header-v182 {
+      --mih-navy-1200: #00040b;
+      --mih-navy-1150: #000711;
+      --mih-navy-1100: #010914;
+      --mih-navy-1050: #020d1d;
+      --mih-navy-1000: #031329;
+      --mih-navy-950: #051a37;
+      --mih-navy-900: #062143;
+      --mih-navy-850: #082b56;
+
+      --mih-blue-700: #07589f;
+      --mih-blue-600: #0874d0;
+      --mih-blue-500: #188ee8;
+      --mih-blue-400: #46a8ef;
+
+      --mih-green-800: #287824;
+      --mih-green-700: #3e962f;
+      --mih-green-600: #63bd43;
+      --mih-green-500: #83df59;
+      --mih-green-400: #a1ec7e;
+
+      --mih-red-700: #af1728;
+      --mih-red-600: #df2031;
+      --mih-red-500: #f13c4c;
+
+      --mih-white: #ffffff;
+
+      --mih-header-height: 94px;
+      --mih-header-height-scrolled: 78px;
+      --mih-mobile-height: 76px;
+
+      --mih-content-width: 1720px;
+
+      --mih-border:
+        rgba(255, 255, 255, 0.11);
+
+      --mih-border-strong:
+        rgba(255, 255, 255, 0.16);
+
+      --mih-shadow:
+        0 22px 70px
+        rgba(0, 4, 11, 0.34);
+
+      --mih-shadow-strong:
+        0 34px 100px
+        rgba(0, 4, 11, 0.58);
+
+      --mih-cta-shadow:
+        0 17px 42px
+        rgba(99, 189, 67, 0.32);
+
+      --mih-cta-shadow-hover:
+        0 25px 60px
+        rgba(99, 189, 67, 0.47);
+
+      --mih-ease-out:
+        cubic-bezier(
+          0.16,
+          1,
+          0.3,
+          1
+        );
+
+      position: sticky;
+      z-index: 99990;
+      top: 0;
+      width: 100%;
+      min-width: 0;
+      color: var(--mih-white);
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+      isolation: isolate;
+    }
+
+    #motiv-invitational-header-v182,
+    #motiv-invitational-header-v182 *,
+    #motiv-invitational-header-v182 *::before,
+    #motiv-invitational-header-v182 *::after {
+      box-sizing: border-box;
+    }
+
+    #motiv-invitational-header-v182 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    #motiv-invitational-header-v182 button {
+      border: 0;
+      font: inherit;
+    }
+
+    #motiv-invitational-header-v182 img,
+    #motiv-invitational-header-v182 svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    #motiv-invitational-header-v182 a,
+    #motiv-invitational-header-v182 button {
+      -webkit-tap-highlight-color:
+        transparent;
+    }
+
+    body.mih-menu-open {
+      overflow: hidden;
+      touch-action: none;
+    }
+
+    html.mih-smooth-scroll {
+      scroll-behavior: smooth;
+    }
+
+    .mih-header-surface {
+      position: relative;
+      width: 100%;
+      border-bottom:
+        1px solid
+        var(--mih-border);
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0, 4, 11, 0.91) 0%,
+          rgba(1, 9, 20, 0.84) 100%
+        );
+      box-shadow:
+        0 10px 46px
+        rgba(0, 4, 11, 0.20);
+      backdrop-filter:
+        blur(24px)
+        saturate(150%);
+      -webkit-backdrop-filter:
+        blur(24px)
+        saturate(150%);
+      transition:
+        background 260ms ease,
+        border-color 260ms ease,
+        box-shadow 260ms ease;
+    }
+
+    .mih-event-header.mih-scrolled
+    .mih-header-surface {
+      border-bottom-color:
+        var(--mih-border-strong);
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0, 4, 11, 0.985) 0%,
+          rgba(1, 9, 20, 0.96) 100%
+        );
+      box-shadow:
+        var(--mih-shadow);
+    }
+
+    .mih-header-surface::before {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background:
+        radial-gradient(
+          circle at 10% 0%,
+          rgba(24, 142, 232, 0.10),
+          transparent 26%
+        ),
+        radial-gradient(
+          circle at 92% 0%,
+          rgba(99, 189, 67, 0.09),
+          transparent 25%
+        );
+      content: "";
+      pointer-events: none;
+    }
+
+    .mih-header-inner {
+      display: grid;
+      width:
+        min(
+          calc(100% - 48px),
+          var(--mih-content-width)
+        );
+      min-height:
+        var(--mih-header-height);
+      margin-inline: auto;
+      grid-template-columns:
+        minmax(220px, auto)
+        minmax(0, 1fr)
+        auto;
+      align-items: center;
+      gap:
+        clamp(
+          28px,
+          4vw,
+          74px
+        );
+      transition:
+        min-height 260ms
+        var(--mih-ease-out);
+    }
+
+    .mih-event-header.mih-scrolled
+    .mih-header-inner {
+      min-height:
+        var(--mih-header-height-scrolled);
+    }
+
+    .mih-brand-link {
+      display: inline-flex;
+      min-width: 0;
+      align-items: center;
+      gap: 15px;
+      color: var(--mih-white);
+      transition:
+        opacity 180ms ease,
+        transform 180ms
+        var(--mih-ease-out);
+    }
+
+    .mih-brand-link:hover {
+      opacity: 0.97;
+      transform: translateY(-1px);
+    }
+
+    .mih-brand-image-shell {
+      position: relative;
+      display: grid;
+      width: 50px;
+      height: 50px;
+      flex: 0 0 auto;
+      place-items: center;
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.07),
+          rgba(255, 255, 255, 0.025)
+        );
+      box-shadow:
+        0 15px 36px
+        rgba(0, 4, 11, 0.30);
+    }
+
+    .mih-brand-image-shell::before {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.08);
+      content: "";
+      pointer-events: none;
+    }
+
+    .mih-brand-image {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .mih-brand-copy {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .mih-brand-primary {
+      display: block;
+      overflow: hidden;
+      color: var(--mih-white);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.78rem,
+          0.9vw,
+          0.91rem
+        );
+      font-weight: 800;
+      letter-spacing: 0.075em;
+      line-height: 1.15;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mih-brand-secondary {
+      display: block;
+      margin-top: 6px;
+      overflow: hidden;
+      color:
+        rgba(255, 255, 255, 0.57);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.48rem;
+      font-weight: 700;
+      letter-spacing: 0.135em;
+      line-height: 1.25;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mih-desktop-navigation {
+      display: flex;
+      min-width: 0;
+      align-items: center;
+      justify-content: center;
+      gap:
+        clamp(
+          8px,
+          1vw,
+          20px
+        );
+    }
+
+    .mih-navigation-link {
+      position: relative;
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding:
+        13px
+        clamp(
+          9px,
+          0.75vw,
+          14px
+        );
+      overflow: hidden;
+      border-radius: 12px;
+      color:
+        rgba(255, 255, 255, 0.96);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.57rem,
+          0.65vw,
+          0.66rem
+        );
+      font-weight: 800;
+      letter-spacing: 0.085em;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition:
+        color 180ms ease,
+        background 180ms ease,
+        transform 180ms
+        var(--mih-ease-out);
+    }
+
+    .mih-navigation-link::before {
+      position: absolute;
+      right: 11px;
+      bottom: 4px;
+      left: 11px;
+      height: 3px;
+      border-radius: 999px;
+      background:
+        linear-gradient(
+          90deg,
+          var(--mih-red-500) 0%,
+          var(--mih-blue-500) 49%,
+          var(--mih-green-500) 100%
+        );
+      box-shadow:
+        0 5px 18px
+        rgba(24, 142, 232, 0.40);
+      content: "";
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition:
+        opacity 180ms ease,
+        transform 260ms
+        var(--mih-ease-out);
+    }
+
+    .mih-navigation-link::after {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background:
+        radial-gradient(
+          circle at 50% 100%,
+          rgba(131, 223, 89, 0.15),
+          transparent 66%
+        );
+      content: "";
+      opacity: 0;
+      pointer-events: none;
+      transition:
+        opacity 180ms ease;
+    }
+
+    .mih-navigation-link:hover {
+      color: var(--mih-green-400);
+      background:
+        rgba(255, 255, 255, 0.055);
+      transform: translateY(-1px);
+    }
+
+    .mih-navigation-link:hover::before {
+      opacity: 0.66;
+      transform: scaleX(0.72);
+    }
+
+    .mih-navigation-link.mih-active {
+      color: var(--mih-green-500);
+      background:
+        rgba(131, 223, 89, 0.075);
+    }
+
+    .mih-navigation-link.mih-active::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    .mih-navigation-link.mih-active::after {
+      opacity: 1;
+    }
+
+    .mih-header-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 11px;
+    }
+
+    .mih-registration-cta {
+      position: relative;
+      isolation: isolate;
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 24px;
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+      border-radius: 999px;
+      color: var(--mih-white);
+      background:
+        linear-gradient(
+          135deg,
+          #8be963 0%,
+          var(--mih-green-600) 46%,
+          var(--mih-green-700) 100%
+        );
+      box-shadow:
+        var(--mih-cta-shadow);
+      cursor: pointer;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.63rem;
+      font-weight: 800;
+      letter-spacing: 0.075em;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+      transform: translateY(0);
+      transition:
+        transform 220ms
+        var(--mih-ease-out),
+        box-shadow 220ms ease,
+        filter 220ms ease;
+      white-space: nowrap;
+    }
+
+    .mih-registration-cta::before {
+      position: absolute;
+      z-index: -1;
+      top: -160%;
+      left: -38%;
+      width: 42%;
+      height: 430%;
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.52),
+          transparent
+        );
+      content: "";
+      opacity: 0;
+      transform: rotate(19deg);
+      transition:
+        left 720ms
+        var(--mih-ease-out),
+        opacity 220ms ease;
+    }
+
+    .mih-registration-cta::after {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      border-radius: inherit;
+      background:
+        radial-gradient(
+          circle at 20% 0%,
+          rgba(255, 255, 255, 0.24),
+          transparent 38%
+        );
+      content: "";
+      pointer-events: none;
+    }
+
+    .mih-registration-cta:hover {
+      filter:
+        saturate(1.07)
+        brightness(1.035);
+      box-shadow:
+        var(--mih-cta-shadow-hover);
+      transform: translateY(-3px);
+    }
+
+    .mih-registration-cta:hover::before {
+      left: 120%;
+      opacity: 1;
+    }
+
+    .mih-registration-cta:active {
+      transform: translateY(-1px);
+    }
+
+    .mih-registration-cta svg {
+      width: 17px;
+      height: 17px;
+      flex: 0 0 auto;
+      transition:
+        transform 220ms
+        var(--mih-ease-out);
+    }
+
+    .mih-registration-cta:hover svg {
+      transform: translateX(4px);
+    }
+
+    .mih-menu-toggle {
+      position: relative;
+      display: none;
+      width: 50px;
+      height: 50px;
+      place-items: center;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      color: var(--mih-white);
+      background:
+        rgba(255, 255, 255, 0.055);
+      box-shadow:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      transition:
+        color 180ms ease,
+        background 180ms ease,
+        border-color 180ms ease,
+        transform 180ms
+        var(--mih-ease-out);
+    }
+
+    .mih-menu-toggle:hover {
+      border-color:
+        rgba(131, 223, 89, 0.32);
+      color: var(--mih-green-500);
+      background:
+        rgba(131, 223, 89, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .mih-menu-icon {
+      position: relative;
+      width: 22px;
+      height: 16px;
+    }
+
+    .mih-menu-icon span {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+      transition:
+        top 220ms
+        var(--mih-ease-out),
+        width 220ms
+        var(--mih-ease-out),
+        opacity 180ms ease,
+        transform 220ms
+        var(--mih-ease-out);
+    }
+
+    .mih-menu-icon span:nth-child(1) {
+      top: 0;
+    }
+
+    .mih-menu-icon span:nth-child(2) {
+      top: 7px;
+      width: 72%;
+    }
+
+    .mih-menu-icon span:nth-child(3) {
+      top: 14px;
+    }
+
+    .mih-menu-toggle[aria-expanded="true"]
+    .mih-menu-icon span:nth-child(1) {
+      top: 7px;
+      transform: rotate(45deg);
+    }
+
+    .mih-menu-toggle[aria-expanded="true"]
+    .mih-menu-icon span:nth-child(2) {
+      width: 0;
+      opacity: 0;
+    }
+
+    .mih-menu-toggle[aria-expanded="true"]
+    .mih-menu-icon span:nth-child(3) {
+      top: 7px;
+      transform: rotate(-45deg);
+    }
+
+    .mih-progress-track {
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .mih-progress-bar {
+      width: 100%;
+      height: 100%;
+      background:
+        linear-gradient(
+          90deg,
+          var(--mih-red-500),
+          var(--mih-blue-500) 50%,
+          var(--mih-green-500)
+        );
+      box-shadow:
+        0 2px 13px
+        rgba(24, 142, 232, 0.46);
+      transform: scaleX(0);
+      transform-origin: left center;
+      will-change: transform;
+    }
+
+    .mih-mobile-overlay {
+      position: fixed;
+      z-index: 100002;
+      inset: 0;
+      visibility: hidden;
+      background:
+        rgba(0, 4, 11, 0.74);
+      opacity: 0;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      transition:
+        visibility 240ms ease,
+        opacity 240ms ease;
+    }
+
+    .mih-mobile-overlay.mih-open {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .mih-mobile-drawer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      width:
+        min(
+          100%,
+          470px
+        );
+      flex-direction: column;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      border-left:
+        1px solid
+        rgba(255, 255, 255, 0.11);
+      background:
+        radial-gradient(
+          circle at 94% 4%,
+          rgba(99, 189, 67, 0.13),
+          transparent 31%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.13),
+          transparent 34%
+        ),
+        linear-gradient(
+          155deg,
+          var(--mih-navy-950),
+          var(--mih-navy-1200)
+        );
+      box-shadow:
+        -30px 0 100px
+        rgba(0, 4, 11, 0.58);
+      transform: translateX(104%);
+      transition:
+        transform 290ms
+        var(--mih-ease-out);
+      scrollbar-width: thin;
+      scrollbar-color:
+        rgba(255, 255, 255, 0.19)
+        transparent;
+    }
+
+    .mih-mobile-overlay.mih-open
+    .mih-mobile-drawer {
+      transform: translateX(0);
+    }
+
+    .mih-mobile-drawer-header {
+      display: flex;
+      min-height: 94px;
+      padding:
+        calc(
+          20px +
+          env(safe-area-inset-top)
+        )
+        22px 20px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+    }
+
+    .mih-mobile-brand {
+      display: flex;
+      min-width: 0;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .mih-mobile-brand-image-shell {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      flex: 0 0 auto;
+      place-items: center;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+      border-radius: 15px;
+      background:
+        rgba(255, 255, 255, 0.05);
+    }
+
+    .mih-mobile-brand-image {
+      width: 31px;
+      height: 31px;
+      object-fit: contain;
+    }
+
+    .mih-mobile-brand-copy {
+      min-width: 0;
+    }
+
+    .mih-mobile-brand-copy strong {
+      display: block;
+      overflow: hidden;
+      color: var(--mih-white);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.065em;
+      line-height: 1.25;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mih-mobile-brand-copy span {
+      display: block;
+      margin-top: 5px;
+      overflow: hidden;
+      color:
+        rgba(255, 255, 255, 0.52);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.44rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      line-height: 1.3;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mih-mobile-close {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      flex: 0 0 auto;
+      place-items: center;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+      border-radius: 15px;
+      color: var(--mih-white);
+      background:
+        rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      transition:
+        color 180ms ease,
+        background 180ms ease,
+        border-color 180ms ease,
+        transform 180ms
+        var(--mih-ease-out);
+    }
+
+    .mih-mobile-close:hover {
+      border-color:
+        rgba(131, 223, 89, 0.28);
+      color: var(--mih-green-500);
+      background:
+        rgba(131, 223, 89, 0.08);
+      transform: rotate(3deg);
+    }
+
+    .mih-mobile-close svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .mih-mobile-drawer-content {
+      flex: 1 1 auto;
+      padding:
+        35px 22px
+        calc(
+          30px +
+          env(safe-area-inset-bottom)
+        );
+    }
+
+    .mih-mobile-eyebrow {
+      margin: 0;
+      color: var(--mih-green-500);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.51rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .mih-mobile-title {
+      max-width: 380px;
+      margin: 11px 0 0;
+      color: var(--mih-white);
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+      font-size:
+        clamp(
+          2.1rem,
+          8.5vw,
+          3rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.045em;
+      line-height: 1;
+    }
+
+    .mih-mobile-intro {
+      max-width: 390px;
+      margin: 14px 0 0;
+      color:
+        rgba(255, 255, 255, 0.61);
+      font-size: 0.79rem;
+      line-height: 1.65;
+    }
+
+    .mih-mobile-navigation {
+      display: grid;
+      gap: 9px;
+      margin-top: 31px;
+    }
+
+    .mih-mobile-navigation-link {
+      position: relative;
+      display: grid;
+      min-height: 72px;
+      grid-template-columns:
+        41px
+        minmax(0, 1fr)
+        24px;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 19px;
+      color: var(--mih-white);
+      background:
+        rgba(255, 255, 255, 0.045);
+      transition:
+        color 180ms ease,
+        background 180ms ease,
+        border-color 180ms ease,
+        transform 180ms
+        var(--mih-ease-out);
+    }
+
+    .mih-mobile-navigation-link::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 4px;
+      background:
+        linear-gradient(
+          180deg,
+          var(--mih-red-500),
+          var(--mih-blue-500),
+          var(--mih-green-500)
+        );
+      content: "";
+      opacity: 0;
+      transform: scaleY(0.35);
+      transition:
+        opacity 180ms ease,
+        transform 240ms
+        var(--mih-ease-out);
+    }
+
+    .mih-mobile-navigation-link:hover,
+    .mih-mobile-navigation-link.mih-active {
+      border-color:
+        rgba(131, 223, 89, 0.24);
+      background:
+        rgba(131, 223, 89, 0.075);
+      transform: translateX(3px);
+    }
+
+    .mih-mobile-navigation-link.mih-active::before {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+
+    .mih-mobile-navigation-index {
+      display: grid;
+      width: 41px;
+      height: 41px;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--mih-green-500);
+      background:
+        rgba(131, 223, 89, 0.09);
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+      font-size: 0.85rem;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .mih-mobile-navigation-copy {
+      min-width: 0;
+    }
+
+    .mih-mobile-navigation-copy strong {
+      display: block;
+      overflow-wrap: anywhere;
+      color: var(--mih-white);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.71rem;
+      font-weight: 800;
+      letter-spacing: 0.055em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .mih-mobile-navigation-copy span {
+      display: block;
+      margin-top: 4px;
+      overflow-wrap: anywhere;
+      color:
+        rgba(255, 255, 255, 0.50);
+      font-size: 0.63rem;
+      line-height: 1.45;
+    }
+
+    .mih-mobile-navigation-arrow {
+      color:
+        rgba(255, 255, 255, 0.45);
+      transition:
+        color 180ms ease,
+        transform 180ms
+        var(--mih-ease-out);
+    }
+
+    .mih-mobile-navigation-link:hover
+    .mih-mobile-navigation-arrow,
+    .mih-mobile-navigation-link.mih-active
+    .mih-mobile-navigation-arrow {
+      color: var(--mih-green-500);
+      transform: translateX(3px);
+    }
+
+    .mih-mobile-navigation-arrow svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .mih-mobile-registration-card {
+      margin-top: 26px;
+      padding: 21px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.11);
+      border-radius: 23px;
+      background:
+        radial-gradient(
+          circle at 94% 0%,
+          rgba(131, 223, 89, 0.14),
+          transparent 45%
+        ),
+        rgba(255, 255, 255, 0.045);
+    }
+
+    .mih-mobile-registration-card strong {
+      display: block;
+      color: var(--mih-white);
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+      font-size: 1.48rem;
+      font-weight: 600;
+      letter-spacing: -0.028em;
+      line-height: 1.12;
+    }
+
+    .mih-mobile-registration-card p {
+      margin: 9px 0 0;
+      color:
+        rgba(255, 255, 255, 0.55);
+      font-size: 0.69rem;
+      line-height: 1.56;
+    }
+
+    .mih-mobile-registration-card
+    .mih-registration-cta {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    .mih-mobile-event-details {
+      display: grid;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .mih-mobile-event-detail {
+      display: flex;
+      min-height: 42px;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 11px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+      border-radius: 13px;
+      color:
+        rgba(255, 255, 255, 0.62);
+      background:
+        rgba(255, 255, 255, 0.03);
+      font-size: 0.65rem;
+      line-height: 1.4;
+    }
+
+    .mih-mobile-event-detail svg {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 auto;
+      color: var(--mih-green-500);
+    }
+
+    .mih-navigation-link:focus-visible,
+    .mih-registration-cta:focus-visible,
+    .mih-menu-toggle:focus-visible,
+    .mih-mobile-close:focus-visible,
+    .mih-mobile-navigation-link:focus-visible,
+    .mih-brand-link:focus-visible {
+      outline:
+        3px solid
+        rgba(131, 223, 89, 0.55);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 1320px) {
+      .mih-header-inner {
+        width:
+          min(
+            calc(100% - 36px),
+            var(--mih-content-width)
+          );
+        gap: 24px;
+      }
+
+      .mih-desktop-navigation {
+        gap: 4px;
+      }
+
+      .mih-navigation-link {
+        padding-inline: 8px;
+        font-size: 0.54rem;
+        letter-spacing: 0.068em;
+      }
+
+      .mih-registration-cta {
+        padding-inline: 19px;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .mih-header-inner {
+        grid-template-columns:
+          minmax(0, 1fr)
+          auto;
+      }
+
+      .mih-desktop-navigation {
+        display: none;
+      }
+
+      .mih-header-actions
+      > .mih-registration-cta {
+        display: none;
+      }
+
+      .mih-menu-toggle {
+        display: grid;
+      }
+    }
+
+    @media (max-width: 700px) {
+      #motiv-invitational-header-v182 {
+        --mih-header-height:
+          var(--mih-mobile-height);
+
+        --mih-header-height-scrolled:
+          68px;
+      }
+
+      .mih-header-inner {
+        width:
+          min(
+            calc(100% - 24px),
+            var(--mih-content-width)
+          );
+        gap: 13px;
+      }
+
+      .mih-brand-link {
+        gap: 11px;
+      }
+
+      .mih-brand-image-shell {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+      }
+
+      .mih-brand-image {
+        width: 29px;
+        height: 29px;
+      }
+
+      .mih-brand-primary {
+        font-size: 0.67rem;
+        letter-spacing: 0.055em;
+      }
+
+      .mih-brand-secondary {
+        margin-top: 4px;
+        font-size: 0.40rem;
+        letter-spacing: 0.09em;
+      }
+
+      .mih-menu-toggle {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .mih-brand-secondary {
+        display: none;
+      }
+
+      .mih-brand-primary {
+        max-width: 205px;
+      }
+
+      .mih-mobile-drawer-header,
+      .mih-mobile-drawer-content {
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+    }
+
+    @media (max-height: 610px) and (orientation: landscape) {
+      .mih-mobile-drawer-header {
+        min-height: 72px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+      }
+
+      .mih-mobile-drawer-content {
+        padding-top: 22px;
+      }
+
+      .mih-mobile-title {
+        font-size: 2rem;
+      }
+
+      .mih-mobile-navigation {
+        margin-top: 20px;
+      }
+
+      .mih-mobile-navigation-link {
+        min-height: 62px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html.mih-smooth-scroll {
+        scroll-behavior: auto;
+      }
+
+      #motiv-invitational-header-v182 *,
+      #motiv-invitational-header-v182 *::before,
+      #motiv-invitational-header-v182 *::after {
+        animation-duration:
+          0.01ms !important;
+        animation-iteration-count:
+          1 !important;
+        scroll-behavior:
+          auto !important;
+        transition-duration:
+          0.01ms !important;
+      }
+    }
+
+    @media (forced-colors: active) {
+      .mih-navigation-link,
+      .mih-registration-cta,
+      .mih-menu-toggle,
+      .mih-mobile-navigation-link,
+      .mih-mobile-close {
+        border:
+          1px solid
+          currentColor;
+      }
+
+      .mih-navigation-link.mih-active {
+        text-decoration: underline;
+      }
+    }
+  </style>
+
+  <div class="mih-header-surface">
+
+    <div class="mih-header-inner">
+
+      <a
+        class="mih-brand-link"
+        href="#motiv-invitational-v1100"
+        data-mih-navigation-link
+        data-mih-target="motiv-invitational-v1100"
+        data-mih-navigation-name="Logo Overview"
+        aria-label="Go to the Motiv Brands Invitational overview"
+      >
+        <span class="mih-brand-image-shell">
+
+          <img
+            class="mih-brand-image"
+            src="assets/brand-mark.png"
+            alt=""
+            aria-hidden="true"
+          >
+        </span>
+
+        <span class="mih-brand-copy">
+
+          <span class="mih-brand-primary">
+            Motiv Brands Invitational
+          </span>
+
+          <span class="mih-brand-secondary">
+            January 27, 2027 &middot; Bali Hai Golf Club
+          </span>
+        </span>
+      </a>
+
+      <nav
+        class="mih-desktop-navigation"
+        aria-label="Invitational navigation"
+      >
+        <a
+          class="mih-navigation-link mih-active"
+          href="#motiv-invitational-v1100"
+          data-mih-navigation-link
+          data-mih-target="motiv-invitational-v1100"
+          data-mih-navigation-name="Overview"
+        >
+          Overview
+        </a>
+
+        <a
+          class="mih-navigation-link"
+          href="#miCourseExperience"
+          data-mih-navigation-link
+          data-mih-target="miCourseExperience"
+          data-mih-navigation-name="Bali Hai"
+        >
+          Bali Hai
+        </a>
+
+        <a
+          class="mih-navigation-link"
+          href="#miPrizeExperience"
+          data-mih-navigation-link
+          data-mih-target="miPrizeExperience"
+          data-mih-navigation-name="Prizes"
+        >
+          Prizes
+        </a>
+
+        <a
+          class="mih-navigation-link"
+          href="#miLaunchTitle"
+          data-mih-navigation-link
+          data-mih-target="miLaunchTitle"
+          data-mih-navigation-name="Launch Celebration"
+        >
+          Launch Celebration
+        </a>
+
+        <a
+          class="mih-navigation-link"
+          href="#miRegistration"
+          data-mih-navigation-link
+          data-mih-target="miRegistration"
+          data-mih-navigation-name="Registration"
+        >
+          Registration
+        </a>
+      </nav>
+
+      <div class="mih-header-actions">
+
+        <a
+          class="mih-registration-cta"
+          href="/start"
+          data-mih-registration-cta
+          data-cta-name="Header Registration"
+          data-cta-section="Invitational Header"
+        >
+          Request an Invitation
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M5 12h14M13 6l6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+
+        <button
+          class="mih-menu-toggle"
+          type="button"
+          aria-label="Open Invitational navigation"
+          aria-controls="mihMobileMenu"
+          aria-expanded="false"
+          data-mih-menu-toggle
+        >
+          <span
+            class="mih-menu-icon"
+            aria-hidden="true"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="mih-progress-track"
+      aria-hidden="true"
+    >
+      <div
+        class="mih-progress-bar"
+        data-mih-progress-bar
+      ></div>
+    </div>
+  </div>
+
+  <div
+    class="mih-mobile-overlay"
+    id="mihMobileMenu"
+    aria-hidden="true"
+    data-mih-mobile-overlay
+  >
+    <div
+      class="mih-mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="mihMobileMenuTitle"
+      data-mih-mobile-drawer
+    >
+      <div class="mih-mobile-drawer-header">
+
+        <div class="mih-mobile-brand">
+
+          <span class="mih-mobile-brand-image-shell">
+
+            <img
+              class="mih-mobile-brand-image"
+              src="assets/brand-mark.png"
+              alt=""
+              aria-hidden="true"
+            >
+          </span>
+
+          <span class="mih-mobile-brand-copy">
+
+            <strong>
+              Motiv Brands Invitational
+            </strong>
+
+            <span>
+              Presented by Lead Generation World
+            </span>
+          </span>
+        </div>
+
+        <button
+          class="mih-mobile-close"
+          type="button"
+          aria-label="Close Invitational navigation"
+          data-mih-mobile-close
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M6 6l12 12M18 6 6 18"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mih-mobile-drawer-content">
+
+        <p class="mih-mobile-eyebrow">
+          Explore the Invitational
+        </p>
+
+        <h2
+          class="mih-mobile-title"
+          id="mihMobileMenuTitle"
+        >
+          Navigate the complete Bali Hai experience.
+        </h2>
+
+        <p class="mih-mobile-intro">
+          Championship golf, premium prizes and the official Motiv Brands
+          launch celebration in one exceptional Las Vegas experience.
+        </p>
+
+        <nav
+          class="mih-mobile-navigation"
+          aria-label="Mobile Invitational navigation"
+        >
+          <a
+            class="mih-mobile-navigation-link mih-active"
+            href="#motiv-invitational-v1100"
+            data-mih-navigation-link
+            data-mih-target="motiv-invitational-v1100"
+            data-mih-navigation-name="Overview"
+          >
+            <span class="mih-mobile-navigation-index">
+              01
+            </span>
+
+            <span class="mih-mobile-navigation-copy">
+
+              <strong>
+                Invitational Overview
+              </strong>
+
+              <span>
+                Event details, countdown and first impressions.
+              </span>
+            </span>
+
+            <span class="mih-mobile-navigation-arrow">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            class="mih-mobile-navigation-link"
+            href="#miCourseExperience"
+            data-mih-navigation-link
+            data-mih-target="miCourseExperience"
+            data-mih-navigation-name="Bali Hai"
+          >
+            <span class="mih-mobile-navigation-index">
+              02
+            </span>
+
+            <span class="mih-mobile-navigation-copy">
+
+              <strong>
+                Bali Hai Experience
+              </strong>
+
+              <span>
+                Explore the course and Las Vegas destination.
+              </span>
+            </span>
+
+            <span class="mih-mobile-navigation-arrow">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            class="mih-mobile-navigation-link"
+            href="#miPrizeExperience"
+            data-mih-navigation-link
+            data-mih-target="miPrizeExperience"
+            data-mih-navigation-name="Prizes"
+          >
+            <span class="mih-mobile-navigation-index">
+              03
+            </span>
+
+            <span class="mih-mobile-navigation-copy">
+
+              <strong>
+                Prize Experience
+              </strong>
+
+              <span>
+                Preview selected prizes and projected opportunity.
+              </span>
+            </span>
+
+            <span class="mih-mobile-navigation-arrow">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            class="mih-mobile-navigation-link"
+            href="#miLaunchTitle"
+            data-mih-navigation-link
+            data-mih-target="miLaunchTitle"
+            data-mih-navigation-name="Launch Celebration"
+          >
+            <span class="mih-mobile-navigation-index">
+              04
+            </span>
+
+            <span class="mih-mobile-navigation-copy">
+
+              <strong>
+                Launch Celebration
+              </strong>
+
+              <span>
+                Discover how the inaugural event concludes.
+              </span>
+            </span>
+
+            <span class="mih-mobile-navigation-arrow">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            class="mih-mobile-navigation-link"
+            href="#miRegistration"
+            data-mih-navigation-link
+            data-mih-target="miRegistration"
+            data-mih-navigation-name="Registration"
+          >
+            <span class="mih-mobile-navigation-index">
+              05
+            </span>
+
+            <span class="mih-mobile-navigation-copy">
+
+              <strong>
+                Invitational Registration
+              </strong>
+
+              <span>
+                Complete your event and golfer information.
+              </span>
+            </span>
+
+            <span class="mih-mobile-navigation-arrow">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+        </nav>
+
+        <div class="mih-mobile-registration-card">
+
+          <strong>
+            Secure your place in the inaugural field.
+          </strong>
+
+          <p>
+            Register for championship golf, premium prize moments and the
+            official Motiv Brands launch celebration.
+          </p>
+
+          <a
+            class="mih-registration-cta"
+            href="/start"
+            data-mih-registration-cta
+            data-cta-name="Mobile Menu Registration"
+            data-cta-section="Invitational Mobile Header"
+          >
+            Request an Invitation
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12h14M13 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="mih-mobile-event-details">
+
+          <div class="mih-mobile-event-detail">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            Wednesday, January 27, 2027
+          </div>
+
+          <div class="mih-mobile-event-detail">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="8"
+                stroke="currentColor"
+                stroke-width="1.7"
+              />
+
+              <path
+                d="M12 8v4l3 2"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            12:00 PM Modified Shotgun
+          </div>
+
+          <div class="mih-mobile-event-detail">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 21s7-5.4 7-12a7 7 0 1 0-14 0c0 6.6 7 12 7 12Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <circle
+                cx="12"
+                cy="9"
+                r="2.3"
+                stroke="currentColor"
+                stroke-width="1.7"
+              />
+            </svg>
+
+            Bali Hai Golf Club &middot; Las Vegas
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const header =
+        document.getElementById(
+          "motiv-invitational-header-v182"
+        );
+
+      if (!header) {
+        return;
+      }
+
+      const headerSurface =
+        header.querySelector(
+          ".mih-header-surface"
+        );
+
+      const menuToggle =
+        header.querySelector(
+          "[data-mih-menu-toggle]"
+        );
+
+      const mobileOverlay =
+        header.querySelector(
+          "[data-mih-mobile-overlay]"
+        );
+
+      const mobileDrawer =
+        header.querySelector(
+          "[data-mih-mobile-drawer]"
+        );
+
+      const mobileClose =
+        header.querySelector(
+          "[data-mih-mobile-close]"
+        );
+
+      const progressBar =
+        header.querySelector(
+          "[data-mih-progress-bar]"
+        );
+
+      const navigationLinks =
+        Array.from(
+          header.querySelectorAll(
+            "[data-mih-navigation-link]"
+          )
+        );
+
+      const registrationCTAs =
+        Array.from(
+          header.querySelectorAll(
+            "[data-mih-registration-cta]"
+          )
+        );
+
+      const PAGE_NAME =
+        "Motiv Brands Invitational";
+
+      const ACTIVE_CLASS =
+        "mih-active";
+
+      const OPEN_CLASS =
+        "mih-open";
+
+      const BODY_OPEN_CLASS =
+        "mih-menu-open";
+
+      const SCROLLED_CLASS =
+        "mih-scrolled";
+
+      const SMOOTH_SCROLL_CLASS =
+        "mih-smooth-scroll";
+
+      const HEADER_OFFSET_PADDING =
+        18;
+
+      let lastFocusedElement =
+        null;
+
+      let navigationLockUntil =
+        0;
+
+      let ticking =
+        false;
+
+      document.documentElement.classList.add(
+        SMOOTH_SCROLL_CLASS
+      );
+
+      const pushDataLayer =
+        (payload) => {
+          window.dataLayer =
+            window.dataLayer || [];
+
+          window.dataLayer.push(
+            payload
+          );
+        };
+
+      const getTarget =
+        (targetID) => {
+          if (!targetID) {
+            return null;
+          }
+
+          return document.getElementById(
+            targetID
+          );
+        };
+
+      const getHeaderOffset =
+        () => {
+          if (!headerSurface) {
+            return 0;
+          }
+
+          return (
+            headerSurface
+              .getBoundingClientRect()
+              .height +
+            HEADER_OFFSET_PADDING
+          );
+        };
+
+      const setActiveNavigation =
+        (targetID) => {
+          navigationLinks.forEach(
+            (link) => {
+              const isActive =
+                link.getAttribute(
+                  "data-mih-target"
+                ) === targetID;
+
+              link.classList.toggle(
+                ACTIVE_CLASS,
+                isActive
+              );
+
+              if (isActive) {
+                link.setAttribute(
+                  "aria-current",
+                  "location"
+                );
+              } else {
+                link.removeAttribute(
+                  "aria-current"
+                );
+              }
+            }
+          );
+        };
+
+      const smoothScrollTo =
+        (
+          targetID,
+          updateHash = true
+        ) => {
+          const target =
+            getTarget(
+              targetID
+            );
+
+          if (!target) {
+            return false;
+          }
+
+          const targetPosition =
+            Math.max(
+              target
+                .getBoundingClientRect()
+                .top +
+                window.scrollY -
+                getHeaderOffset(),
+              0
+            );
+
+          navigationLockUntil =
+            Date.now() +
+            950;
+
+          window.scrollTo({
+            top:
+              targetPosition,
+
+            behavior:
+              window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+              ).matches
+                ? "auto"
+                : "smooth"
+          });
+
+          if (updateHash) {
+            window.history.replaceState(
+              null,
+              "",
+              `#${targetID}`
+            );
+          }
+
+          return true;
+        };
+
+      const openMobileMenu =
+        () => {
+          if (
+            !mobileOverlay ||
+            !menuToggle
+          ) {
+            return;
+          }
+
+          lastFocusedElement =
+            document.activeElement;
+
+          mobileOverlay.classList.add(
+            OPEN_CLASS
+          );
+
+          mobileOverlay.setAttribute(
+            "aria-hidden",
+            "false"
+          );
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "true"
+          );
+
+          menuToggle.setAttribute(
+            "aria-label",
+            "Close Invitational navigation"
+          );
+
+          document.body.classList.add(
+            BODY_OPEN_CLASS
+          );
+
+          window.setTimeout(
+            () => {
+              mobileClose?.focus();
+            },
+            50
+          );
+        };
+
+      const closeMobileMenu =
+        (
+          restoreFocus = true
+        ) => {
+          if (
+            !mobileOverlay ||
+            !menuToggle
+          ) {
+            return;
+          }
+
+          mobileOverlay.classList.remove(
+            OPEN_CLASS
+          );
+
+          mobileOverlay.setAttribute(
+            "aria-hidden",
+            "true"
+          );
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          menuToggle.setAttribute(
+            "aria-label",
+            "Open Invitational navigation"
+          );
+
+          document.body.classList.remove(
+            BODY_OPEN_CLASS
+          );
+
+          if (
+            restoreFocus
+          ) {
+            (
+              lastFocusedElement ||
+              menuToggle
+            ).focus();
+          }
+
+          lastFocusedElement =
+            null;
+        };
+
+      const isMenuOpen =
+        () =>
+          Boolean(
+            mobileOverlay &&
+            mobileOverlay.classList.contains(
+              OPEN_CLASS
+            )
+          );
+
+      // Keyboard focus stays inside the drawer while it is open, so tabbing
+      // cannot reach the page sitting behind the overlay.
+      const trapFocus =
+        (event) => {
+          if (
+            event.key !== "Tab" ||
+            !isMenuOpen() ||
+            !mobileDrawer
+          ) {
+            return;
+          }
+
+          const focusable =
+            Array.from(
+              mobileDrawer.querySelectorAll(
+                'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+              )
+            ).filter(
+              (element) =>
+                element.offsetParent !== null
+            );
+
+          if (!focusable.length) {
+            return;
+          }
+
+          const first =
+            focusable[0];
+
+          const last =
+            focusable[
+              focusable.length - 1
+            ];
+
+          if (
+            event.shiftKey &&
+            document.activeElement === first
+          ) {
+            event.preventDefault();
+            last.focus();
+            return;
+          }
+
+          if (
+            !event.shiftKey &&
+            document.activeElement === last
+          ) {
+            event.preventDefault();
+            first.focus();
+          }
+        };
+
+      menuToggle?.addEventListener(
+        "click",
+        () => {
+          if (isMenuOpen()) {
+            closeMobileMenu();
+          } else {
+            openMobileMenu();
+          }
+        }
+      );
+
+      mobileClose?.addEventListener(
+        "click",
+        () => closeMobileMenu()
+      );
+
+      // A click on the dimmed area outside the drawer closes it.
+      mobileOverlay?.addEventListener(
+        "click",
+        (event) => {
+          if (event.target === mobileOverlay) {
+            closeMobileMenu();
+          }
+        }
+      );
+
+      document.addEventListener(
+        "keydown",
+        (event) => {
+          if (
+            event.key === "Escape" &&
+            isMenuOpen()
+          ) {
+            closeMobileMenu();
+            return;
+          }
+
+          trapFocus(event);
+        }
+      );
+
+      navigationLinks.forEach(
+        (link) => {
+          link.addEventListener(
+            "click",
+            (event) => {
+              const targetID =
+                link.getAttribute(
+                  "data-mih-target"
+                );
+
+              const target =
+                getTarget(
+                  targetID
+                );
+
+              // Only intercept anchors that exist on this page; anything
+              // else is left to behave as an ordinary link.
+              if (!target) {
+                return;
+              }
+
+              event.preventDefault();
+
+              if (isMenuOpen()) {
+                closeMobileMenu(false);
+              }
+
+              setActiveNavigation(
+                targetID
+              );
+
+              smoothScrollTo(
+                targetID
+              );
+
+              pushDataLayer({
+                event:
+                  "motiv_invitational_navigation_clicked",
+
+                page_name:
+                  PAGE_NAME,
+
+                navigation_name:
+                  link.getAttribute(
+                    "data-mih-navigation-name"
+                  ) || "Unknown",
+
+                navigation_target:
+                  targetID
+              });
+            }
+          );
+        }
+      );
+
+      registrationCTAs.forEach(
+        (cta) => {
+          cta.addEventListener(
+            "click",
+            () => {
+              pushDataLayer({
+                event:
+                  "motiv_invitational_cta_clicked",
+
+                page_name:
+                  PAGE_NAME,
+
+                cta_name:
+                  cta.getAttribute(
+                    "data-cta-name"
+                  ) || "Unknown CTA",
+
+                cta_section:
+                  cta.getAttribute(
+                    "data-cta-section"
+                  ) || "Unknown Section"
+              });
+
+              if (isMenuOpen()) {
+                closeMobileMenu(false);
+              }
+            }
+          );
+        }
+      );
+
+      // Which section is in view. The lock keeps a smooth scroll from
+      // flickering the active state through every section it passes.
+      const updateActiveSection =
+        () => {
+          if (
+            Date.now() < navigationLockUntil
+          ) {
+            return;
+          }
+
+          const offset =
+            getHeaderOffset() + 12;
+
+          let current =
+            null;
+
+          navigationLinks.forEach(
+            (link) => {
+              const targetID =
+                link.getAttribute(
+                  "data-mih-target"
+                );
+
+              const target =
+                getTarget(
+                  targetID
+                );
+
+              if (!target) {
+                return;
+              }
+
+              if (
+                target.getBoundingClientRect().top - offset <= 0
+              ) {
+                current = targetID;
+              }
+            }
+          );
+
+          if (current) {
+            setActiveNavigation(
+              current
+            );
+          }
+        };
+
+      const updateProgressBar =
+        () => {
+          if (!progressBar) {
+            return;
+          }
+
+          const scrollable =
+            document.documentElement.scrollHeight -
+            window.innerHeight;
+
+          const ratio =
+            scrollable > 0
+              ? Math.min(
+                  Math.max(
+                    window.scrollY / scrollable,
+                    0
+                  ),
+                  1
+                )
+              : 0;
+
+          progressBar.style.transform =
+            `scaleX(${ratio})`;
+        };
+
+      const onScroll =
+        () => {
+          header.classList.toggle(
+            SCROLLED_CLASS,
+            window.scrollY > 12
+          );
+
+          updateProgressBar();
+          updateActiveSection();
+
+          ticking = false;
+        };
+
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (ticking) {
+            return;
+          }
+
+          ticking = true;
+
+          window.requestAnimationFrame(
+            onScroll
+          );
+        },
+        {
+          passive: true
+        }
+      );
+
+      window.addEventListener(
+        "resize",
+        updateProgressBar
+      );
+
+      onScroll();
+    })();
+  </script>
+</header>
+<!--
+===============================================================================
+THE 1ST ANNUAL MOTIV BRANDS INVITATIONAL
+PRESENTED BY LEAD GENERATION WORLD
+
+ENTERPRISE LANDING PAGE BODY
+VERSION: 2.4.2
+UPDATED: AUGUST 13, 2026
+
+BODY-ONLY INSTALLATION
+-------------------------------------------------------------------------------
+Paste this complete block between the approved Invitational header and footer.
+
+CHANGE LOG (2.4.1 -> 2.4.2)
+-------------------------------------------------------------------------------
+- Invitational field raised from 48 players to 72, per client. Updated in all
+  13 places the figure appears: hero badge, hero dashboard stat, intro
+  "Curated Field" point, Course feature card, Prizes headline and intro copy,
+  odds card, prize disclosure, Registration headline and benefit, and the
+  planned_player_count value sent with CTA tracking events.
+- Recalculated the two figures derived from the field size, which a
+  find-and-replace would have left wrong:
+    Projected unique-winner opportunity  56.25% -> 37.5%   (27 / 72)
+    Players per prize                     1.78  -> 2.67    (72 / 27)
+  Both appear twice each (hero dashboard + Prizes section, and the
+  disclosure line).
+- Reworded the Prizes headline and intro copy. At 48 players the 56.25%
+  figure supported "better-than-even odds" and "better-than-one-in-two";
+  at 72 players the figure is 37.5%, so both claims became false. They now
+  read "better than a one-in-three chance" and "better-than-one-in-three".
+
+CHANGE LOG (2.4.0 -> 2.4.1)
+-------------------------------------------------------------------------------
+- Fixed excess whitespace between the Prizes section and the Launch section.
+  Prizes' own bottom padding (130px) was stacking with Launch's top padding
+  (120px) for a combined ~250px gap with no color break to visually absorb
+  it, since both sections are light. Reduced Prizes' bottom padding to 32px
+  so the gap now matches the spacing rhythm used elsewhere on the page.
+
+CHANGE LOG (2.3.0 -> 2.4.0)
+-------------------------------------------------------------------------------
+- Four Prizes cards switched from light/white to a dark navy gradient
+  (matching the Intro section's "Event Snapshot" card): the odds card
+  (56.25%), the Featured Prize card, the prize catalog card, the "+19 other
+  prizes" card, and the bottom CTA banner ("Don't wait to see the full prize
+  list in person"). All now use a green + blue radial wash over a navy
+  linear-gradient base, with text switched to white/light gray for
+  visibility. The outer Prizes section background stays light, so these
+  cards float on it as dark panels — matching the original request.
+- Individual prize-item tiles (the 8 listed prizes) switched to the
+  translucent dark-card style used on the Course section's stat cards
+  (rgba(255,255,255,0.055) background, rgba(255,255,255,0.10) border) so
+  they read as distinct layers against the catalog card's new dark
+  background. Hover state is a lighter version of that same translucent
+  background, per request.
+- The "FEATURED PRIZE PREVIEW" badge switched to the dark-mode-safe gold
+  treatment already used on Hero badges (so it stays legible against its
+  now-dark card) — still the one deliberate gold exception on the page.
+- Icon chips (odds card, featured card, catalog card) switched from solid
+  light-mode chips to translucent dark-mode chips for visibility on the new
+  navy backgrounds.
+
+CHANGE LOG (2.2.0 -> 2.3.0)
+-------------------------------------------------------------------------------
+- Prize catalog card ("A selective look at what could be waiting") now has a
+  green/blue gradient wash matching the Featured Prize card beside it,
+  instead of sitting flat white.
+- Prize accent color switched from gold to green throughout the Prizes
+  section — odds card label, prize-index chips (01-08), the featured card's
+  icon and "27 Prizes" figure, the "+19 other prizes" card, and all hover
+  border tints. The "FEATURED PRIZE PREVIEW" badge is the one deliberate
+  exception and stays gold.
+- Prize item tiles switched from light-gray to white backgrounds (with a
+  green hover tint) so they read clearly against the catalog card's new
+  colored wash.
+- Prizes section-level background wash: the gold radial became green.
+- Bottom CTA banner ("Don't wait to see the full prize list in person") now
+  has a real visible green/blue gradient background instead of a
+  near-invisible white tint, with copy color darkened slightly for contrast.
+
+CHANGE LOG (2.1.0 -> 2.2.0)
+-------------------------------------------------------------------------------
+- Replaced every registration CTA (header, hero, intro card, course, prizes,
+  launch, registration section, mobile sticky) with a direct link to
+  /start instead of a GHL popup trigger.
+  The popup approach was triggering inconsistently, so all CTAs now navigate
+  straight to the registration page.
+- Renamed the shared CTA attribute from [data-mi-open-registration] to
+  [data-mi-registration-link] to reflect the new behavior. All CTA elements
+  changed from <button> to <a href="..."> accordingly.
+- Registration section rebuilt as a single centered column (intro copy +
+  benefits + CTA button) on a dark background, matching the visual language
+  of the Course/Launch sections, instead of a two-column layout with a form.
+- Prizes section rebuilt on a light background to break up the visual
+  repetition of two consecutive dark sections (Course + Prizes), with icon
+  chips and hover depth added to match the Intro section's card treatment.
+  Gold prize accents preserved throughout.
+- Headline, eyebrow and body copy rewritten across Intro, Course, Prizes and
+  Launch sections for clarity and a clearer visitor journey.
+- All CTA button labels standardized to "Request an Invitation."
+
+HEADER NAVIGATION ANCHORS
+-------------------------------------------------------------------------------
+Overview:
+#motiv-invitational-v1100
+
+Bali Hai:
+#miCourseExperience
+
+Prizes:
+#miPrizeExperience
+
+Launch Celebration:
+#miLaunchTitle
+
+Registration:
+#miRegistration
+
+REGISTRATION LINK
+-------------------------------------------------------------------------------
+Every CTA across the page (header, hero, intro card, course, prizes, launch,
+registration section, mobile sticky) links directly to:
+
+/start
+
+If this URL changes, search for "invitational.motivbrands.co/start" and
+replace all occurrences.
+
+HERO IMAGE
+-------------------------------------------------------------------------------
+Current Bali Hai image:
+https://ttusa.s3.amazonaws.com/images/gallery/12820/i12820.jpg
+
+Confirm usage rights or replace the URL below with the approved hosted asset.
+===============================================================================
+-->
+
+<section
+  id="motiv-invitational-v1100"
+  class="mi-page"
+  data-mi-page-version="2.1.0"
+>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+
+    #motiv-invitational-v1100 {
+      --mi-navy-1300: #00030a;
+      --mi-navy-1250: #00050d;
+      --mi-navy-1200: #010813;
+      --mi-navy-1150: #020c18;
+      --mi-navy-1100: #03111f;
+      --mi-navy-1050: #041728;
+      --mi-navy-1000: #061d31;
+      --mi-navy-950: #08253c;
+      --mi-navy-900: #0b2e49;
+      --mi-navy-850: #0e3857;
+      --mi-navy-800: #124469;
+
+      --mi-blue-800: #07518f;
+      --mi-blue-700: #0864ae;
+      --mi-blue-600: #0877d0;
+      --mi-blue-500: #188ee8;
+      --mi-blue-400: #49acf2;
+      --mi-blue-300: #81c8f7;
+      --mi-blue-200: #b9e0fa;
+      --mi-blue-100: #e9f6ff;
+      --mi-blue-50: #f5fbff;
+
+      --mi-green-900: #1d641c;
+      --mi-green-800: #287c24;
+      --mi-green-700: #3e962f;
+      --mi-green-650: #4aa638;
+      --mi-green-600: #63bd43;
+      --mi-green-550: #72cf4d;
+      --mi-green-500: #83df59;
+      --mi-green-450: #94e773;
+      --mi-green-400: #a7ed89;
+      --mi-green-300: #c8f5b7;
+      --mi-green-200: #dcf8d2;
+      --mi-green-100: #effae9;
+      --mi-green-50: #f8fdf5;
+
+      --mi-red-800: #8f1020;
+      --mi-red-700: #ae1728;
+      --mi-red-600: #df2031;
+      --mi-red-500: #f13c4c;
+      --mi-red-400: #ff6d79;
+      --mi-red-300: #ffa2aa;
+      --mi-red-200: #ffd0d4;
+      --mi-red-100: #fff0f2;
+
+      --mi-gold-900: #614014;
+      --mi-gold-800: #76501c;
+      --mi-gold-700: #956d2f;
+      --mi-gold-600: #bd9146;
+      --mi-gold-500: #e7c77f;
+      --mi-gold-400: #f2d998;
+      --mi-gold-300: #f7e5b7;
+      --mi-gold-200: #fbefcf;
+      --mi-gold-100: #fff8e8;
+
+      --mi-white: #ffffff;
+
+      --mi-gray-25: #fdfefe;
+      --mi-gray-50: #fafcfd;
+      --mi-gray-75: #f6f9fb;
+      --mi-gray-100: #f0f4f7;
+      --mi-gray-150: #e8eef3;
+      --mi-gray-200: #dee6ec;
+      --mi-gray-250: #d2dce5;
+      --mi-gray-300: #c5d0da;
+      --mi-gray-350: #b2bfca;
+      --mi-gray-400: #95a4b1;
+      --mi-gray-450: #8392a0;
+      --mi-gray-500: #6e7f8e;
+      --mi-gray-550: #5f7081;
+      --mi-gray-600: #506274;
+      --mi-gray-650: #42566a;
+      --mi-gray-700: #35495d;
+      --mi-gray-750: #2b3e52;
+      --mi-gray-800: #203447;
+
+      --mi-ink: #0f263b;
+      --mi-ink-soft: #3f566a;
+
+      --mi-border-faint: rgba(5, 29, 52, 0.05);
+      --mi-border-soft: rgba(5, 29, 52, 0.08);
+      --mi-border: rgba(5, 29, 52, 0.13);
+      --mi-border-strong: rgba(5, 29, 52, 0.20);
+
+      --mi-shadow-xs:
+        0 8px 24px
+        rgba(2, 14, 29, 0.07);
+
+      --mi-shadow-sm:
+        0 14px 38px
+        rgba(2, 14, 29, 0.10);
+
+      --mi-shadow-md:
+        0 26px 75px
+        rgba(2, 14, 29, 0.16);
+
+      --mi-shadow-lg:
+        0 40px 115px
+        rgba(1, 9, 21, 0.34);
+
+      --mi-shadow-xl:
+        0 54px 145px
+        rgba(1, 9, 21, 0.52);
+
+      --mi-shadow-cta:
+        0 18px 46px
+        rgba(99, 189, 67, 0.34);
+
+      --mi-shadow-cta-hover:
+        0 25px 64px
+        rgba(99, 189, 67, 0.48);
+
+      --mi-content-width: 1540px;
+      --mi-wide-width: 1900px;
+
+      --mi-radius-xs: 11px;
+      --mi-radius-sm: 15px;
+      --mi-radius-md: 20px;
+      --mi-radius-lg: 28px;
+      --mi-radius-xl: 38px;
+      --mi-radius-xxl: 52px;
+
+      --mi-ease:
+        cubic-bezier(
+          0.16,
+          1,
+          0.3,
+          1
+        );
+
+      --mi-course-image:
+        url("https://ttusa.s3.amazonaws.com/images/gallery/12820/i12820.jpg");
+
+      position: relative;
+      width: 100%;
+      min-width: 0;
+      overflow-x: hidden;
+      color: var(--mi-ink);
+      background: var(--mi-white);
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      isolation: isolate;
+    }
+
+    #motiv-invitational-v1100,
+    #motiv-invitational-v1100 *,
+    #motiv-invitational-v1100 *::before,
+    #motiv-invitational-v1100 *::after {
+      box-sizing: border-box;
+    }
+
+    #motiv-invitational-v1100 button,
+    #motiv-invitational-v1100 input,
+    #motiv-invitational-v1100 select,
+    #motiv-invitational-v1100 textarea {
+      font: inherit;
+    }
+
+    #motiv-invitational-v1100 button {
+      border: 0;
+    }
+
+    #motiv-invitational-v1100 button,
+    #motiv-invitational-v1100 a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    #motiv-invitational-v1100 a {
+      color: inherit;
+    }
+
+    #motiv-invitational-v1100 img,
+    #motiv-invitational-v1100 svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    #motiv-invitational-v1100 :where(
+      h1,
+      h2,
+      h3,
+      h4,
+      p
+    ) {
+      overflow-wrap: anywhere;
+    }
+
+    #motiv-invitational-v1100 ::selection {
+      color: var(--mi-white);
+      background: var(--mi-blue-600);
+    }
+
+    #miCourseExperience,
+    #miPrizeExperience,
+    #miLaunchTitle,
+    #miRegistration {
+      scroll-margin-top: 112px;
+    }
+
+    .mi-container {
+      width:
+        min(
+          calc(100% - 64px),
+          var(--mi-content-width)
+        );
+      margin-inline: auto;
+    }
+
+    .mi-wide-container {
+      width: 100%;
+      max-width: var(--mi-wide-width);
+      margin-inline: auto;
+      padding-inline:
+        clamp(
+          24px,
+          4.3vw,
+          82px
+        );
+    }
+
+    .mi-section {
+      position: relative;
+      isolation: isolate;
+    }
+
+    .mi-section-header {
+      max-width: 1080px;
+    }
+
+    .mi-section-header-centered {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .mi-section-header-centered
+    .mi-section-copy {
+      margin-inline: auto;
+    }
+
+    .mi-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 20px;
+      color: var(--mi-blue-600);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .mi-eyebrow::before {
+      width: 38px;
+      height: 4px;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background:
+        linear-gradient(
+          90deg,
+          var(--mi-red-600),
+          var(--mi-blue-600),
+          var(--mi-green-600)
+        );
+      content: "";
+    }
+
+    .mi-eyebrow-light {
+      color:
+        rgba(255, 255, 255, 0.78);
+    }
+
+    .mi-section-title {
+      max-width: 1150px;
+      margin: 0;
+      color: var(--mi-navy-900);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          2.65rem,
+          5vw,
+          5.5rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.057em;
+      line-height: 0.98;
+      text-wrap: balance;
+    }
+
+    .mi-section-title-light {
+      color: var(--mi-white);
+    }
+
+    .mi-section-copy {
+      max-width: 850px;
+      margin: 25px 0 0;
+      color: var(--mi-gray-500);
+      font-size:
+        clamp(
+          1rem,
+          1.22vw,
+          1.15rem
+        );
+      line-height: 1.8;
+    }
+
+    .mi-section-copy-light {
+      color:
+        rgba(255, 255, 255, 0.67);
+    }
+
+    .mi-cta {
+      position: relative;
+      z-index: 1;
+      isolation: isolate;
+      display: inline-flex;
+      min-height: 56px;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      padding: 15px 27px;
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      color: var(--mi-white);
+      background:
+        linear-gradient(
+          135deg,
+          #8be963 0%,
+          var(--mi-green-600) 46%,
+          var(--mi-green-700) 100%
+        );
+      box-shadow:
+        var(--mi-shadow-cta);
+      cursor: pointer;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.075em;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+      transition:
+        transform 220ms var(--mi-ease),
+        box-shadow 220ms ease,
+        filter 220ms ease;
+    }
+
+    .mi-cta::before {
+      position: absolute;
+      z-index: -1;
+      top: -150%;
+      left: -40%;
+      width: 42%;
+      height: 420%;
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.52),
+          transparent
+        );
+      content: "";
+      opacity: 0;
+      transform: rotate(19deg);
+      transition:
+        left 720ms var(--mi-ease),
+        opacity 220ms ease;
+    }
+
+    .mi-cta::after {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      border-radius: inherit;
+      background:
+        radial-gradient(
+          circle at 20% 0%,
+          rgba(255, 255, 255, 0.25),
+          transparent 37%
+        );
+      content: "";
+      pointer-events: none;
+    }
+
+    .mi-cta:hover {
+      filter:
+        saturate(1.07)
+        brightness(1.035);
+      box-shadow:
+        var(--mi-shadow-cta-hover);
+      transform: translateY(-4px);
+    }
+
+    .mi-cta:hover::before {
+      left: 120%;
+      opacity: 1;
+    }
+
+    .mi-cta:active {
+      transform: translateY(-1px);
+    }
+
+    .mi-cta:disabled {
+      cursor: not-allowed;
+      opacity: 0.62;
+      transform: none;
+    }
+
+    .mi-cta svg {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+      transition:
+        transform 220ms var(--mi-ease);
+    }
+
+    .mi-cta:hover svg {
+      transform: translateX(5px);
+    }
+
+    .mi-secondary-cta {
+      position: relative;
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 22px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.19);
+      border-radius: 999px;
+      color: var(--mi-white);
+      background:
+        rgba(0, 4, 11, 0.45);
+      cursor: pointer;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-decoration: none;
+      text-transform: uppercase;
+      backdrop-filter: blur(13px);
+      -webkit-backdrop-filter: blur(13px);
+      transition:
+        border-color 180ms ease,
+        color 180ms ease,
+        background 180ms ease,
+        transform 180ms var(--mi-ease);
+    }
+
+    .mi-secondary-cta:hover {
+      border-color:
+        rgba(131, 223, 89, 0.42);
+      color: var(--mi-green-400);
+      background:
+        rgba(0, 4, 11, 0.70);
+      transform: translateY(-3px);
+    }
+
+    .mi-secondary-cta svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .mi-cta:focus-visible,
+    .mi-secondary-cta:focus-visible {
+      outline:
+        3px solid
+        rgba(131, 223, 89, 0.55);
+      outline-offset: 4px;
+    }
+
+    .mi-reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition:
+        opacity 760ms var(--mi-ease),
+        transform 760ms var(--mi-ease);
+    }
+
+    .mi-reveal[data-mi-delay="1"] {
+      transition-delay: 80ms;
+    }
+
+    .mi-reveal[data-mi-delay="2"] {
+      transition-delay: 160ms;
+    }
+
+    .mi-reveal[data-mi-delay="3"] {
+      transition-delay: 240ms;
+    }
+
+    .mi-reveal.mi-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =======================================================================
+       HERO — CTA ABOVE THE FOLD
+       ======================================================================= */
+
+    .mi-hero {
+      position: relative;
+      min-height:
+        clamp(
+          700px,
+          calc(100svh - 74px),
+          950px
+        );
+      overflow: hidden;
+      color: var(--mi-white);
+      background: var(--mi-navy-1250);
+      isolation: isolate;
+    }
+
+    .mi-hero-image {
+      position: absolute;
+      z-index: -10;
+      inset: 0;
+      overflow: hidden;
+      background-image:
+        var(--mi-course-image);
+      background-position:
+        center 49%;
+      background-size: cover;
+      transform: scale(1.02);
+      animation:
+        miHeroImageIn
+        18s ease-out both;
+    }
+
+    .mi-hero-image::before {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0, 4, 11, 0.995) 0%,
+          rgba(1, 8, 19, 0.97) 17%,
+          rgba(2, 13, 27, 0.84) 34%,
+          rgba(2, 14, 28, 0.48) 52%,
+          rgba(2, 14, 28, 0.13) 72%,
+          rgba(2, 14, 28, 0.07) 100%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(0, 4, 11, 0.99) 0%,
+          rgba(0, 4, 11, 0.79) 13%,
+          rgba(0, 4, 11, 0.08) 58%,
+          rgba(0, 4, 11, 0.26) 100%
+        );
+      content: "";
+    }
+
+    .mi-hero-image::after {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(
+          circle at 78% 40%,
+          transparent 0%,
+          transparent 28%,
+          rgba(0, 4, 11, 0.08) 56%,
+          rgba(0, 4, 11, 0.42) 100%
+        );
+      content: "";
+    }
+
+    .mi-hero-noise {
+      position: absolute;
+      z-index: -8;
+      inset: 0;
+      opacity: 0.03;
+      pointer-events: none;
+      background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.84' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.72'/%3E%3C/svg%3E");
+    }
+
+    .mi-hero-layout {
+      display: grid;
+      min-height:
+        clamp(
+          700px,
+          calc(100svh - 74px),
+          950px
+        );
+      grid-template-columns:
+        minmax(0, 0.90fr)
+        minmax(430px, 1.10fr);
+      grid-template-rows:
+        minmax(0, 1fr)
+        auto;
+      align-items: center;
+      gap:
+        clamp(
+          30px,
+          4vw,
+          76px
+        );
+      padding-top:
+        clamp(
+          16px,
+          3vh,
+          36px
+        );
+    }
+
+    .mi-hero-copy {
+      width: 100%;
+      max-width: 805px;
+      padding-block:
+        clamp(
+          22px,
+          4vh,
+          52px
+        )
+        clamp(
+          18px,
+          2vh,
+          32px
+        );
+      animation:
+        miRise
+        900ms 60ms
+        var(--mi-ease)
+        both;
+    }
+
+    .mi-hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 15px;
+    }
+
+    .mi-hero-badge {
+      display: inline-flex;
+      min-height: 29px;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.17);
+      border-radius: 999px;
+      color:
+        rgba(255, 255, 255, 0.90);
+      background:
+        rgba(0, 4, 11, 0.46);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.46rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .mi-hero-badge-green {
+      border-color:
+        rgba(131, 223, 89, 0.38);
+      color: #ceffbc;
+      background:
+        rgba(35, 103, 29, 0.30);
+    }
+
+    .mi-hero-badge-gold {
+      border-color:
+        rgba(231, 199, 127, 0.42);
+      color: #ffe6a7;
+      background:
+        rgba(113, 76, 20, 0.31);
+    }
+
+    .mi-hero-overline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 12px;
+      color:
+        rgba(255, 255, 255, 0.83);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.55rem,
+          0.68vw,
+          0.67rem
+        );
+      font-weight: 800;
+      letter-spacing: 0.17em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .mi-hero-overline::before {
+      width: 40px;
+      height: 4px;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background:
+        linear-gradient(
+          90deg,
+          var(--mi-red-500),
+          var(--mi-blue-500),
+          var(--mi-green-500)
+        );
+      content: "";
+    }
+
+    .mi-hero-title {
+      max-width: 820px;
+      margin: 0;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          3.35rem,
+          5.45vw,
+          6.55rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.064em;
+      line-height: 0.88;
+      text-wrap: balance;
+    }
+
+    .mi-hero-title span {
+      display: block;
+      margin-top: 7px;
+      font-style: italic;
+    }
+
+    .mi-hero-title em {
+      color: var(--mi-green-500);
+      font-style: inherit;
+    }
+
+    .mi-hero-sponsor {
+      display: flex;
+      max-width: 720px;
+      margin-top: 17px;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mi-hero-sponsor::before {
+      width: 37px;
+      height: 1px;
+      flex: 0 0 auto;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.12),
+          rgba(255, 255, 255, 0.68)
+        );
+      content: "";
+    }
+
+    .mi-hero-sponsor span {
+      color:
+        rgba(255, 255, 255, 0.72);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.64rem,
+          0.78vw,
+          0.76rem
+        );
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      line-height: 1.45;
+      text-transform: uppercase;
+    }
+
+    .mi-hero-sponsor strong {
+      color: var(--mi-white);
+      font-weight: 800;
+    }
+
+    .mi-hero-description {
+      max-width: 720px;
+      margin: 14px 0 0;
+      color:
+        rgba(255, 255, 255, 0.80);
+      font-size:
+        clamp(
+          0.91rem,
+          1vw,
+          1.04rem
+        );
+      line-height: 1.66;
+      text-shadow:
+        0 3px 22px
+        rgba(0, 0, 0, 0.42);
+    }
+
+    .mi-hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 15px;
+    }
+
+    .mi-hero-meta-item {
+      display: inline-flex;
+      min-height: 32px;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 10px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color:
+        rgba(255, 255, 255, 0.83);
+      background:
+        rgba(0, 4, 11, 0.48);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.54rem;
+      font-weight: 700;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .mi-hero-meta-item svg {
+      width: 14px;
+      height: 14px;
+      flex: 0 0 auto;
+      color: var(--mi-green-500);
+    }
+
+    .mi-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 11px;
+      margin-top: 18px;
+    }
+
+    .mi-hero-actions
+    .mi-cta {
+      min-height: 56px;
+    }
+
+    .mi-hero-visual-zone {
+      position: relative;
+      align-self: stretch;
+      min-height: 530px;
+      pointer-events: none;
+    }
+
+    .mi-hero-view-label {
+      position: absolute;
+      right: 0;
+      bottom: 27px;
+      display: flex;
+      max-width: 340px;
+      padding: 15px 17px;
+      align-items: center;
+      gap: 12px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.17);
+      border-radius: 18px;
+      color: var(--mi-white);
+      background:
+        rgba(0, 4, 11, 0.58);
+      box-shadow:
+        0 18px 54px
+        rgba(0, 4, 11, 0.28);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      pointer-events: auto;
+    }
+
+    .mi-hero-view-icon {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--mi-green-500);
+      background:
+        rgba(131, 223, 89, 0.10);
+    }
+
+    .mi-hero-view-icon svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .mi-hero-view-label small {
+      display: block;
+      color: var(--mi-green-500);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.45rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .mi-hero-view-label strong {
+      display: block;
+      margin-top: 5px;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 1.14rem;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    .mi-hero-dashboard {
+      position: relative;
+      z-index: 4;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1.22fr)
+        repeat(
+          3,
+          minmax(0, 0.58fr)
+        );
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+      border-radius:
+        22px 22px 0 0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0, 5, 14, 0.97),
+          rgba(3, 20, 42, 0.91)
+        );
+      backdrop-filter: blur(21px);
+      -webkit-backdrop-filter: blur(21px);
+    }
+
+    .mi-countdown-area {
+      display: grid;
+      grid-template-columns:
+        auto
+        minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      padding: 15px 19px;
+    }
+
+    .mi-countdown-date {
+      display: grid;
+      width: 51px;
+      height: 51px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 16px;
+      color: var(--mi-white);
+      background:
+        linear-gradient(
+          145deg,
+          var(--mi-blue-500),
+          var(--mi-blue-700)
+        );
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 1.46rem;
+      font-style: italic;
+    }
+
+    .mi-countdown-copy strong {
+      display: block;
+      color: var(--mi-white);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .mi-countdown-copy p {
+      margin: 3px 0 0;
+      color:
+        rgba(255, 255, 255, 0.52);
+      font-size: 0.59rem;
+      line-height: 1.4;
+    }
+
+    .mi-countdown-grid {
+      display: grid;
+      margin-top: 7px;
+      grid-template-columns:
+        repeat(
+          4,
+          minmax(48px, 1fr)
+        );
+      gap: 5px;
+    }
+
+    .mi-countdown-cell {
+      padding: 6px 5px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+      border-radius: 9px;
+      background:
+        rgba(255, 255, 255, 0.045);
+      text-align: center;
+    }
+
+    .mi-countdown-value {
+      display: block;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .mi-countdown-label {
+      display: block;
+      margin-top: 3px;
+      color: var(--mi-green-500);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.35rem;
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .mi-hero-stat {
+      display: flex;
+      min-width: 0;
+      padding: 15px 18px;
+      flex-direction: column;
+      justify-content: center;
+      border-left:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+    }
+
+    .mi-hero-stat small {
+      color:
+        rgba(255, 255, 255, 0.47);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.43rem;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    .mi-hero-stat strong {
+      display: block;
+      margin-top: 5px;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          1.31rem,
+          1.8vw,
+          2.05rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.037em;
+      line-height: 1;
+    }
+
+    .mi-hero-stat span {
+      display: block;
+      margin-top: 5px;
+      color:
+        rgba(255, 255, 255, 0.51);
+      font-size: 0.55rem;
+      line-height: 1.38;
+    }
+
+    .mi-brand-stripe {
+      height: 7px;
+      background:
+        linear-gradient(
+          90deg,
+          var(--mi-red-600) 0%,
+          var(--mi-red-600) 24%,
+          var(--mi-blue-600) 24%,
+          var(--mi-blue-600) 69%,
+          var(--mi-green-600) 69%,
+          var(--mi-green-600) 100%
+        );
+    }
+
+    /* =======================================================================
+       CORE SECTIONS
+       ======================================================================= */
+
+
+    /* ---------- sponsored by ------------------------------------------- */
+
+    .mi-sponsors {
+      /* The knobs: speed, logo size, spacing.
+         The LGW mark is a three-line wordmark in a 2:1 box, so its type is
+         a third of the height set here - 42px left it unreadable. */
+      --mi-sponsors-speed: 40s;
+      --mi-sponsors-logo: 60px;
+      --mi-sponsors-gap: 86px;
+
+      border-bottom: 1px solid var(--mi-border-faint);
+      background:
+        linear-gradient(
+          180deg,
+          var(--mi-white),
+          var(--mi-gray-50)
+        );
+    }
+
+
+    .mi-sponsors-inner {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 2.4vw, 42px);
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    /* The fixed half. */
+    .mi-sponsors-label {
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      color: var(--mi-ink-soft);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.64rem,
+          0.78vw,
+          0.76rem
+        );
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      line-height: 1.45;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* Echoes the rule beside the hero credit, in the dark tone. */
+    .mi-sponsors-label::before {
+      width: 37px;
+      height: 1px;
+      flex: 0 0 auto;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 29, 52, 0.08),
+          rgba(5, 29, 52, 0.42)
+        );
+      content: "";
+    }
+
+    /* Clips the track and softens both ends, so a logo fades rather than
+       being cut off mid-word. */
+    .mi-sponsors-viewport {
+      position: relative;
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      -webkit-mask-image:
+        linear-gradient(
+          90deg,
+          transparent,
+          #000 5%,
+          #000 95%,
+          transparent
+        );
+      mask-image:
+        linear-gradient(
+          90deg,
+          transparent,
+          #000 5%,
+          #000 95%,
+          transparent
+        );
+    }
+
+    .mi-sponsors-track {
+      display: flex;
+      align-items: center;
+      gap: var(--mi-sponsors-gap);
+      width: max-content;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      animation:
+        mi-sponsors-scroll
+        var(--mi-sponsors-speed)
+        linear
+        infinite;
+    }
+
+    /* Let a visitor stop the motion to read a logo. */
+    .mi-sponsors:hover .mi-sponsors-track,
+    .mi-sponsors-track:focus-within {
+      animation-play-state: paused;
+    }
+
+    .mi-sponsors-item {
+      flex: 0 0 auto;
+    }
+
+    .mi-sponsors-item a {
+      display: block;
+      border-radius: 6px;
+      line-height: 0;
+      opacity: 0.86;
+      transition: opacity 180ms ease;
+    }
+
+    .mi-sponsors-item a:hover {
+      opacity: 1;
+    }
+
+    .mi-sponsors-item a:focus-visible {
+      outline: 2px solid var(--mi-gold-600);
+      outline-offset: 5px;
+    }
+
+    .mi-sponsors-item img {
+      display: block;
+      width: auto;
+      height: var(--mi-sponsors-logo);
+      max-width: none;
+      object-fit: contain;
+    }
+
+    /* The script mirrors the run, so travelling half the track lands on an
+       identical frame and the loop has no seam. */
+    @keyframes mi-sponsors-scroll {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .mi-sponsors-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .mi-sponsors {
+        --mi-sponsors-logo: 46px;
+        --mi-sponsors-gap: 56px;
+      }
+
+      .mi-sponsors-viewport {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mi-sponsors-track {
+        animation: none;
+      }
+
+      .mi-sponsors-viewport {
+        overflow-x: auto;
+        -webkit-mask-image: none;
+        mask-image: none;
+      }
+    }
+
+    .mi-intro {
+      padding:
+        118px 0
+        126px;
+      background:
+        radial-gradient(
+          circle at 95% 0%,
+          rgba(99, 189, 67, 0.11),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.08),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          var(--mi-white),
+          var(--mi-gray-50)
+        );
+    }
+
+    .mi-intro-grid {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(390px, 0.75fr);
+      align-items: center;
+      gap:
+        clamp(
+          55px,
+          6vw,
+          108px
+        );
+    }
+
+    .mi-intro-points {
+      display: grid;
+      margin-top: 38px;
+      grid-template-columns:
+        repeat(
+          2,
+          minmax(0, 1fr)
+        );
+      gap: 15px;
+    }
+
+    .mi-intro-point {
+      padding: 24px;
+      border:
+        1px solid
+        var(--mi-border);
+      border-radius: 23px;
+      background: var(--mi-white);
+      box-shadow:
+        var(--mi-shadow-sm);
+      transition:
+        transform 230ms var(--mi-ease),
+        box-shadow 230ms ease,
+        border-color 230ms ease;
+    }
+
+    .mi-intro-point:hover {
+      border-color:
+        rgba(8, 119, 208, 0.20);
+      box-shadow:
+        var(--mi-shadow-md);
+      transform: translateY(-6px);
+    }
+
+    .mi-intro-point-icon {
+      display: grid;
+      width: 45px;
+      height: 45px;
+      place-items: center;
+      border-radius: 15px;
+      color: var(--mi-blue-600);
+      background: var(--mi-blue-100);
+    }
+
+    .mi-intro-point-icon svg {
+      width: 21px;
+      height: 21px;
+    }
+
+    .mi-intro-point h3 {
+      margin: 22px 0 0;
+      color: var(--mi-navy-900);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 1.48rem;
+      font-weight: 600;
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+    }
+
+    .mi-intro-point p {
+      margin: 11px 0 0;
+      color: var(--mi-gray-500);
+      font-size: 0.79rem;
+      line-height: 1.65;
+    }
+
+    .mi-invitation-card {
+      position: relative;
+      padding:
+        clamp(
+          34px,
+          4vw,
+          52px
+        );
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 36px;
+      color: var(--mi-white);
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(231, 199, 127, 0.28),
+          transparent 39%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.17),
+          transparent 38%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-850),
+          var(--mi-navy-1150)
+        );
+      box-shadow:
+        var(--mi-shadow-md);
+    }
+
+    .mi-invitation-card small {
+      color: var(--mi-gold-500);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.55rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .mi-invitation-card h3 {
+      margin: 19px 0 0;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          2.2rem,
+          3.8vw,
+          3.85rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.047em;
+      line-height: 1;
+    }
+
+    .mi-invitation-card p {
+      margin: 20px 0 0;
+      color:
+        rgba(255, 255, 255, 0.66);
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+
+    .mi-invitation-details {
+      display: grid;
+      margin-top: 28px;
+      border-top:
+        1px solid
+        rgba(255, 255, 255, 0.11);
+    }
+
+    .mi-invitation-detail {
+      display: grid;
+      grid-template-columns:
+        39px
+        minmax(0, 1fr);
+      align-items: center;
+      gap: 11px;
+      padding: 14px 0;
+      border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+    }
+
+    .mi-invitation-detail-icon {
+      display: grid;
+      width: 39px;
+      height: 39px;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--mi-green-500);
+      background:
+        rgba(255, 255, 255, 0.055);
+    }
+
+    .mi-invitation-detail-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .mi-invitation-detail strong {
+      display: block;
+      color: var(--mi-white);
+      font-size: 0.79rem;
+    }
+
+    .mi-invitation-detail span span {
+      display: block;
+      margin-top: 3px;
+      color:
+        rgba(255, 255, 255, 0.51);
+      font-size: 0.63rem;
+    }
+
+    .mi-invitation-card
+    .mi-cta {
+      width: 100%;
+      margin-top: 27px;
+    }
+
+    /* COURSE */
+
+    .mi-course {
+      padding:
+        126px 0
+        125px;
+      color: var(--mi-white);
+      background:
+        radial-gradient(
+          circle at 90% 4%,
+          rgba(99, 189, 67, 0.12),
+          transparent 29%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.14),
+          transparent 34%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-1000),
+          var(--mi-navy-1250)
+        );
+    }
+
+    .mi-course-heading-grid {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(330px, 0.50fr);
+      align-items: end;
+      gap: 68px;
+    }
+
+    .mi-course-side-copy {
+      padding-left: 30px;
+      border-left:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+    }
+
+    .mi-course-side-copy strong {
+      display: block;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          1.7rem,
+          2.6vw,
+          2.65rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.038em;
+      line-height: 1.08;
+    }
+
+    .mi-course-side-copy p {
+      margin: 14px 0 0;
+      color:
+        rgba(255, 255, 255, 0.59);
+      font-size: 0.83rem;
+      line-height: 1.72;
+    }
+
+    .mi-course-image-shell {
+      position: relative;
+      min-height:
+        clamp(
+          520px,
+          57vw,
+          850px
+        );
+      margin-top: 56px;
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+      border-radius: 42px;
+      background-image:
+        linear-gradient(
+          0deg,
+          rgba(1, 8, 20, 0.80),
+          rgba(1, 8, 20, 0.02) 50%
+        ),
+        var(--mi-course-image);
+      background-position:
+        center 48%;
+      background-size: cover;
+      box-shadow:
+        var(--mi-shadow-lg);
+    }
+
+    .mi-course-image-caption {
+      position: absolute;
+      right: 43px;
+      bottom: 38px;
+      left: 43px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 42px;
+    }
+
+    .mi-course-image-caption small {
+      display: block;
+      color: #c8ffb7;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.55rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .mi-course-image-caption strong {
+      display: block;
+      max-width: 900px;
+      margin-top: 9px;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          2.2rem,
+          4.2vw,
+          4.8rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.052em;
+      line-height: 0.97;
+    }
+
+    .mi-course-image-caption p {
+      max-width: 355px;
+      margin: 0;
+      color:
+        rgba(255, 255, 255, 0.65);
+      font-size: 0.78rem;
+      line-height: 1.64;
+      text-align: right;
+    }
+
+    .mi-course-feature-grid {
+      display: grid;
+      margin-top: 20px;
+      grid-template-columns:
+        repeat(
+          4,
+          minmax(0, 1fr)
+        );
+      gap: 15px;
+    }
+
+    .mi-course-feature {
+      padding: 28px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 24px;
+      background:
+        rgba(255, 255, 255, 0.055);
+    }
+
+    .mi-course-feature small {
+      color: var(--mi-green-500);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.50rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .mi-course-feature strong {
+      display: block;
+      margin-top: 10px;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          1.35rem,
+          2vw,
+          2.05rem
+        );
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .mi-course-feature span {
+      display: block;
+      margin-top: 10px;
+      color:
+        rgba(255, 255, 255, 0.56);
+      font-size: 0.68rem;
+      line-height: 1.55;
+    }
+
+    .mi-section-cta {
+      display: flex;
+      margin-top: 30px;
+      padding: 31px 34px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 34px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 29px;
+      background:
+        radial-gradient(
+          circle at 95% 10%,
+          rgba(99, 189, 67, 0.16),
+          transparent 34%
+        ),
+        rgba(255, 255, 255, 0.045);
+    }
+
+    .mi-section-cta strong {
+      display: block;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          1.7rem,
+          3vw,
+          2.75rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.035em;
+      line-height: 1.08;
+    }
+
+    .mi-section-cta p {
+      max-width: 760px;
+      margin: 8px 0 0;
+      color:
+        rgba(255, 255, 255, 0.59);
+      font-size: 0.76rem;
+      line-height: 1.58;
+    }
+
+    /* PRIZES — now a light section (v2.1.0) */
+
+    .mi-prizes {
+      padding:
+        128px 0
+        32px;
+      color: var(--mi-ink);
+      background:
+        radial-gradient(
+          circle at 7% 4%,
+          rgba(62, 150, 47, 0.13),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 94% 8%,
+          rgba(24, 142, 232, 0.07),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 96%,
+          rgba(99, 189, 67, 0.10),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          var(--mi-white),
+          var(--mi-gray-50)
+        );
+    }
+
+    .mi-prize-icon-chip {
+      display: grid;
+      width: 45px;
+      height: 45px;
+      margin-bottom: 18px;
+      place-items: center;
+      border-radius: 15px;
+    }
+
+    .mi-prize-icon-chip svg {
+      width: 21px;
+      height: 21px;
+    }
+
+    .mi-prize-icon-chip-blue {
+      color: var(--mi-blue-400);
+      background: rgba(24, 142, 232, 0.16);
+    }
+
+    .mi-prize-icon-chip-green {
+      color: var(--mi-green-400);
+      background: rgba(131, 223, 89, 0.14);
+    }
+
+    .mi-prize-heading-grid {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(375px, 0.54fr);
+      align-items: end;
+      gap: 67px;
+    }
+
+    .mi-odds-card {
+      padding: 35px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 32px;
+      color: var(--mi-white);
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(62, 150, 47, 0.30),
+          transparent 42%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.22),
+          transparent 42%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-850),
+          var(--mi-navy-1150)
+        );
+      box-shadow:
+        var(--mi-shadow-md);
+      transition:
+        transform 230ms var(--mi-ease),
+        box-shadow 230ms ease,
+        border-color 230ms ease;
+    }
+
+    .mi-odds-card:hover {
+      border-color:
+        rgba(131, 223, 89, 0.38);
+      box-shadow:
+        var(--mi-shadow-lg);
+      transform: translateY(-6px);
+    }
+
+    .mi-odds-card small {
+      color: var(--mi-green-400);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.55rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .mi-odds-card > strong {
+      display: block;
+      margin-top: 12px;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          3rem,
+          5vw,
+          5.1rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.056em;
+      line-height: 0.93;
+    }
+
+    .mi-odds-card > p {
+      margin: 17px 0 0;
+      color:
+        rgba(255, 255, 255, 0.62);
+      font-size: 0.79rem;
+      line-height: 1.65;
+    }
+
+    .mi-prize-showcase {
+      display: grid;
+      margin-top: 52px;
+      grid-template-columns:
+        minmax(0, 0.78fr)
+        minmax(0, 1.22fr);
+      gap: 20px;
+    }
+
+    .mi-prize-feature,
+    .mi-prize-catalog {
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 35px;
+      color: var(--mi-white);
+      box-shadow:
+        var(--mi-shadow-md);
+      transition:
+        transform 230ms var(--mi-ease),
+        box-shadow 230ms ease,
+        border-color 230ms ease;
+    }
+
+    .mi-prize-feature:hover,
+    .mi-prize-catalog:hover {
+      box-shadow:
+        var(--mi-shadow-lg);
+      transform: translateY(-6px);
+    }
+
+    .mi-prize-feature:hover,
+    .mi-prize-catalog:hover {
+      border-color:
+        rgba(131, 223, 89, 0.36);
+    }
+
+    .mi-prize-feature {
+      position: relative;
+      min-height: 620px;
+      padding: 42px;
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 96% 5%,
+          rgba(62, 150, 47, 0.28),
+          transparent 40%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.20),
+          transparent 38%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-850),
+          var(--mi-navy-1150)
+        );
+    }
+
+    .mi-prize-feature-label {
+      display: inline-flex;
+      min-height: 29px;
+      align-items: center;
+      padding: 6px 10px;
+      border:
+        1px solid
+        rgba(231, 199, 127, 0.42);
+      border-radius: 999px;
+      color: #ffe6a7;
+      background:
+        rgba(113, 76, 20, 0.31);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.49rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .mi-prize-feature h3 {
+      margin: 76px 0 0;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          2.55rem,
+          4.7vw,
+          5rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.054em;
+      line-height: 0.97;
+    }
+
+    .mi-prize-feature p {
+      margin: 23px 0 0;
+      color:
+        rgba(255, 255, 255, 0.64);
+      font-size: 0.90rem;
+      line-height: 1.76;
+    }
+
+    .mi-prize-feature-footer {
+      position: absolute;
+      right: 40px;
+      bottom: 38px;
+      left: 40px;
+      padding-top: 23px;
+      border-top:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+    }
+
+    .mi-prize-feature-footer small {
+      color:
+        rgba(255, 255, 255, 0.50);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.48rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .mi-prize-feature-footer strong {
+      display: block;
+      margin-top: 7px;
+      color: var(--mi-green-400);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 2.35rem;
+      font-weight: 600;
+    }
+
+    .mi-prize-catalog {
+      padding: 37px;
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(62, 150, 47, 0.24),
+          transparent 40%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.18),
+          transparent 38%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-850),
+          var(--mi-navy-1150)
+        );
+    }
+
+    .mi-prize-catalog h3 {
+      margin: 0;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          2.05rem,
+          3vw,
+          2.8rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+    }
+
+    .mi-prize-catalog > p {
+      margin: 12px 0 0;
+      color:
+        rgba(255, 255, 255, 0.60);
+      font-size: 0.79rem;
+      line-height: 1.63;
+    }
+
+    .mi-prize-grid {
+      display: grid;
+      margin-top: 29px;
+      grid-template-columns:
+        repeat(
+          2,
+          minmax(0, 1fr)
+        );
+      gap: 12px;
+    }
+
+    .mi-prize-item {
+      display: grid;
+      min-height: 112px;
+      grid-template-columns:
+        46px
+        minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      padding: 17px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 19px;
+      background:
+        rgba(255, 255, 255, 0.055);
+      transition:
+        transform 200ms var(--mi-ease),
+        border-color 200ms ease,
+        background 200ms ease;
+    }
+
+    .mi-prize-item:hover {
+      border-color:
+        rgba(255, 255, 255, 0.18);
+      background:
+        rgba(255, 255, 255, 0.095);
+      transform: translateY(-3px);
+    }
+
+    .mi-prize-index {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--mi-green-400);
+      background:
+        rgba(131, 223, 89, 0.12);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 0.92rem;
+      font-style: italic;
+    }
+
+    .mi-prize-item strong {
+      display: block;
+      color: var(--mi-white);
+      font-size: 0.78rem;
+      line-height: 1.43;
+    }
+
+    .mi-prize-item span span {
+      display: block;
+      margin-top: 5px;
+      color:
+        rgba(255, 255, 255, 0.56);
+      font-size: 0.64rem;
+      line-height: 1.48;
+    }
+
+    .mi-prize-more {
+      display: grid;
+      min-height: 135px;
+      margin-top: 13px;
+      padding: 24px;
+      place-items: center;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 21px;
+      background:
+        radial-gradient(
+          circle at 90% 0%,
+          rgba(62, 150, 47, 0.30),
+          transparent 45%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.18),
+          transparent 42%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-850),
+          var(--mi-navy-1150)
+        );
+      text-align: center;
+    }
+
+    .mi-prize-more small {
+      color: var(--mi-green-400);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.49rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .mi-prize-more strong {
+      display: block;
+      margin-top: 8px;
+      color: var(--mi-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          2rem,
+          3.4vw,
+          3.35rem
+        );
+      font-weight: 600;
+    }
+
+    .mi-prize-more span span {
+      display: block;
+      margin-top: 9px;
+      color:
+        rgba(255, 255, 255, 0.58);
+      font-size: 0.72rem;
+      line-height: 1.56;
+    }
+
+    .mi-prize-disclosure {
+      margin-top: 24px;
+      color: var(--mi-gray-450);
+      font-size: 0.63rem;
+      line-height: 1.68;
+    }
+
+    .mi-prizes .mi-section-cta {
+      border-color: rgba(255, 255, 255, 0.10);
+      background:
+        radial-gradient(
+          circle at 95% 0%,
+          rgba(62, 150, 47, 0.28),
+          transparent 42%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.20),
+          transparent 40%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-850),
+          var(--mi-navy-1150)
+        );
+      box-shadow:
+        var(--mi-shadow-md);
+    }
+
+    .mi-prizes .mi-section-cta strong {
+      color: var(--mi-white);
+    }
+
+    .mi-prizes .mi-section-cta p {
+      color:
+        rgba(255, 255, 255, 0.60);
+    }
+
+    /* LAUNCH */
+
+    .mi-launch {
+      padding:
+        120px 24px;
+      background: var(--mi-gray-50);
+    }
+
+    .mi-launch-panel {
+      position: relative;
+      display: grid;
+      width:
+        min(
+          100%,
+          var(--mi-wide-width)
+        );
+      min-height: 650px;
+      margin-inline: auto;
+      grid-template-columns:
+        minmax(0, 0.98fr)
+        minmax(470px, 1.02fr);
+      overflow: hidden;
+      border-radius: 54px;
+      color: var(--mi-white);
+      background: var(--mi-navy-1150);
+      box-shadow:
+        var(--mi-shadow-md);
+    }
+
+    .mi-launch-copy {
+      display: flex;
+      padding:
+        clamp(
+          65px,
+          6vw,
+          105px
+        );
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .mi-launch-highlights {
+      display: grid;
+      margin-top: 38px;
+      grid-template-columns:
+        repeat(
+          3,
+          minmax(0, 1fr)
+        );
+      gap: 11px;
+    }
+
+    .mi-launch-highlight {
+      padding: 18px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      background:
+        rgba(255, 255, 255, 0.055);
+    }
+
+    .mi-launch-highlight strong {
+      display: block;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 1.12rem;
+      font-weight: 600;
+    }
+
+    .mi-launch-highlight span {
+      display: block;
+      margin-top: 6px;
+      color:
+        rgba(255, 255, 255, 0.53);
+      font-size: 0.62rem;
+    }
+
+    .mi-launch-media {
+      position: relative;
+      min-height: 100%;
+      background-image:
+        linear-gradient(
+          90deg,
+          var(--mi-navy-1150),
+          rgba(3, 17, 31, 0.05) 45%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(1, 8, 20, 0.73),
+          transparent 57%
+        ),
+        var(--mi-course-image);
+      background-position:
+        69% center;
+      background-size: cover;
+    }
+
+    .mi-launch-card {
+      position: absolute;
+      right: 37px;
+      bottom: 37px;
+      left: 37px;
+      padding: 28px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+      border-radius: 23px;
+      background:
+        rgba(1, 8, 20, 0.83);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .mi-launch-card small {
+      color: var(--mi-green-500);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.52rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .mi-launch-card strong {
+      display: block;
+      margin-top: 9px;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 1.67rem;
+      font-weight: 600;
+    }
+
+    .mi-launch-card span {
+      display: block;
+      margin-top: 9px;
+      color:
+        rgba(255, 255, 255, 0.62);
+      font-size: 0.78rem;
+      line-height: 1.59;
+    }
+
+    /* REGISTRATION — now a centered single column (v2.1.0) */
+
+    .mi-registration {
+      padding:
+        130px 0
+        138px;
+      color: var(--mi-white);
+      background:
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(99, 189, 67, 0.14),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(24, 142, 232, 0.14),
+          transparent 31%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mi-navy-950),
+          var(--mi-navy-1250)
+        );
+    }
+
+    .mi-registration-centered {
+      display: flex;
+      justify-content: center;
+    }
+
+    .mi-registration-intro {
+      max-width: 760px;
+      text-align: center;
+    }
+
+    .mi-registration-centered
+    .mi-registration-intro {
+      position: static;
+    }
+
+    .mi-registration-intro
+    .mi-eyebrow {
+      justify-content: center;
+    }
+
+    .mi-registration-intro
+    .mi-section-copy {
+      margin-inline: auto;
+    }
+
+    .mi-registration-benefits {
+      display: grid;
+      max-width: 520px;
+      margin: 38px auto 0;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .mi-registration-benefit {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color:
+        rgba(255, 255, 255, 0.82);
+      font-size: 0.87rem;
+      line-height: 1.56;
+    }
+
+    .mi-registration-benefit-icon {
+      display: grid;
+      width: 29px;
+      height: 29px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 9px;
+      color: var(--mi-green-500);
+      background:
+        rgba(255, 255, 255, 0.08);
+    }
+
+    .mi-registration-benefit-icon svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .mi-registration-cta-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 38px;
+    }
+
+    .mi-mobile-cta {
+      position: fixed;
+      z-index: 9997;
+      right: 12px;
+      bottom:
+        calc(
+          12px +
+          env(safe-area-inset-bottom)
+        );
+      left: 12px;
+      display: none;
+      padding: 8px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+      border-radius: 999px;
+      background:
+        rgba(1, 8, 20, 0.96);
+      transform:
+        translateY(145%);
+      transition:
+        transform 250ms var(--mi-ease);
+    }
+
+    .mi-mobile-cta.mi-visible {
+      transform:
+        translateY(0);
+    }
+
+    .mi-mobile-cta
+    .mi-cta {
+      width: 100%;
+    }
+
+    @keyframes miHeroImageIn {
+      from {
+        transform: scale(1.07);
+      }
+
+      to {
+        transform: scale(1.02);
+      }
+    }
+
+    @keyframes miRise {
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* =======================================================================
+       SHORT DESKTOP / LAPTOP HEIGHTS
+       ======================================================================= */
+
+    @media
+      (min-width: 1081px)
+      and (max-height: 900px) {
+
+      .mi-hero {
+        min-height:
+          calc(
+            100svh - 74px
+          );
+      }
+
+      .mi-hero-layout {
+        min-height:
+          calc(
+            100svh - 74px
+          );
+        padding-top: 9px;
+      }
+
+      .mi-hero-copy {
+        padding-block:
+          15px 12px;
+      }
+
+      .mi-hero-title {
+        font-size:
+          clamp(
+            3rem,
+            4.75vw,
+            5.65rem
+          );
+      }
+
+      .mi-hero-badge-row {
+        margin-bottom: 10px;
+      }
+
+      .mi-hero-overline {
+        margin-bottom: 8px;
+      }
+
+      .mi-hero-sponsor {
+        margin-top: 11px;
+      }
+
+      .mi-hero-description {
+        max-width: 690px;
+        margin-top: 10px;
+        font-size: 0.89rem;
+        line-height: 1.57;
+      }
+
+      .mi-hero-meta {
+        margin-top: 11px;
+      }
+
+      .mi-hero-actions {
+        margin-top: 13px;
+      }
+
+      .mi-hero-actions
+      .mi-cta,
+      .mi-secondary-cta {
+        min-height: 50px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      .mi-hero-visual-zone {
+        min-height: 450px;
+      }
+
+      .mi-hero-dashboard {
+        border-radius:
+          19px 19px 0 0;
+      }
+
+      .mi-countdown-area,
+      .mi-hero-stat {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .mi-countdown-grid {
+        margin-top: 5px;
+      }
+    }
+
+    @media
+      (min-width: 1081px)
+      and (max-height: 760px) {
+
+      .mi-hero-title {
+        font-size:
+          clamp(
+            2.75rem,
+            4.25vw,
+            4.85rem
+          );
+      }
+
+      .mi-hero-description {
+        max-width: 660px;
+        font-size: 0.82rem;
+        line-height: 1.48;
+      }
+
+      .mi-hero-badge:nth-child(3) {
+        display: none;
+      }
+
+      .mi-hero-meta-item {
+        min-height: 28px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .mi-hero-visual-zone {
+        min-height: 360px;
+      }
+
+      .mi-countdown-copy p,
+      .mi-hero-stat span {
+        display: none;
+      }
+
+      .mi-countdown-grid {
+        margin-top: 4px;
+      }
+
+      .mi-countdown-cell {
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+
+    /* =======================================================================
+       TABLET / MOBILE
+       ======================================================================= */
+
+    @media (max-width: 1080px) {
+      .mi-hero {
+        min-height: auto;
+      }
+
+      .mi-hero-layout {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows:
+          auto auto auto;
+        gap: 0;
+        padding-top: 44px;
+      }
+
+      .mi-hero-copy {
+        max-width: 850px;
+        padding-block:
+          45px 28px;
+      }
+
+      .mi-hero-visual-zone {
+        min-height: 400px;
+      }
+
+      .mi-hero-dashboard {
+        grid-template-columns:
+          repeat(
+            3,
+            minmax(0, 1fr)
+          );
+      }
+
+      .mi-countdown-area {
+        grid-column: 1 / -1;
+        border-bottom:
+          1px solid
+          rgba(255, 255, 255, 0.09);
+      }
+
+      .mi-hero-stat:first-of-type {
+        border-left: 0;
+      }
+
+      .mi-intro-grid,
+      .mi-course-heading-grid,
+      .mi-prize-heading-grid,
+      .mi-prize-showcase,
+      .mi-launch-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .mi-course-side-copy {
+        padding-top: 25px;
+        padding-left: 0;
+        border-top:
+          1px solid
+          rgba(255, 255, 255, 0.13);
+        border-left: 0;
+      }
+
+      .mi-course-feature-grid {
+        grid-template-columns:
+          repeat(
+            2,
+            minmax(0, 1fr)
+          );
+      }
+
+      .mi-launch-media {
+        min-height: 510px;
+      }
+    }
+
+    @media (max-width: 740px) {
+      .mi-container {
+        width:
+          min(
+            calc(100% - 28px),
+            var(--mi-content-width)
+          );
+      }
+
+      .mi-wide-container {
+        padding-inline: 15px;
+      }
+
+      #miCourseExperience,
+      #miPrizeExperience,
+      #miLaunchTitle,
+      #miRegistration {
+        scroll-margin-top: 92px;
+      }
+
+      .mi-hero-image {
+        background-position:
+          61% center;
+      }
+
+      .mi-hero-image::before {
+        background:
+          linear-gradient(
+            0deg,
+            rgba(0, 4, 11, 0.995) 0%,
+            rgba(0, 4, 11, 0.96) 56%,
+            rgba(0, 4, 11, 0.54) 100%
+          );
+      }
+
+      .mi-hero-layout {
+        padding-top: 28px;
+      }
+
+      .mi-hero-copy {
+        padding-block:
+          34px 24px;
+      }
+
+      .mi-hero-title {
+        font-size:
+          clamp(
+            2.7rem,
+            13vw,
+            4.25rem
+          );
+      }
+
+      .mi-hero-description {
+        font-size: 0.89rem;
+      }
+
+      .mi-hero-meta {
+        display: grid;
+      }
+
+      .mi-hero-meta-item {
+        width: 100%;
+      }
+
+      .mi-hero-actions {
+        display: grid;
+      }
+
+      .mi-hero-actions
+      .mi-cta,
+      .mi-secondary-cta {
+        width: 100%;
+      }
+
+      .mi-hero-visual-zone {
+        min-height: 310px;
+      }
+
+      .mi-hero-view-label {
+        right: 14px;
+        bottom: 18px;
+        left: 14px;
+        max-width: none;
+      }
+
+      .mi-hero-dashboard {
+        grid-template-columns: 1fr;
+      }
+
+      .mi-countdown-area {
+        grid-column: auto;
+      }
+
+      .mi-hero-stat {
+        border-top:
+          1px solid
+          rgba(255, 255, 255, 0.09);
+        border-left: 0;
+      }
+
+      .mi-intro,
+      .mi-course,
+      .mi-prizes,
+      .mi-registration {
+        padding-block: 88px;
+      }
+
+      .mi-section-title {
+        font-size:
+          clamp(
+            2.35rem,
+            11.2vw,
+            3.6rem
+          );
+      }
+
+      .mi-intro-points,
+      .mi-course-feature-grid,
+      .mi-prize-grid,
+      .mi-launch-highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .mi-course-image-shell {
+        min-height: 500px;
+        margin-top: 40px;
+        border-radius: 27px;
+        background-position:
+          58% center;
+      }
+
+      .mi-course-image-caption {
+        right: 23px;
+        bottom: 22px;
+        left: 23px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .mi-course-image-caption p {
+        max-width: 100%;
+        text-align: left;
+      }
+
+      .mi-section-cta {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .mi-section-cta
+      .mi-cta {
+        width: 100%;
+      }
+
+      .mi-prize-feature {
+        min-height: 530px;
+        padding: 29px;
+      }
+
+      .mi-prize-feature-footer {
+        right: 29px;
+        bottom: 27px;
+        left: 29px;
+      }
+
+      .mi-prize-catalog {
+        padding: 28px 23px;
+      }
+
+      .mi-launch {
+        padding:
+          0 0
+          88px;
+      }
+
+      .mi-launch-panel {
+        border-radius: 0;
+      }
+
+      .mi-launch-copy {
+        padding:
+          60px 24px;
+      }
+
+      .mi-launch-media {
+        min-height: 420px;
+      }
+
+      .mi-launch-card {
+        right: 19px;
+        bottom: 19px;
+        left: 19px;
+      }
+
+      .mi-registration-benefits {
+        max-width: 100%;
+      }
+
+      .mi-mobile-cta {
+        display: block;
+      }
+
+      .mi-page {
+        padding-bottom:
+          calc(
+            82px +
+            env(safe-area-inset-bottom)
+          );
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #motiv-invitational-v1100 *,
+      #motiv-invitational-v1100 *::before,
+      #motiv-invitational-v1100 *::after {
+        animation-duration:
+          0.01ms !important;
+        animation-iteration-count:
+          1 !important;
+        transition-duration:
+          0.01ms !important;
+      }
+
+      .mi-reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <main>
+
+    <!-- HERO -->
+    <section
+      class="mi-hero"
+      aria-labelledby="miHeroTitle"
+    >
+      <div
+        class="mi-hero-image"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="mi-hero-noise"
+        aria-hidden="true"
+      ></div>
+
+      <div class="mi-wide-container mi-hero-layout">
+
+        <div class="mi-hero-copy">
+
+          <div class="mi-hero-badge-row">
+
+            <span class="mi-hero-badge mi-hero-badge-green">
+              Limited 72-Player Invitational
+            </span>
+
+            <span class="mi-hero-badge mi-hero-badge-gold">
+              27 Planned Prizes
+            </span>
+
+            <span class="mi-hero-badge">
+              Official Motiv Brands Launch
+            </span>
+          </div>
+
+          <p class="mi-hero-overline">
+            A New Annual Tradition Begins in Las Vegas
+          </p>
+
+          <h1
+            class="mi-hero-title"
+            id="miHeroTitle"
+          >
+            The 1st Annual
+
+            <span>
+              Motiv Brands
+              <em>Invitational</em>
+            </span>
+          </h1>
+
+          <div class="mi-hero-sponsor">
+
+            <span>
+              Presented by
+              <strong>
+                Lead Generation World
+              </strong>
+            </span>
+          </div>
+
+          <p class="mi-hero-description">
+            An invitation-only Bali Hai experience combining championship
+            golf, 27 planned prizes and the official Motiv Brands launch
+            celebration.
+          </p>
+
+          <div class="mi-hero-meta">
+
+            <span class="mi-hero-meta-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              Wednesday, January 27, 2027
+            </span>
+
+            <span class="mi-hero-meta-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="8"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+
+                <path
+                  d="M12 8v4l3 2"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              12:00 PM Modified Shotgun
+            </span>
+
+            <span class="mi-hero-meta-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 21s7-5.4 7-12a7 7 0 1 0-14 0c0 6.6 7 12 7 12Z"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <circle
+                  cx="12"
+                  cy="9"
+                  r="2.3"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+              </svg>
+
+              Bali Hai Golf Club
+            </span>
+          </div>
+
+          <div class="mi-hero-actions">
+
+            <a
+              class="mi-cta"
+              href="/start"
+              data-mi-registration-link
+              data-cta-name="Hero Registration"
+              data-cta-section="Hero"
+            >
+              Request an Invitation
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="mi-secondary-cta"
+              href="#miCourseExperience"
+            >
+              Explore Bali Hai
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="mi-hero-visual-zone"
+          aria-hidden="true"
+        >
+          <div class="mi-hero-view-label">
+
+            <span class="mi-hero-view-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6 21V4m0 0 9 3-9 3V4Zm5 17h7"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+
+            <span>
+
+              <small>
+                Official Event Venue
+              </small>
+
+              <strong>
+                Bali Hai Golf Club on the Las Vegas Strip
+              </strong>
+            </span>
+          </div>
+        </div>
+
+        <div class="mi-hero-dashboard">
+
+          <div class="mi-countdown-area">
+
+            <span class="mi-countdown-date">
+              27
+            </span>
+
+            <div class="mi-countdown-copy">
+
+              <strong>
+                The countdown to Bali Hai is on.
+              </strong>
+
+              <p>
+                Championship golf, premium prizes and the Motiv Brands launch.
+              </p>
+
+              <div
+                class="mi-countdown-grid"
+                aria-live="polite"
+              >
+                <div class="mi-countdown-cell">
+
+                  <span
+                    class="mi-countdown-value"
+                    id="miDays"
+                  >
+                    000
+                  </span>
+
+                  <span class="mi-countdown-label">
+                    Days
+                  </span>
+                </div>
+
+                <div class="mi-countdown-cell">
+
+                  <span
+                    class="mi-countdown-value"
+                    id="miHours"
+                  >
+                    00
+                  </span>
+
+                  <span class="mi-countdown-label">
+                    Hours
+                  </span>
+                </div>
+
+                <div class="mi-countdown-cell">
+
+                  <span
+                    class="mi-countdown-value"
+                    id="miMinutes"
+                  >
+                    00
+                  </span>
+
+                  <span class="mi-countdown-label">
+                    Minutes
+                  </span>
+                </div>
+
+                <div class="mi-countdown-cell">
+
+                  <span
+                    class="mi-countdown-value"
+                    id="miSeconds"
+                  >
+                    00
+                  </span>
+
+                  <span class="mi-countdown-label">
+                    Seconds
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mi-hero-stat">
+
+            <small>
+              Invitational Field
+            </small>
+
+            <strong>
+              72
+            </strong>
+
+            <span>
+              Planned players.
+            </span>
+          </div>
+
+          <div class="mi-hero-stat">
+
+            <small>
+              Planned Prizes
+            </small>
+
+            <strong>
+              27
+            </strong>
+
+            <span>
+              Eight revealed plus 19 more.
+            </span>
+          </div>
+
+          <div class="mi-hero-stat">
+
+            <small>
+              Projected Opportunity
+            </small>
+
+            <strong>
+              37.5%
+            </strong>
+
+            <span>
+              Assuming no repeat winners.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="mi-brand-stripe"
+      aria-hidden="true"
+    ></div>
+
+    <!-- ===================================================================
+         SPONSORED BY
+         The label is fixed; the logos scroll. Adding a sponsor is one <li>:
+         copy the block below and change the link, the image and the alt
+         text. The script repeats and mirrors the list itself, so the loop
+         stays seamless whatever the count.
+
+    ==================================================================== -->
+    <section class="mi-sponsors" aria-label="Sponsors">
+      <div class="mi-wide-container mi-sponsors-inner">
+
+        <p class="mi-sponsors-label">Sponsored By</p>
+
+        <div class="mi-sponsors-viewport">
+          <ul class="mi-sponsors-track" data-mi-sponsors>
+
+            <li class="mi-sponsors-item">
+              <a
+                href="https://leadgenerationworld.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://assets.cdn.filesafe.space/9OouFmu9QY2d3ZK4LMwe/media/6ab166e4c3c92dff4d1b01ca.png"
+                  alt="Lead Generation World"
+                  decoding="async"
+                >
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="mi-section mi-intro">
+
+      <div class="mi-container mi-intro-grid">
+
+        <div class="mi-reveal">
+
+          <p class="mi-eyebrow">
+            By Invitation Only
+          </p>
+
+          <h2 class="mi-section-title">
+            An invitation-only golf event for Motiv Brands' closest partners.
+          </h2>
+
+          <p class="mi-section-copy">
+            The Invitational brings together a carefully selected group of
+            partners, operators and industry leaders for a relaxed day of
+            golf, conversation, and celebration — the kind of access that's
+            hard to come by any other way.
+          </p>
+
+          <div class="mi-intro-points">
+
+            <article class="mi-intro-point">
+
+              <span class="mi-intro-point-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8-2a3 3 0 1 0 0-6M2 20a6 6 0 0 1 12 0M14 15a5 5 0 0 1 8 4"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              <h3>
+                Curated Field
+              </h3>
+
+              <p>
+                A focused 72-player field keeps the room valuable and the
+                conversations meaningful.
+              </p>
+            </article>
+
+            <article class="mi-intro-point">
+
+              <span class="mi-intro-point-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 21V4m0 0 9 3-9 3V4Zm5 17h7"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              <h3>
+                Championship Setting
+              </h3>
+
+              <p>
+                Bali Hai creates an unmistakably Las Vegas tournament
+                experience.
+              </p>
+            </article>
+
+            <article class="mi-intro-point">
+
+              <span class="mi-intro-point-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 9h16v11H4V9Zm-1-4h18v4H3V5Zm9 0v15"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              <h3>
+                Premium Prize Plan
+              </h3>
+
+              <p>
+                Twenty-seven planned drawings keep anticipation high
+                throughout the event.
+              </p>
+            </article>
+
+            <article class="mi-intro-point">
+
+              <span class="mi-intro-point-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 3 2.2 4.6L19 8.3l-3.5 3.4.8 4.8L12 14.2l-4.3 2.3.8-4.8L5 8.3l4.8-.7L12 3Z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              <h3>
+                Official Launch
+              </h3>
+
+              <p>
+                The tournament flows directly into the Motiv Brands launch
+                celebration.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <aside
+          class="mi-invitation-card mi-reveal"
+          data-mi-delay="1"
+        >
+          <small>
+            Event Snapshot
+          </small>
+
+          <h3>
+            Everything happens in one afternoon.
+          </h3>
+
+          <p>
+            Golf, prizes, and the Motiv Brands launch celebration — back to
+            back, all in the same afternoon at Bali Hai.
+          </p>
+
+          <div class="mi-invitation-details">
+
+            <div class="mi-invitation-detail">
+
+              <span class="mi-invitation-detail-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                  />
+                </svg>
+              </span>
+
+              <span>
+
+                <strong>
+                  Wednesday, January 27, 2027
+                </strong>
+
+                <span>
+                  The first annual Invitational.
+                </span>
+              </span>
+            </div>
+
+            <div class="mi-invitation-detail">
+
+              <span class="mi-invitation-detail-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="8"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                  />
+
+                  <path
+                    d="M12 8v4l3 2"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                  />
+                </svg>
+              </span>
+
+              <span>
+
+                <strong>
+                  12:00 PM Modified Shotgun
+                </strong>
+
+                <span>
+                  Structured for pace and energy.
+                </span>
+              </span>
+            </div>
+
+            <div class="mi-invitation-detail">
+
+              <span class="mi-invitation-detail-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 21s7-5.4 7-12a7 7 0 1 0-14 0c0 6.6 7 12 7 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                  />
+                </svg>
+              </span>
+
+              <span>
+
+                <strong>
+                  Bali Hai Golf Club
+                </strong>
+
+                <span>
+                  5160 S. Las Vegas Boulevard.
+                </span>
+              </span>
+            </div>
+
+            <div class="mi-invitation-detail">
+
+              <span class="mi-invitation-detail-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 9h16v11H4V9Zm-1-4h18v4H3V5Zm9 0v15"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                  />
+                </svg>
+              </span>
+
+              <span>
+
+                <strong>
+                  27 Planned Prize Drawings
+                </strong>
+
+                <span>
+                  Eight revealed selections and 19 more.
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <a
+            class="mi-cta"
+            href="/start"
+            data-mi-registration-link
+            data-cta-name="Invitation Card Registration"
+            data-cta-section="Invitation"
+          >
+            Request an Invitation
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12h14M13 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- COURSE -->
+    <section
+      class="mi-section mi-course"
+      id="miCourseExperience"
+      aria-labelledby="miCourseTitle"
+    >
+      <div class="mi-container">
+
+        <div class="mi-course-heading-grid">
+
+          <div class="mi-reveal">
+
+            <p class="mi-eyebrow mi-eyebrow-light">
+              The Bali Hai Experience
+            </p>
+
+            <h2
+              class="mi-section-title mi-section-title-light"
+              id="miCourseTitle"
+            >
+              A tropical golf oasis in the heart of Las Vegas.
+            </h2>
+
+            <p class="mi-section-copy mi-section-copy-light">
+              Championship fairways, tropical landscaping, reflective water
+              and the Las Vegas skyline create an extraordinary visual setting
+              for the inaugural Invitational.
+            </p>
+          </div>
+
+          <aside
+            class="mi-course-side-copy mi-reveal"
+            data-mi-delay="1"
+          >
+            <strong>
+              One of the most recognizable courses on the Las Vegas Strip.
+            </strong>
+
+            <p>
+              Bali Hai gives invited guests an unmistakable setting for
+              championship golf, relationship-building and celebration.
+            </p>
+          </aside>
+        </div>
+
+        <div class="mi-course-image-shell mi-reveal">
+
+          <div class="mi-course-image-caption">
+
+            <div>
+
+              <small>
+                Bali Hai · Las Vegas Boulevard
+              </small>
+
+              <strong>
+                Championship golf surrounded by unmistakable Vegas energy.
+              </strong>
+            </div>
+
+            <p>
+              The official venue of the first annual Motiv Brands
+              Invitational.
+            </p>
+          </div>
+        </div>
+
+        <div class="mi-course-feature-grid">
+
+          <article class="mi-course-feature mi-reveal">
+
+            <small>
+              Venue
+            </small>
+
+            <strong>
+              Bali Hai Golf Club
+            </strong>
+
+            <span>
+              5160 South Las Vegas Boulevard.
+            </span>
+          </article>
+
+          <article
+            class="mi-course-feature mi-reveal"
+            data-mi-delay="1"
+          >
+            <small>
+              Format
+            </small>
+
+            <strong>
+              Modified Shotgun
+            </strong>
+
+            <span>
+              Tournament start scheduled for 12:00 PM.
+            </span>
+          </article>
+
+          <article
+            class="mi-course-feature mi-reveal"
+            data-mi-delay="2"
+          >
+            <small>
+              Invitational Field
+            </small>
+
+            <strong>
+              72 Players
+            </strong>
+
+            <span>
+              A focused field built for stronger interaction.
+            </span>
+          </article>
+
+          <article
+            class="mi-course-feature mi-reveal"
+            data-mi-delay="3"
+          >
+            <small>
+              Full Experience
+            </small>
+
+            <strong>
+              Golf + Launch
+            </strong>
+
+            <span>
+              Tournament play followed by the official celebration.
+            </span>
+          </article>
+        </div>
+
+        <div class="mi-section-cta mi-reveal">
+
+          <div>
+
+            <strong>
+              Experience Bali Hai from inside the inaugural field.
+            </strong>
+
+            <p>
+              Register for the first Motiv Brands Invitational presented by
+              Lead Generation World.
+            </p>
+          </div>
+
+          <a
+            class="mi-cta"
+            href="/start"
+            data-mi-registration-link
+            data-cta-name="Course Registration"
+            data-cta-section="Bali Hai"
+          >
+            Request an Invitation
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12h14M13 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIZES -->
+    <section
+      class="mi-section mi-prizes"
+      id="miPrizeExperience"
+      aria-labelledby="miPrizeTitle"
+    >
+      <div class="mi-container">
+
+        <div class="mi-prize-heading-grid">
+
+          <div class="mi-reveal">
+
+            <p class="mi-eyebrow">
+              The Invitational Prize Experience
+            </p>
+
+            <h2
+              class="mi-section-title"
+              id="miPrizeTitle"
+            >
+              27 prizes. 72 players. Better than a one-in-three chance to win.
+            </h2>
+
+            <p class="mi-section-copy">
+              The 72-player Invitational is planned around 27 prizes,
+              preserving a better-than-one-in-three projected unique-winner
+              opportunity.
+            </p>
+          </div>
+
+          <aside
+            class="mi-odds-card mi-reveal"
+            data-mi-delay="1"
+          >
+            <span class="mi-prize-icon-chip mi-prize-icon-chip-blue">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+
+                <path
+                  d="M9 15l6-6M9.5 10a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+
+            <small>
+              Projected Unique-Winner Opportunity
+            </small>
+
+            <strong>
+              37.5%
+            </strong>
+
+            <p>
+              Twenty-seven planned prizes across a 72-player field equals one
+              prize for every 2.67 players, assuming no repeat winners.
+            </p>
+          </aside>
+        </div>
+
+        <div class="mi-prize-showcase">
+
+          <article class="mi-prize-feature mi-reveal">
+
+            <span class="mi-prize-icon-chip mi-prize-icon-chip-green">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8 21h8M12 17v4M6 4h12v3a6 6 0 0 1-12 0V4Zm-3 0h3v2a3 3 0 0 1-3-3Zm18 0h-3v2a3 3 0 0 0 3-3Z"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+
+            <span class="mi-prize-feature-label">
+              Featured Prize Preview
+            </span>
+
+            <h3>
+              Golf, travel, technology and Las Vegas experiences.
+            </h3>
+
+            <p>
+              The selected preview includes premium equipment, destination
+              experiences and high-interest lifestyle prizes.
+            </p>
+
+            <div class="mi-prize-feature-footer">
+
+              <small>
+                Total Planned Inventory
+              </small>
+
+              <strong>
+                27 Prizes
+              </strong>
+            </div>
+          </article>
+
+          <article
+            class="mi-prize-catalog mi-reveal"
+            data-mi-delay="1"
+          >
+            <span class="mi-prize-icon-chip mi-prize-icon-chip-green">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="3"
+                  y="3"
+                  width="8"
+                  height="8"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+
+                <rect
+                  x="13"
+                  y="3"
+                  width="8"
+                  height="8"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+
+                <rect
+                  x="3"
+                  y="13"
+                  width="8"
+                  height="8"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+
+                <rect
+                  x="13"
+                  y="13"
+                  width="8"
+                  height="8"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+              </svg>
+            </span>
+
+            <h3>
+              A selective look at what could be waiting.
+            </h3>
+
+            <p>
+              Eight prizes set the tone. Nineteen additional prizes remain
+              reserved for the full Invitational reveal.
+            </p>
+
+            <div class="mi-prize-grid">
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  01
+                </span>
+
+                <span>
+
+                  <strong>
+                    Premium flagship golf driver
+                  </strong>
+
+                  <span>
+                    Callaway Quantum Triple Diamond Max or comparable model.
+                  </span>
+                </span>
+              </article>
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  02
+                </span>
+
+                <span>
+
+                  <strong>
+                    Weekend golf getaway package
+                  </strong>
+
+                  <span>
+                    A destination trip with lodging and a round included.
+                  </span>
+                </span>
+              </article>
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  03
+                </span>
+
+                <span>
+
+                  <strong>
+                    Premium GPS watch or rangefinder
+                  </strong>
+
+                  <span>
+                    Course technology from a leading golf brand.
+                  </span>
+                </span>
+              </article>
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  04
+                </span>
+
+                <span>
+
+                  <strong>
+                    Custom-fit or premium putter
+                  </strong>
+
+                  <span>
+                    A high-interest golf prize.
+                  </span>
+                </span>
+              </article>
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  05
+                </span>
+
+                <span>
+
+                  <strong>
+                    Premium stand or cart bag
+                  </strong>
+
+                  <span>
+                    Elevated golf gear from a leading equipment brand.
+                  </span>
+                </span>
+              </article>
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  06
+                </span>
+
+                <span>
+
+                  <strong>
+                    Las Vegas Strip show tickets
+                  </strong>
+
+                  <span>
+                    A premium entertainment experience for two.
+                  </span>
+                </span>
+              </article>
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  07
+                </span>
+
+                <span>
+
+                  <strong>
+                    Wireless earbuds
+                  </strong>
+
+                  <span>
+                    Premium personal technology for work and travel.
+                  </span>
+                </span>
+              </article>
+
+              <article class="mi-prize-item">
+
+                <span class="mi-prize-index">
+                  08
+                </span>
+
+                <span>
+
+                  <strong>
+                    Spa day experience
+                  </strong>
+
+                  <span>
+                    A selected Las Vegas hospitality package.
+                  </span>
+                </span>
+              </article>
+            </div>
+
+            <div class="mi-prize-more">
+
+              <span>
+
+                <small>
+                  The Rest of the Lineup
+                </small>
+
+                <strong>
+                  +19 other prizes
+                </strong>
+
+                <span>
+                  Additional golf, travel, technology, dining, entertainment
+                  and event-day surprises.
+                </span>
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="mi-section-cta mi-reveal">
+
+          <div>
+
+            <strong>
+              Don't wait to see the full prize list in person.
+            </strong>
+
+            <p>
+              Join the inaugural field and experience the complete prize lineup
+              in person.
+            </p>
+          </div>
+
+          <a
+            class="mi-cta"
+            href="/start"
+            data-mi-registration-link
+            data-cta-name="Prize Registration"
+            data-cta-section="Prizes"
+          >
+            Request an Invitation
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12h14M13 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <p class="mi-prize-disclosure">
+          The 37.5% projected opportunity assumes 27 planned prizes, 72
+          planned players and no repeat winners. Prize descriptions, brands,
+          models, availability and drawing structure may change. Registration
+          does not guarantee a prize.
+        </p>
+      </div>
+    </section>
+
+    <!-- LAUNCH -->
+    <section
+      class="mi-launch"
+      aria-labelledby="miLaunchTitle"
+    >
+      <div class="mi-launch-panel mi-reveal">
+
+        <div class="mi-launch-copy">
+
+          <p class="mi-eyebrow mi-eyebrow-light">
+            What Happens After Golf
+          </p>
+
+          <h2
+            class="mi-section-title mi-section-title-light"
+            id="miLaunchTitle"
+          >
+            After the round: the official Motiv Brands launch celebration.
+          </h2>
+
+          <p class="mi-section-copy mi-section-copy-light">
+            The Invitational transitions into the official Motiv Brands
+            launch celebration, creating a premium finish built around
+            recognition and connection.
+          </p>
+
+          <div class="mi-launch-highlights">
+
+            <div class="mi-launch-highlight">
+
+              <strong>
+                Recognition
+              </strong>
+
+              <span>
+                Tournament results and awards.
+              </span>
+            </div>
+
+            <div class="mi-launch-highlight">
+
+              <strong>
+                Prize Reveals
+              </strong>
+
+              <span>
+                The complete prize experience.
+              </span>
+            </div>
+
+            <div class="mi-launch-highlight">
+
+              <strong>
+                Motiv Launch
+              </strong>
+
+              <span>
+                The official Motiv Brands celebration.
+              </span>
+            </div>
+          </div>
+
+          <a
+            class="mi-cta"
+            href="/start"
+            data-mi-registration-link
+            data-cta-name="Launch Registration"
+            data-cta-section="Launch Celebration"
+            style="margin-top:34px;align-self:flex-start;"
+          >
+            Request an Invitation
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12h14M13 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="mi-launch-media">
+
+          <div class="mi-launch-card">
+
+            <small>
+              Wednesday · January 27, 2027
+            </small>
+
+            <strong>
+              The inaugural Motiv Brands tradition begins at Bali Hai.
+            </strong>
+
+            <span>
+              Championship golf, premium prize moments and the official company
+              launch in one exceptional Las Vegas experience.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section
+      class="mi-section mi-registration"
+      id="miRegistration"
+      aria-labelledby="miRegistrationTitle"
+    >
+      <div class="mi-container mi-registration-centered">
+
+        <div class="mi-registration-intro mi-reveal">
+
+          <p class="mi-eyebrow mi-eyebrow-light">
+            Invitational Registration
+          </p>
+
+          <h2
+            class="mi-section-title mi-section-title-light"
+            id="miRegistrationTitle"
+          >
+            Secure your place in the 72-player Invitational.
+          </h2>
+
+          <p class="mi-section-copy mi-section-copy-light">
+            Register for championship golf at Bali Hai, the official Motiv
+            Brands launch celebration and eligibility for the planned prize
+            drawings.
+          </p>
+
+          <div class="mi-registration-benefits">
+
+            <div class="mi-registration-benefit">
+
+              <span class="mi-registration-benefit-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m6 12 4 4 8-8"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+
+              Limited 72-player Invitational field
+            </div>
+
+            <div class="mi-registration-benefit">
+
+              <span class="mi-registration-benefit-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m6 12 4 4 8-8"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+
+              Championship golf at Bali Hai
+            </div>
+
+            <div class="mi-registration-benefit">
+
+              <span class="mi-registration-benefit-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m6 12 4 4 8-8"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+
+              Twenty-seven planned prize drawings
+            </div>
+
+            <div class="mi-registration-benefit">
+
+              <span class="mi-registration-benefit-icon">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m6 12 4 4 8-8"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+
+              Official Motiv Brands launch celebration
+            </div>
+          </div>
+
+          <div class="mi-registration-cta-wrap">
+
+            <a
+              class="mi-cta"
+              href="/start"
+              data-mi-registration-link
+              data-cta-name="Registration Section CTA"
+              data-cta-section="Registration"
+            >
+              Request an Invitation
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MOBILE STICKY CTA -->
+  <div
+    class="mi-mobile-cta"
+    id="miMobileCTA"
+  >
+    <a
+      class="mi-cta"
+      href="/start"
+      data-mi-registration-link
+      data-cta-name="Mobile Sticky Registration"
+      data-cta-section="Mobile Sticky CTA"
+    >
+      Request an Invitation
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M5 12h14M13 6l6 6-6 6"
+          stroke="currentColor"
+          stroke-width="1.8"
+        />
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const PAGE_NAME =
+        "Motiv Brands Invitational";
+
+      const PAGE_VERSION =
+        "2.1.0";
+
+      const EVENT_TIME =
+        new Date(
+          "2027-01-27T12:00:00-08:00"
+        ).getTime();
+
+      const page =
+        document.getElementById(
+          "motiv-invitational-v1100"
+        );
+
+      if (!page) {
+        return;
+      }
+
+      const mobileCTA =
+        page.querySelector(
+          "#miMobileCTA"
+        );
+
+      const registrationSection =
+        page.querySelector(
+          "#miRegistration"
+        );
+
+      const registrationLinks =
+        Array.from(
+          page.querySelectorAll(
+            "[data-mi-registration-link]"
+          )
+        );
+
+      const dispatchTracking =
+        (
+          eventName,
+          detail
+        ) => {
+          window.dataLayer =
+            window.dataLayer || [];
+
+          window.dataLayer.push({
+            event:
+              eventName,
+
+            page_name:
+              PAGE_NAME,
+
+            page_version:
+              PAGE_VERSION,
+
+            ...detail
+          });
+
+          window.dispatchEvent(
+            new CustomEvent(
+              eventName,
+              {
+                detail: {
+                  page_name:
+                    PAGE_NAME,
+
+                  page_version:
+                    PAGE_VERSION,
+
+                  ...detail
+                }
+              }
+            )
+          );
+        };
+
+      const updateCountdown =
+        () => {
+          const distance =
+            Math.max(
+              EVENT_TIME -
+                Date.now(),
+              0
+            );
+
+          const days =
+            Math.floor(
+              distance /
+                86400000
+            );
+
+          const hours =
+            Math.floor(
+              (
+                distance %
+                86400000
+              ) /
+                3600000
+            );
+
+          const minutes =
+            Math.floor(
+              (
+                distance %
+                3600000
+              ) /
+                60000
+            );
+
+          const seconds =
+            Math.floor(
+              (
+                distance %
+                60000
+              ) /
+                1000
+            );
+
+          const values = {
+            miDays:
+              String(
+                days
+              ).padStart(
+                3,
+                "0"
+              ),
+
+            miHours:
+              String(
+                hours
+              ).padStart(
+                2,
+                "0"
+              ),
+
+            miMinutes:
+              String(
+                minutes
+              ).padStart(
+                2,
+                "0"
+              ),
+
+            miSeconds:
+              String(
+                seconds
+              ).padStart(
+                2,
+                "0"
+              )
+          };
+
+          Object.entries(
+            values
+          ).forEach(
+            (
+              [
+                id,
+                value
+              ]
+            ) => {
+              const field =
+                page.querySelector(
+                  `#${id}`
+                );
+
+              if (field) {
+                field.textContent =
+                  value;
+              }
+            }
+          );
+        };
+
+      updateCountdown();
+
+      window.setInterval(
+        updateCountdown,
+        1000
+      );
+
+      if (
+        "IntersectionObserver" in
+        window
+      ) {
+        const observer =
+          new IntersectionObserver(
+            (
+              entries,
+              activeObserver
+            ) => {
+              entries.forEach(
+                (entry) => {
+                  if (
+                    entry.isIntersecting
+                  ) {
+                    entry.target.classList.add(
+                      "mi-visible"
+                    );
+
+                    activeObserver.unobserve(
+                      entry.target
+                    );
+                  }
+                }
+              );
+            },
+            {
+              threshold:
+                0.12,
+
+              rootMargin:
+                "0px 0px -24px 0px"
+            }
+          );
+
+        page
+          .querySelectorAll(
+            ".mi-reveal"
+          )
+          .forEach(
+            (element) => {
+              observer.observe(
+                element
+              );
+            }
+          );
+      } else {
+        page
+          .querySelectorAll(
+            ".mi-reveal"
+          )
+          .forEach(
+            (element) => {
+              element.classList.add(
+                "mi-visible"
+              );
+            }
+          );
+      }
+
+      const updateMobileCTA =
+        () => {
+          if (
+            !mobileCTA ||
+            window.innerWidth >
+              740
+          ) {
+            mobileCTA?.classList.remove(
+              "mi-visible"
+            );
+
+            return;
+          }
+
+          const pageRect =
+            page.getBoundingClientRect();
+
+          const registrationRect =
+            registrationSection
+              ?.getBoundingClientRect();
+
+          const insidePage =
+            pageRect.top <
+              window.innerHeight *
+                0.4 &&
+            pageRect.bottom >
+              window.innerHeight *
+                0.35;
+
+          const registrationVisible =
+            registrationRect &&
+            registrationRect.top <
+              window.innerHeight *
+                0.78;
+
+          mobileCTA.classList.toggle(
+            "mi-visible",
+            insidePage &&
+              !registrationVisible
+          );
+        };
+
+      updateMobileCTA();
+
+      window.addEventListener(
+        "scroll",
+        updateMobileCTA,
+        {
+          passive:
+            true
+        }
+      );
+
+      window.addEventListener(
+        "resize",
+        updateMobileCTA
+      );
+
+      registrationLinks.forEach(
+        (link) => {
+          link.addEventListener(
+            "click",
+            () => {
+              const ctaName =
+                link.getAttribute(
+                  "data-cta-name"
+                ) ||
+                "Unknown CTA";
+
+              const ctaSection =
+                link.getAttribute(
+                  "data-cta-section"
+                ) ||
+                "Unknown Section";
+
+              dispatchTracking(
+                "motiv_invitational_cta_clicked",
+                {
+                  cta_name:
+                    ctaName,
+
+                  cta_section:
+                    ctaSection,
+
+                  planned_player_count:
+                    72,
+
+                  planned_prize_count:
+                    27
+                }
+              );
+
+              // No preventDefault() here — this fires the
+              // tracking event, then the browser follows the
+              // link's href to the registration page normally.
+            }
+          );
+        }
+      );
+    })();
+
+    /* ---------- sponsored by: fill and mirror the logo run ------------- */
+    (function () {
+      var track = document.querySelector("[data-mi-sponsors]");
+
+      if (!track || track.dataset.miReady) {
+        return;
+      }
+
+      track.dataset.miReady = "1";
+
+      var originals =
+        Array.prototype.slice.call(track.children);
+
+      if (!originals.length) {
+        return;
+      }
+
+      function build() {
+        while (track.children.length > originals.length) {
+          track.removeChild(track.lastChild);
+        }
+
+        var viewport =
+          track.parentElement.offsetWidth || 1200;
+
+        var guard = 0;
+
+        // A short list leaves dead space on a wide screen, so repeat it
+        // until it over-fills, then mirror the whole run for the loop.
+        while (track.scrollWidth < viewport * 2 && guard++ < 40) {
+          originals.forEach(function (node) {
+            track.appendChild(node.cloneNode(true));
+          });
+        }
+
+        Array.prototype.slice
+          .call(track.children)
+          .forEach(function (node) {
+            track.appendChild(node.cloneNode(true));
+          });
+
+        // Everything past the first real pass is decoration: keep it out of
+        // the tab order and out of the screen-reader announcement, so one
+        // sponsor is read once rather than once per repeat.
+        Array.prototype.slice
+          .call(track.children)
+          .forEach(function (node, i) {
+            var decorative = i >= originals.length;
+
+            node.setAttribute(
+              "aria-hidden",
+              decorative ? "true" : "false"
+            );
+
+            Array.prototype.slice
+              .call(node.querySelectorAll("a"))
+              .forEach(function (a) {
+                if (decorative) {
+                  a.tabIndex = -1;
+                } else {
+                  a.removeAttribute("tabindex");
+                }
+              });
+          });
+      }
+
+      build();
+
+      // An <img> with height set and width auto measures 0 until it decodes,
+      // so a pass before the logos load sizes the run off the gaps alone.
+      var pending =
+        Array.prototype.slice
+          .call(track.querySelectorAll("img"))
+          .filter(function (img) {
+            return !img.complete;
+          });
+
+      if (pending.length) {
+        var left = pending.length;
+
+        pending.forEach(function (img) {
+          var done = function () {
+            if (--left === 0) {
+              build();
+            }
+          };
+
+          img.addEventListener("load", done, { once: true });
+          img.addEventListener("error", done, { once: true });
+        });
+      }
+
+      var timer;
+
+      window.addEventListener("resize", function () {
+        clearTimeout(timer);
+        timer = setTimeout(build, 200);
+      });
+    })();
+
+  </script>
+</section>
+<!--
+===============================================================================
+MOTIV BRANDS INVITATIONAL — SITE FOOTER
+
+Three columns on a black band: the brand lockup, the registration link, and
+the legal links. Collapses to a centred stack on small screens.
+
+The legal links point at the general policy pages by filename rather than a
+clean URL, so they resolve with or without the vercel.json rewrite rules -
+including when a page is opened straight off disk.
+===============================================================================
+-->
+
+<footer
+  id="motiv-invitational-footer"
+  class="mif-footer"
+>
+  <style>
+    #motiv-invitational-footer {
+      --mif-black: #000000;
+      --mif-white: #ffffff;
+      --mif-muted: rgba(255, 255, 255, 0.62);
+      --mif-green: #83df59;
+
+      position: relative;
+      width: 100%;
+      color: var(--mif-white);
+      background: var(--mif-black);
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+    }
+
+    #motiv-invitational-footer,
+    #motiv-invitational-footer *,
+    #motiv-invitational-footer *::before,
+    #motiv-invitational-footer *::after {
+      box-sizing: border-box;
+    }
+
+    #motiv-invitational-footer a {
+      color: inherit;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    #motiv-invitational-footer img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .mif-inner {
+      display: grid;
+      width:
+        min(
+          calc(100% - 48px),
+          1720px
+        );
+      min-height: 132px;
+      margin-inline: auto;
+      padding-block: 26px;
+      grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+      align-items: center;
+      gap:
+        clamp(
+          22px,
+          4vw,
+          64px
+        );
+    }
+
+    .mif-brand {
+      display: inline-flex;
+      align-items: center;
+      justify-self: start;
+      transition:
+        opacity 180ms ease;
+    }
+
+    .mif-brand:hover {
+      opacity: 0.88;
+    }
+
+    .mif-brand img {
+      width:
+        clamp(
+          210px,
+          19vw,
+          290px
+        );
+      height: auto;
+    }
+
+    /* The middle column: the one action in the footer. */
+    .mif-action {
+      justify-self: center;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.78rem,
+          1vw,
+          0.92rem
+        );
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      line-height: 1.4;
+      text-align: center;
+      white-space: nowrap;
+      transition:
+        color 180ms ease;
+    }
+
+    .mif-action:hover {
+      color: var(--mif-green);
+    }
+
+    .mif-legal {
+      display: inline-flex;
+      align-items: center;
+      justify-self: end;
+      gap: 10px;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.78rem,
+          1vw,
+          0.92rem
+        );
+      font-weight: 700;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+
+    .mif-legal a {
+      transition:
+        color 180ms ease;
+    }
+
+    .mif-legal a:hover {
+      color: var(--mif-green);
+    }
+
+    .mif-legal span {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    #motiv-invitational-footer a:focus-visible {
+      outline:
+        3px solid
+        rgba(131, 223, 89, 0.55);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 980px) {
+      .mif-inner {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        padding-block: 32px;
+        text-align: center;
+      }
+
+      .mif-brand,
+      .mif-action,
+      .mif-legal {
+        justify-self: center;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .mif-legal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+      }
+    }
+  </style>
+
+  <div class="mif-inner">
+
+    <a
+      class="mif-brand"
+      href="/"
+      aria-label="Motiv Brands, Inc. home"
+    >
+      <img
+        src="assets/motiv-brands-logo-light.png"
+        alt="Motiv Brands, Inc. Build Momentum. Own the Market."
+        width="480"
+        height="157"
+      >
+    </a>
+
+    <a
+      class="mif-action"
+      href="/start"
+      data-mif-cta
+      data-cta-name="Footer Registration"
+      data-cta-section="Invitational Footer"
+    >
+      Request Your Invitation
+    </a>
+
+    <p class="mif-legal">
+
+      <a href="privacy-policy-registration.html">
+        Privacy Policy
+      </a>
+
+      <span aria-hidden="true">|</span>
+
+      <a href="terms-of-use-register.html">
+        Terms and Conditions
+      </a>
+    </p>
+  </div>
+
+  <script>
+    /* The footer CTA reports alongside the header and body CTAs. */
+    (function () {
+      var cta = document.querySelector("[data-mif-cta]");
+
+      if (!cta) {
+        return;
+      }
+
+      cta.addEventListener("click", function () {
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+          event: "motiv_invitational_cta_clicked",
+          page_name: "Motiv Brands Invitational",
+          cta_name: cta.getAttribute("data-cta-name"),
+          cta_section: cta.getAttribute("data-cta-section")
+        });
+      });
+    })();
+  </script>
+</footer>
+</body>
+</html>
