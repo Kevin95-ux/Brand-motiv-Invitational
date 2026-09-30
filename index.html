@@ -69,6 +69,33 @@
     height: 58px;
   }
 
+  /* The desktop nav went from five items to seven ("Become a Sponsor" and
+     "Launch Party RSVP"). Its links are flex-shrink:1 with overflow:hidden
+     inside a minmax(0,1fr) grid column, so once the row stopped fitting,
+     each label quietly lost a few pixels off its right edge instead of the
+     row wrapping or scrolling - the kind of clipping that reads as a font
+     bug rather than a layout one. Tightening the gap and the link padding
+     buys back far more than the deficit, and flex-shrink:0 means any label
+     added later overflows visibly rather than being silently trimmed. */
+
+  #motiv-invitational-header-v182 .mih-navigation-link {
+    flex-shrink: 0;
+    padding-inline: clamp(6px, 0.55vw, 10px);
+  }
+
+  /* Seven links no longer fit at the header's full clamp gap; the header
+     already drops to a tight gap, but not until 1320. A single max-width
+     rule covers everything below 1400 and matches the value the header
+     uses lower down, so there is no boundary between the two where a
+     fractional viewport width (1320.8px, say) matches neither query and
+     the nav silently overflows. */
+  @media (max-width: 1400px) {
+    #motiv-invitational-header-v182 .mih-desktop-navigation {
+      gap: 4px;
+    }
+  }
+
+
   #motiv-invitational-header-v182 .mih-brand-image {
     width: 42px;
     height: 42px;
@@ -1309,7 +1336,7 @@ Registration:        #miRegistration
       }
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
       .mih-header-inner {
         grid-template-columns:
           minmax(0, 1fr)
@@ -1544,6 +1571,20 @@ Registration:        #miRegistration
         >
           Registration
         </a>
+        <a
+          class="mih-navigation-link"
+          href="/sponsorships"
+        >
+          Become a Sponsor
+        </a>
+
+        <a
+          class="mih-navigation-link"
+          href="/launch-party"
+        >
+          Launch Party RSVP
+        </a>
+
       </nav>
 
       <div class="mih-header-actions">
@@ -1884,6 +1925,70 @@ Registration:        #miRegistration
               </svg>
             </span>
           </a>
+          <a
+            class="mih-mobile-navigation-link"
+            href="/sponsorships"
+          >
+            <span class="mih-mobile-navigation-index">
+              06
+            </span>
+            <span class="mih-mobile-navigation-copy">
+              <strong>
+                Become a Sponsor
+              </strong>
+              <span>
+                Sponsorship tiers, raffle prizes and signage.
+              </span>
+            </span>
+            <span class="mih-mobile-navigation-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <a
+            class="mih-mobile-navigation-link"
+            href="/launch-party"
+          >
+            <span class="mih-mobile-navigation-index">
+              07
+            </span>
+            <span class="mih-mobile-navigation-copy">
+              <strong>
+                Launch Party RSVP
+              </strong>
+              <span>
+                Reserve your place at the launch celebration.
+              </span>
+            </span>
+            <span class="mih-mobile-navigation-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
         </nav>
 
         <div class="mih-mobile-registration-card">
