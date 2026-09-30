@@ -1,0 +1,2169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launch Party RSVP | Motiv Brands Invitational</title>
+<meta name="description" content="RSVP for the official Motiv Brands launch celebration, following the Invitational at Bali Hai Golf Club on Wednesday 27 January 2027.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://brand-motiv-invitational.vercel.app/launch-party">
+<meta name="theme-color" content="#00040b">
+<link rel="icon" href="assets/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Motiv Brands Invitational">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://brand-motiv-invitational.vercel.app/launch-party">
+<meta property="og:title" content="Launch Party RSVP | Motiv Brands Invitational">
+<meta property="og:description" content="RSVP for the official Motiv Brands launch celebration, following the Invitational at Bali Hai Golf Club on Wednesday 27 January 2027.">
+<meta property="og:image" content="https://brand-motiv-invitational.vercel.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 1st Annual Motiv Brands Invitational at Bali Hai Golf Club, Las Vegas.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Launch Party RSVP | Motiv Brands Invitational">
+<meta name="twitter:description" content="RSVP for the official Motiv Brands launch celebration, following the Invitational at Bali Hai Golf Club on Wednesday 27 January 2027.">
+<meta name="twitter:image" content="https://brand-motiv-invitational.vercel.app/assets/og-image.jpg">
+
+<style>
+  /* ---- build-time header fixes -------------------------------------- */
+
+  /* The glass header is 0.91/0.84 alpha, so it takes its colour from what
+     sits behind it. In GHL that was a dark page; as a standalone document
+     the white <body> showed through and the bar read mid-grey. Giving the
+     header itself a dark base restores the intended near-black navy. */
+  #motiv-invitational-header-v182 {
+    background: #00040b;
+  }
+
+  /* "Back to Event Details" was invisible on the sponsorship page. Its own
+     rule is .spt-back-link (0,1,0) but "#motiv-sponsorship-top a { color:
+     inherit }" scores (1,0,1) and wins, so the link inherited --spt-ink,
+     a dark navy, on a dark header. These selectors score (1,1,0) and take
+     it back. The registration page escapes the same bug only because its
+     block colour happens to be white. */
+  #motiv-sponsorship-top .spt-back-link,
+  #motiv-sponsorship-top .spt-back-link span,
+  #motiv-sponsorship-top .spt-back-link svg,
+  #motiv-registration-top .mrt-back-link,
+  #motiv-registration-top .mrt-back-link span,
+  #motiv-registration-top .mrt-back-link svg {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  #motiv-sponsorship-top .spt-back-link:hover,
+  #motiv-sponsorship-top .spt-back-link:hover span,
+  #motiv-sponsorship-top .spt-back-link:hover svg,
+  #motiv-registration-top .mrt-back-link:hover,
+  #motiv-registration-top .mrt-back-link:hover span,
+  #motiv-registration-top .mrt-back-link:hover svg {
+    color: #83df59;
+  }
+
+  /* Larger brand mark across the event headers, per request.
+     These are ID-scoped on purpose: this <style> sits in <head> while each
+     block ships its own <style> later in the body, so a plain class selector
+     would lose the "later rule wins" tie-break. */
+  #motiv-invitational-header-v182 .mih-brand-image-shell {
+    width: 58px;
+    height: 58px;
+  }
+
+  #motiv-invitational-header-v182 .mih-brand-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  #motiv-sponsorship-top .spt-brand-image-shell,
+  #motiv-registration-top .mrt-brand-image-shell,
+  #motiv-registration-confirmation .rc-brand-image-shell,
+  #motiv-sponsorship-confirmation .sc-brand-image-shell {
+    width: 54px;
+    height: 54px;
+  }
+
+  #motiv-sponsorship-top .spt-brand-image,
+  #motiv-registration-top .mrt-brand-image,
+  #motiv-registration-confirmation .rc-brand-image,
+  #motiv-sponsorship-confirmation .sc-brand-image {
+    width: 38px;
+    height: 38px;
+  }
+
+  @media (max-width: 700px) {
+    #motiv-invitational-header-v182 .mih-brand-image-shell {
+      width: 48px;
+      height: 48px;
+    }
+
+    #motiv-invitational-header-v182 .mih-brand-image {
+      width: 34px;
+      height: 34px;
+    }
+  }
+</style>
+
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #ffffff; }
+</style>
+</head>
+<body>
+
+<!--
+===============================================================================
+MOTIV BRANDS INVITATIONAL — REGISTRATION PAGE
+TOP BLOCK (Header + Hero Recap)
+
+VERSION: 1.0.0
+UPDATED: AUGUST 13, 2026
+
+INSTALLATION
+-------------------------------------------------------------------------------
+This is the FIRST of two custom code blocks for the registration page.
+Paste this block ABOVE the native GHL form element in the page builder.
+The second block (registration-bottom.html) goes BELOW the form.
+Do not add any code between this block and the form — the GHL form element
+sits directly beneath it.
+
+PLACEHOLDERS TO CONFIRM
+-------------------------------------------------------------------------------
+1. "Back to Event Details" link currently points to:
+   /
+   Replace with the confirmed live URL of the main Invitational page if
+   different.
+
+2. Event date/time/venue meta pills below are hard-coded to match the main
+   page (Wednesday, January 27, 2027 · Immediately following play · Bali Hai
+   Golf Club). Update here if the main page's details ever change.
+===============================================================================
+-->
+
+<section
+  id="motiv-registration-top"
+  class="mrt-page"
+>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+
+    #motiv-registration-top {
+      --mrt-navy-1250: #00050d;
+      --mrt-navy-1150: #020c18;
+      --mrt-navy-950: #08253c;
+      --mrt-navy-850: #0e3857;
+
+      --mrt-green-500: #83df59;
+      --mrt-green-400: #a7ed89;
+
+      --mrt-blue-500: #188ee8;
+      --mrt-blue-400: #49acf2;
+
+      --mrt-red-500: #f13c4c;
+
+      --mrt-white: #ffffff;
+
+      --mrt-shadow-md:
+        0 26px 75px
+        rgba(2, 14, 29, 0.16);
+
+      --mrt-ease:
+        cubic-bezier(0.16, 1, 0.3, 1);
+
+      position: relative;
+      width: 100%;
+      overflow-x: hidden;
+      color: var(--mrt-white);
+      background: var(--mrt-navy-1150);
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #motiv-registration-top,
+    #motiv-registration-top *,
+    #motiv-registration-top *::before,
+    #motiv-registration-top *::after {
+      box-sizing: border-box;
+    }
+
+    #motiv-registration-top a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    #motiv-registration-top img,
+    #motiv-registration-top svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    .mrt-container {
+      width:
+        min(
+          calc(100% - 48px),
+          1180px
+        );
+      margin-inline: auto;
+    }
+
+    /* HEADER */
+
+    .mrt-header {
+      border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      background:
+        rgba(0, 5, 13, 0.30);
+    }
+
+    .mrt-header-inner {
+      display: flex;
+      min-height: 84px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-block: 16px;
+    }
+
+    .mrt-brand-link {
+      display: inline-flex;
+      min-width: 0;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .mrt-brand-image-shell {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      flex: 0 0 auto;
+      place-items: center;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+      border-radius: 14px;
+      background:
+        rgba(255, 255, 255, 0.055);
+    }
+
+    .mrt-brand-image {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .mrt-brand-copy {
+      min-width: 0;
+    }
+
+    .mrt-brand-primary {
+      display: block;
+      overflow: hidden;
+      color: var(--mrt-white);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.065em;
+      line-height: 1.25;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mrt-brand-secondary {
+      display: block;
+      margin-top: 4px;
+      overflow: hidden;
+      color:
+        rgba(255, 255, 255, 0.52);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.44rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mrt-back-link {
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      color:
+        rgba(255, 255, 255, 0.85);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition:
+        color 180ms ease,
+        border-color 180ms ease,
+        background 180ms ease;
+      white-space: nowrap;
+    }
+
+    .mrt-back-link:hover {
+      color: var(--mrt-green-500);
+      border-color:
+        rgba(131, 223, 89, 0.35);
+      background:
+        rgba(131, 223, 89, 0.08);
+    }
+
+    .mrt-back-link svg {
+      width: 14px;
+      height: 14px;
+      transform: rotate(180deg);
+    }
+
+    /* HERO */
+
+    .mrt-hero {
+      position: relative;
+      padding:
+        70px 0
+        56px;
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 92% 0%,
+          rgba(62, 150, 47, 0.24),
+          transparent 42%
+        ),
+        radial-gradient(
+          circle at 4% 100%,
+          rgba(24, 142, 232, 0.20),
+          transparent 42%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mrt-navy-850),
+          var(--mrt-navy-1150)
+        );
+    }
+
+    .mrt-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 18px;
+      color:
+        rgba(255, 255, 255, 0.80);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    .mrt-hero-eyebrow::before {
+      width: 38px;
+      height: 4px;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background:
+        linear-gradient(
+          90deg,
+          var(--mrt-red-500),
+          var(--mrt-blue-500),
+          var(--mrt-green-500)
+        );
+      content: "";
+    }
+
+    .mrt-hero-title {
+      max-width: 760px;
+      margin: 0;
+      color: var(--mrt-white);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(
+          2.3rem,
+          4.4vw,
+          3.7rem
+        );
+      font-weight: 600;
+      letter-spacing: -0.045em;
+      line-height: 1.02;
+      text-wrap: balance;
+    }
+
+    .mrt-hero-title em {
+      color: var(--mrt-green-500);
+      font-style: italic;
+    }
+
+    .mrt-hero-copy {
+      max-width: 620px;
+      margin: 16px 0 0;
+      color:
+        rgba(255, 255, 255, 0.68);
+      font-size: 0.94rem;
+      line-height: 1.68;
+    }
+
+    .mrt-hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .mrt-hero-meta-item {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      color:
+        rgba(255, 255, 255, 0.85);
+      background:
+        rgba(255, 255, 255, 0.045);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.62rem;
+      font-weight: 700;
+    }
+
+    .mrt-hero-meta-item svg {
+      width: 15px;
+      height: 15px;
+      flex: 0 0 auto;
+      color: var(--mrt-green-500);
+    }
+
+    .mrt-benefits {
+      display: grid;
+      margin-top: 34px;
+      grid-template-columns:
+        repeat(
+          4,
+          minmax(0, 1fr)
+        );
+      gap: 12px;
+    }
+
+    .mrt-benefit {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 16px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 16px;
+      background:
+        rgba(255, 255, 255, 0.05);
+    }
+
+    .mrt-benefit-icon {
+      display: grid;
+      width: 26px;
+      height: 26px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 9px;
+      color: var(--mrt-green-500);
+      background:
+        rgba(131, 223, 89, 0.12);
+    }
+
+    .mrt-benefit-icon svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    .mrt-benefit span {
+      color:
+        rgba(255, 255, 255, 0.82);
+      font-size: 0.76rem;
+      line-height: 1.5;
+    }
+
+    .mrt-brand-stripe {
+      height: 6px;
+      background:
+        linear-gradient(
+          90deg,
+          var(--mrt-red-500) 0%,
+          var(--mrt-red-500) 24%,
+          var(--mrt-blue-500) 24%,
+          var(--mrt-blue-500) 69%,
+          var(--mrt-green-500) 69%,
+          var(--mrt-green-500) 100%
+        );
+    }
+
+    @media (max-width: 900px) {
+      .mrt-benefits {
+        grid-template-columns:
+          repeat(
+            2,
+            minmax(0, 1fr)
+          );
+      }
+    }
+
+    @media (max-width: 640px) {
+      .mrt-header-inner {
+        flex-wrap: wrap;
+        min-height: auto;
+        gap: 14px;
+      }
+
+      .mrt-back-link span {
+        display: none;
+      }
+
+      .mrt-hero {
+        padding: 48px 0 40px;
+      }
+
+      .mrt-hero-meta-item {
+        width: 100%;
+      }
+
+      .mrt-benefits {
+        grid-template-columns: 1fr;
+        margin-top: 26px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #motiv-registration-top *,
+      #motiv-registration-top *::before,
+      #motiv-registration-top *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ---------- sponsored by ------------------------------------------ */
+
+    .mrt-sponsors {
+      /* The knobs: speed, logo size, spacing. The LGW mark is a three-line
+         wordmark in a 2:1 box, so its type reads at a third of this
+         height. */
+      --mrt-sponsors-speed: 40s;
+      --mrt-sponsors-logo: 60px;
+      --mrt-sponsors-gap: 86px;
+
+      border-bottom: 1px solid rgba(5, 29, 52, 0.05);
+      background:
+        linear-gradient(
+          180deg,
+          #ffffff,
+          #fafcfd
+        );
+    }
+
+    .mrt-sponsors-inner {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 2.4vw, 42px);
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    /* The fixed half. */
+    .mrt-sponsors-label {
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      color: #3f566a;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.64rem,
+          0.78vw,
+          0.76rem
+        );
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      line-height: 1.45;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mrt-sponsors-label::before {
+      width: 37px;
+      height: 1px;
+      flex: 0 0 auto;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 29, 52, 0.08),
+          rgba(5, 29, 52, 0.42)
+        );
+      content: "";
+    }
+
+    /* Clips the track and softens both ends, so a logo fades rather than
+       being cut off mid-word. */
+    .mrt-sponsors-viewport {
+      position: relative;
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      -webkit-mask-image:
+        linear-gradient(
+          90deg,
+          transparent,
+          #000 5%,
+          #000 95%,
+          transparent
+        );
+      mask-image:
+        linear-gradient(
+          90deg,
+          transparent,
+          #000 5%,
+          #000 95%,
+          transparent
+        );
+    }
+
+    .mrt-sponsors-track {
+      display: flex;
+      align-items: center;
+      gap: var(--mrt-sponsors-gap);
+      width: max-content;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      animation:
+        mrt-sponsors-scroll
+        var(--mrt-sponsors-speed)
+        linear
+        infinite;
+    }
+
+    /* Let a visitor stop the motion to read a logo. */
+    .mrt-sponsors:hover .mrt-sponsors-track,
+    .mrt-sponsors-track:focus-within {
+      animation-play-state: paused;
+    }
+
+    .mrt-sponsors-item {
+      flex: 0 0 auto;
+    }
+
+    .mrt-sponsors-item a {
+      display: block;
+      border-radius: 6px;
+      line-height: 0;
+      opacity: 0.86;
+      transition: opacity 180ms ease;
+    }
+
+    .mrt-sponsors-item a:hover {
+      opacity: 1;
+    }
+
+    .mrt-sponsors-item a:focus-visible {
+      outline: 2px solid #3e962f;
+      outline-offset: 5px;
+    }
+
+    .mrt-sponsors-item img {
+      display: block;
+      width: auto;
+      height: var(--mrt-sponsors-logo);
+      max-width: none;
+      object-fit: contain;
+    }
+
+    /* The script mirrors the run, so travelling half the track lands on an
+       identical frame and the loop has no seam. */
+    @keyframes mrt-sponsors-scroll {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .mrt-sponsors-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .mrt-sponsors {
+        --mrt-sponsors-logo: 46px;
+        --mrt-sponsors-gap: 56px;
+      }
+
+      .mrt-sponsors-viewport {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mrt-sponsors-track {
+        animation: none;
+      }
+
+      .mrt-sponsors-viewport {
+        overflow-x: auto;
+        -webkit-mask-image: none;
+        mask-image: none;
+      }
+    }
+
+  </style>
+
+  <header class="mrt-header">
+    <div class="mrt-container mrt-header-inner">
+
+      <a
+        class="mrt-brand-link"
+        href="/"
+        aria-label="Back to the Motiv Brands Invitational overview"
+      >
+        <span class="mrt-brand-image-shell">
+
+          <img
+            class="mrt-brand-image"
+            src="assets/brand-mark.png"
+            alt=""
+            aria-hidden="true"
+          >
+        </span>
+
+        <span class="mrt-brand-copy">
+
+          <span class="mrt-brand-primary">
+            Motiv Brands Invitational
+          </span>
+
+          <span class="mrt-brand-secondary">
+            January 27, 2027 · Bali Hai Golf Club
+          </span>
+        </span>
+      </a>
+
+      <a
+        class="mrt-back-link"
+        href="/"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M5 12h14M13 6l6 6-6 6"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <span>
+          Back to Event Details
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <section class="mrt-hero">
+    <div class="mrt-container">
+
+      <p class="mrt-hero-eyebrow">
+        Launch Celebration
+      </p>
+
+      <h1 class="mrt-hero-title">
+        RSVP for the
+        <em>launch party.</em>
+      </h1>
+
+      <p class="mrt-hero-copy">
+        After the final putt drops the Invitational becomes the official Motiv Brands launch celebration &mdash; awards, the full prize reveal and the night Motiv Brands goes public. Reserve your place below.
+      </p>
+
+      <div class="mrt-hero-meta">
+
+        <span class="mrt-hero-meta-item">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          Wednesday, January 27, 2027
+        </span>
+
+        <span class="mrt-hero-meta-item">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+
+            <path
+              d="M12 8v4l3 2"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          12:00 PM Modified Shotgun
+        </span>
+
+        <span class="mrt-hero-meta-item">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 21s7-5.4 7-12a7 7 0 1 0-14 0c0 6.6 7 12 7 12Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <circle
+              cx="12"
+              cy="9"
+              r="2.3"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+          </svg>
+
+          Bali Hai Golf Club
+        </span>
+      </div>
+
+      <div class="mrt-benefits">
+
+        <div class="mrt-benefit">
+
+          <span class="mrt-benefit-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m6 12 4 4 8-8"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span>
+            Limited 72-player field
+          </span>
+        </div>
+
+        <div class="mrt-benefit">
+
+          <span class="mrt-benefit-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m6 12 4 4 8-8"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span>
+            Championship golf at Bali Hai
+          </span>
+        </div>
+
+        <div class="mrt-benefit">
+
+          <span class="mrt-benefit-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m6 12 4 4 8-8"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span>
+            27 planned prize drawings
+          </span>
+        </div>
+
+        <div class="mrt-benefit">
+
+          <span class="mrt-benefit-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m6 12 4 4 8-8"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span>
+            Official Motiv Brands launch celebration
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div
+    class="mrt-brand-stripe"
+    aria-hidden="true"
+  ></div>
+
+    <!-- ===================================================================
+         SPONSORED BY
+         The label is fixed; the logos scroll. Adding a sponsor is one <li>:
+         copy the block below and change the link, the image and the alt
+         text. The script repeats and mirrors the list itself, so the loop
+         stays seamless whatever the count.
+    ==================================================================== -->
+    <section class="mrt-sponsors" aria-label="Sponsors">
+      <div class="mrt-container mrt-sponsors-inner">
+
+        <p class="mrt-sponsors-label">Sponsored By</p>
+
+        <div class="mrt-sponsors-viewport">
+          <ul class="mrt-sponsors-track" data-mrt-sponsors>
+
+            <li class="mrt-sponsors-item">
+              <a
+                href="https://leadgenerationworld.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://assets.cdn.filesafe.space/9OouFmu9QY2d3ZK4LMwe/media/6ab166e4c3c92dff4d1b01ca.png"
+                  alt="Lead Generation World"
+                  decoding="async"
+                >
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+      /* ---------- sponsored by: fill and mirror the logo run ---------- */
+      (function () {
+        var track = document.querySelector("[data-mrt-sponsors]");
+
+        if (!track || track.dataset.mrtReady) {
+          return;
+        }
+
+        track.dataset.mrtReady = "1";
+
+        var originals =
+          Array.prototype.slice.call(track.children);
+
+        if (!originals.length) {
+          return;
+        }
+
+        function build() {
+          while (track.children.length > originals.length) {
+            track.removeChild(track.lastChild);
+          }
+
+          var viewport =
+            track.parentElement.offsetWidth || 1200;
+
+          var guard = 0;
+
+          // A short list leaves dead space on a wide screen, so repeat it
+          // until it over-fills, then mirror the run for the loop.
+          while (track.scrollWidth < viewport * 2 && guard++ < 40) {
+            originals.forEach(function (node) {
+              track.appendChild(node.cloneNode(true));
+            });
+          }
+
+          Array.prototype.slice
+            .call(track.children)
+            .forEach(function (node) {
+              track.appendChild(node.cloneNode(true));
+            });
+
+          // Everything past the first real pass is decoration: out of the
+          // tab order and out of the screen-reader announcement, so one
+          // sponsor is read once rather than once per repeat.
+          Array.prototype.slice
+            .call(track.children)
+            .forEach(function (node, i) {
+              var decorative = i >= originals.length;
+
+              node.setAttribute(
+                "aria-hidden",
+                decorative ? "true" : "false"
+              );
+
+              Array.prototype.slice
+                .call(node.querySelectorAll("a"))
+                .forEach(function (a) {
+                  if (decorative) {
+                    a.tabIndex = -1;
+                  } else {
+                    a.removeAttribute("tabindex");
+                  }
+                });
+            });
+        }
+
+        build();
+
+        // An <img> with height set and width auto measures 0 until it
+        // decodes, so a pass before the logos load sizes the run off the
+        // gaps alone and over-fills.
+        var pending =
+          Array.prototype.slice
+            .call(track.querySelectorAll("img"))
+            .filter(function (img) {
+              return !img.complete;
+            });
+
+        if (pending.length) {
+          var left = pending.length;
+
+          pending.forEach(function (img) {
+            var done = function () {
+              if (--left === 0) {
+                build();
+              }
+            };
+
+            img.addEventListener("load", done, { once: true });
+            img.addEventListener("error", done, { once: true });
+          });
+        }
+
+        var timer;
+
+        window.addEventListener("resize", function () {
+          clearTimeout(timer);
+          timer = setTimeout(build, 200);
+        });
+      })();
+    </script>
+</section>
+<!--
+===============================================================================
+INVITATIONAL INVITE REQUEST FORM
+
+The GoHighLevel form, sitting where the page's own notes say it belongs:
+directly beneath the registration top block and above the footer.
+
+On submit the visitor is sent to /invite-confirm. That redirect is done twice
+on purpose - see the comment above the script at the bottom of this block.
+===============================================================================
+-->
+
+<section
+  class="mrt-form-section"
+  id="mrt-form"
+  aria-labelledby="mrt-form-title"
+>
+  <style>
+    .mrt-form-section {
+      width: 100%;
+      padding: clamp(40px, 6vw, 72px) 0 clamp(48px, 7vw, 88px);
+      background:
+        linear-gradient(
+          180deg,
+          #ffffff,
+          #f6f9fb
+        );
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+    }
+
+    .mrt-form-inner {
+      width:
+        min(
+          calc(100% - 48px),
+          860px
+        );
+      margin-inline: auto;
+    }
+
+    .mrt-form-heading {
+      margin: 0 0 8px;
+      color: #0b2e49;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(1.7rem, 3.4vw, 2.5rem);
+      font-weight: 600;
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+      text-align: center;
+    }
+
+    .mrt-form-note {
+      margin: 0 0 26px;
+      color: #6e7f8e;
+      font-size: 0.86rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* The shell reserves the form's height before the iframe reports back,
+       so the footer does not jump down once it loads. */
+    .mrt-form-shell {
+      position: relative;
+      min-height: 702px;
+      overflow: hidden;
+      border: 1px solid #dee6ec;
+      border-radius: 14px;
+      background: #ffffff;
+      box-shadow:
+        0 14px 38px
+        rgba(2, 14, 29, 0.08);
+    }
+    /* Shown only while the form slot has no GoHighLevel ID. Sized to the
+       same box as the embed so the page does not reflow when the form
+       is switched on. */
+    .mrt-form-pending {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(32px, 5vw, 56px);
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid rgba(9, 28, 48, 0.12);
+      border-radius: 18px;
+    }
+
+    .mrt-form-pending-inner {
+      max-width: 430px;
+    }
+
+    .mrt-form-pending strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: clamp(19px, 2.2vw, 23px);
+      font-weight: 800;
+      color: #09182b;
+      letter-spacing: -0.02em;
+    }
+
+    .mrt-form-pending p {
+      margin: 0 0 20px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(9, 24, 43, 0.72);
+    }
+
+    .mrt-form-pending a {
+      display: inline-block;
+      padding: 13px 26px;
+      border-radius: 999px;
+      background: #68ae4e;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .mrt-form-pending a:hover {
+      background: #5b9c44;
+    }
+
+
+    .mrt-form-shell iframe {
+      display: block;
+      width: 100%;
+      min-height: 702px;
+      border: none;
+    }
+
+    @media (max-width: 640px) {
+      .mrt-form-inner {
+        width: calc(100% - 28px);
+      }
+
+      .mrt-form-shell,
+      .mrt-form-shell iframe {
+        min-height: 820px;
+      }
+    }
+  </style>
+
+  <div class="mrt-form-inner">
+
+    <h2
+      class="mrt-form-heading"
+      id="mrt-form-title"
+    >
+      RSVP for the launch party
+    </h2>
+
+    <p class="mrt-form-note">
+      Let us know you&rsquo;re coming and we&rsquo;ll hold your place at the celebration.
+    </p>
+
+    <!-- ====================================================================
+         FORM SLOT - needs ONE value from GoHighLevel.
+         Paste the form ID into data-form-id below and the embed goes live.
+         While it is empty this renders the email fallback instead of a
+         broken iframe, so the page is safe to deploy either way.
+         data-redirect is optional: set it to send people to a confirmation
+         page after submit, or leave it empty to let GHL show its own
+         thank-you message inline.
+    ==================================================================== -->
+    <div
+      class="mrt-form-shell"
+      data-ghl-form
+      data-form-id=""
+      data-form-name="Invitational Launch Party RSVP"
+      data-redirect=""
+    ></div>
+  </div>
+
+    <script>
+    /* ---------------------------------------------------------------------
+       Mounts the GoHighLevel embed from the slot's data-form-id.
+
+       With no ID the slot renders a contact panel instead - a live page
+       showing a broken iframe is worse than one showing an email address,
+       and this way switching the form on is a one-string edit rather than
+       an uncomment-and-hope.
+
+       The redirect listener is the same one proven on the registration and
+       sponsorship pages: it only trusts LeadConnector's own origins and
+       ignores the height/resize chatter the embed streams constantly, so it
+       cannot fire on anything but a submit. The more reliable half is still
+       the form's own "On Submit -> Redirect to URL" setting inside GHL.
+    --------------------------------------------------------------------- */
+    (function () {
+      var slot = document.querySelector("[data-ghl-form]");
+      if (!slot) {
+        return;
+      }
+
+      var formID = (slot.getAttribute("data-form-id") || "").trim();
+      var formName = slot.getAttribute("data-form-name") || "Motiv Brands Invitational";
+      var destination = (slot.getAttribute("data-redirect") || "").trim();
+
+      if (!formID) {
+        slot.className = "mrt-form-pending";
+        slot.innerHTML =
+          '<div class="mrt-form-pending-inner">' +
+            "<strong>Form coming shortly</strong>" +
+            "<p>We are finalizing this form. In the meantime email us and " +
+            "we will take your details directly.</p>" +
+            '<a href="mailto:invitational@motivbrands.co">invitational@motivbrands.co</a>' +
+          "</div>";
+        return;
+      }
+
+      var frame = document.createElement("iframe");
+      frame.src = "https://api.leadconnectorhq.com/widget/form/" + formID;
+      frame.id = "inline-" + formID;
+      frame.title = formName;
+      frame.style.cssText = "width:100%;height:100%;border:none;border-radius:8px";
+      frame.setAttribute("data-layout", "{'id':'INLINE'}");
+      frame.setAttribute("data-trigger-type", "alwaysShow");
+      frame.setAttribute("data-activation-type", "alwaysActivated");
+      frame.setAttribute("data-deactivation-type", "neverDeactivate");
+      frame.setAttribute("data-form-name", formName);
+      frame.setAttribute("data-height", "702");
+      frame.setAttribute("data-layout-iframe-id", "inline-" + formID);
+      frame.setAttribute("data-form-id", formID);
+      frame.setAttribute("data-cookie-consent", "true");
+      frame.setAttribute("data-cookie-consent-provider", "auto");
+      slot.appendChild(frame);
+
+      var embed = document.createElement("script");
+      embed.src = "https://link.msgsndr.com/js/form_embed.js";
+      document.body.appendChild(embed);
+
+      if (!destination) {
+        return;
+      }
+
+      var done = false;
+      window.addEventListener("message", function (event) {
+        if (done) {
+          return;
+        }
+        var host;
+        try {
+          host = new URL(event.origin).hostname;
+        } catch (e) {
+          return;
+        }
+        if (!/(^|\.)(leadconnectorhq|msgsndr)\.com$/.test(host)) {
+          return;
+        }
+        var payload;
+        try {
+          payload =
+            typeof event.data === "string"
+              ? event.data
+              : JSON.stringify(event.data || "");
+        } catch (e) {
+          return;
+        }
+        if (/setHeight|resize|scroll/i.test(payload)) {
+          return;
+        }
+        if (!/submit/i.test(payload)) {
+          return;
+        }
+        if (/formId|form_id/i.test(payload) && payload.indexOf(formID) === -1) {
+          return;
+        }
+        done = true;
+        window.location.href = destination;
+      });
+    })();
+  </script>
+</section>
+<!--
+===============================================================================
+MOTIV BRANDS INVITATIONAL — REGISTRATION PAGE
+BOTTOM BLOCK (What Happens Next + Event Recap + Footer)
+
+VERSION: 1.0.0
+UPDATED: AUGUST 13, 2026
+
+INSTALLATION
+-------------------------------------------------------------------------------
+This is the SECOND of two custom code blocks for the registration page.
+Paste this block BELOW the native GHL form element in the page builder.
+The first block (registration-top.html) goes ABOVE the form.
+
+PLACEHOLDERS TO CONFIRM
+-------------------------------------------------------------------------------
+1. "Confirmation timing" copy below reads "within 2 business days" — this is
+   a placeholder. Update to whatever your actual review/confirmation window
+   is once decided.
+
+2. Contact email in the footer is set to a placeholder:
+   invitational@motivbrands.co
+   Replace with the correct inbox for registration questions.
+
+3. Event date/time/venue/prize details are hard-coded to match the main page.
+   Update here if those details ever change.
+===============================================================================
+-->
+
+<section
+  id="motiv-registration-bottom"
+  class="mrb-page"
+>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+
+    #motiv-registration-bottom {
+      --mrb-navy-1250: #00050d;
+      --mrb-navy-1150: #020c18;
+      --mrb-navy-900: #0b2e49;
+      --mrb-navy-850: #0e3857;
+
+      --mrb-green-800: #287c24;
+      --mrb-green-700: #3e962f;
+      --mrb-green-500: #83df59;
+      --mrb-green-400: #a7ed89;
+      --mrb-green-100: #effae9;
+
+      --mrb-blue-600: #0877d0;
+      --mrb-blue-500: #188ee8;
+
+      --mrb-ink: #0f263b;
+      --mrb-gray-500: #6e7f8e;
+      --mrb-gray-450: #8392a0;
+
+      --mrb-border: rgba(5, 29, 52, 0.13);
+
+      --mrb-shadow-sm:
+        0 14px 38px
+        rgba(2, 14, 29, 0.10);
+
+      --mrb-shadow-md:
+        0 26px 75px
+        rgba(2, 14, 29, 0.16);
+
+      --mrb-ease:
+        cubic-bezier(0.16, 1, 0.3, 1);
+
+      position: relative;
+      width: 100%;
+      overflow-x: hidden;
+      color: var(--mrb-ink);
+      background: #ffffff;
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #motiv-registration-bottom,
+    #motiv-registration-bottom *,
+    #motiv-registration-bottom *::before,
+    #motiv-registration-bottom *::after {
+      box-sizing: border-box;
+    }
+
+    #motiv-registration-bottom a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    #motiv-registration-bottom img,
+    #motiv-registration-bottom svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    .mrb-container {
+      width:
+        min(
+          calc(100% - 48px),
+          1180px
+        );
+      margin-inline: auto;
+    }
+
+    /* NEXT STEPS */
+
+    .mrb-next {
+      padding:
+        64px 0
+        8px;
+      background:
+        radial-gradient(
+          circle at 92% 0%,
+          rgba(62, 150, 47, 0.08),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 4% 100%,
+          rgba(24, 142, 232, 0.06),
+          transparent 30%
+        ),
+        #ffffff;
+    }
+
+    .mrb-next-inner {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 22px 26px;
+      border:
+        1px solid
+        var(--mrb-border);
+      border-radius: 20px;
+      background: var(--mrb-green-100);
+    }
+
+    .mrb-next-icon {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--mrb-green-700);
+      background: #ffffff;
+    }
+
+    .mrb-next-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .mrb-next-copy strong {
+      display: block;
+      color: var(--mrb-navy-900);
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .mrb-next-copy p {
+      margin: 5px 0 0;
+      color: var(--mrb-gray-500);
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    /* EVENT RECAP */
+
+    .mrb-recap {
+      padding:
+        48px 0
+        70px;
+    }
+
+    .mrb-recap-card {
+      position: relative;
+      padding:
+        clamp(30px, 4vw, 46px);
+      overflow: hidden;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 32px;
+      color: #ffffff;
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(62, 150, 47, 0.26),
+          transparent 40%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(24, 142, 232, 0.18),
+          transparent 40%
+        ),
+        linear-gradient(
+          145deg,
+          var(--mrb-navy-850),
+          var(--mrb-navy-1150)
+        );
+      box-shadow:
+        var(--mrb-shadow-md);
+    }
+
+    .mrb-recap-eyebrow {
+      color: var(--mrb-green-400);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.55rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .mrb-recap-title {
+      max-width: 480px;
+      margin: 12px 0 0;
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+      font-size:
+        clamp(1.5rem, 2.6vw, 2rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+
+    .mrb-recap-grid {
+      display: grid;
+      margin-top: 26px;
+      grid-template-columns:
+        repeat(
+          4,
+          minmax(0, 1fr)
+        );
+      gap: 12px;
+    }
+
+    .mrb-recap-item {
+      padding: 16px;
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+      border-radius: 16px;
+      background:
+        rgba(255, 255, 255, 0.055);
+    }
+
+    .mrb-recap-item small {
+      display: block;
+      color: var(--mrb-green-400);
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size: 0.44rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .mrb-recap-item strong {
+      display: block;
+      margin-top: 7px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .mrb-recap-item span {
+      display: block;
+      margin-top: 5px;
+      color:
+        rgba(255, 255, 255, 0.55);
+      font-size: 0.65rem;
+      line-height: 1.45;
+    }
+
+    /* FOOTER */
+
+    .mrb-footer {
+      padding: 30px 0 46px;
+      border-top:
+        1px solid
+        var(--mrb-border);
+    }
+
+    .mrb-footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .mrb-footer-sponsor {
+      color: var(--mrb-gray-500);
+      font-size: 0.72rem;
+    }
+
+    .mrb-footer-sponsor strong {
+      color: var(--mrb-navy-900);
+      font-weight: 700;
+    }
+
+    .mrb-footer-contact {
+      color: var(--mrb-gray-450);
+      font-size: 0.72rem;
+    }
+
+    .mrb-footer-contact a {
+      color: var(--mrb-blue-600);
+      font-weight: 600;
+      transition: color 180ms ease;
+    }
+
+    .mrb-footer-contact a:hover {
+      color: var(--mrb-blue-500);
+    }
+
+    @media (max-width: 900px) {
+      .mrb-recap-grid {
+        grid-template-columns:
+          repeat(
+            2,
+            minmax(0, 1fr)
+          );
+      }
+    }
+
+    @media (max-width: 640px) {
+      .mrb-next-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .mrb-recap-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mrb-footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #motiv-registration-bottom *,
+      #motiv-registration-bottom *::before,
+      #motiv-registration-bottom *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+
+  <section class="mrb-next">
+    <div class="mrb-container">
+
+      <div class="mrb-next-inner">
+
+        <span class="mrb-next-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 21s7-5.4 7-12a7 7 0 1 0-14 0c0 6.6 7 12 7 12Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <path
+              d="m9 12 2 2 4-4"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+
+        <span class="mrb-next-copy">
+
+          <strong>
+            What happens next
+          </strong>
+
+          <p>
+            We&rsquo;ll confirm your RSVP by email and send full timings for the celebration closer to the event.
+          </p>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="mrb-recap">
+    <div class="mrb-container">
+
+      <div class="mrb-recap-card">
+
+        <p class="mrb-recap-eyebrow">
+          Celebration Snapshot
+        </p>
+
+        <h2 class="mrb-recap-title">
+          What the evening includes.
+        </h2>
+
+        <div class="mrb-recap-grid">
+          <div class="mrb-recap-item">
+            <small>
+              Date
+            </small>
+            <strong>
+              January 27, 2027
+            </strong>
+            <span>
+              Immediately following play.
+            </span>
+          </div>
+          <div class="mrb-recap-item">
+            <small>
+              Recognition
+            </small>
+            <strong>
+              Awards
+            </strong>
+            <span>
+              Tournament results and awards.
+            </span>
+          </div>
+          <div class="mrb-recap-item">
+            <small>
+              Prizes
+            </small>
+            <strong>
+              27 Planned Drawings
+            </strong>
+            <span>
+              The complete prize reveal.
+            </span>
+          </div>
+          <div class="mrb-recap-item">
+            <small>
+              Venue
+            </small>
+            <strong>
+              Bali Hai Golf Club
+            </strong>
+            <span>
+              5160 S. Las Vegas Boulevard.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mrb-footer">
+    <div class="mrb-container mrb-footer-inner">
+
+      <p class="mrb-footer-sponsor">
+        Presented by
+        <strong>
+          Lead Generation World
+        </strong>
+      </p>
+
+      <p class="mrb-footer-contact">
+        Questions? Email
+        <a href="mailto:invitational@motivbrands.co">
+          invitational@motivbrands.co
+        </a>
+      </p>
+    </div>
+  </footer>
+</section>
+<!--
+===============================================================================
+MOTIV BRANDS INVITATIONAL — SITE FOOTER
+
+Three columns on a black band: the brand lockup, the registration link, and
+the legal links. Collapses to a centred stack on small screens.
+
+The legal links point at the general policy pages by filename rather than a
+clean URL, so they resolve with or without the vercel.json rewrite rules -
+including when a page is opened straight off disk.
+===============================================================================
+-->
+
+<footer
+  id="motiv-invitational-footer"
+  class="mif-footer"
+>
+  <style>
+    #motiv-invitational-footer {
+      --mif-black: #000000;
+      --mif-white: #ffffff;
+      --mif-muted: rgba(255, 255, 255, 0.62);
+      --mif-green: #83df59;
+
+      position: relative;
+      width: 100%;
+      color: var(--mif-white);
+      background: var(--mif-black);
+      font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+    }
+
+    #motiv-invitational-footer,
+    #motiv-invitational-footer *,
+    #motiv-invitational-footer *::before,
+    #motiv-invitational-footer *::after {
+      box-sizing: border-box;
+    }
+
+    #motiv-invitational-footer a {
+      color: inherit;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    #motiv-invitational-footer img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .mif-inner {
+      display: grid;
+      width:
+        min(
+          calc(100% - 48px),
+          1720px
+        );
+      min-height: 132px;
+      margin-inline: auto;
+      padding-block: 26px;
+      grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+      align-items: center;
+      gap:
+        clamp(
+          22px,
+          4vw,
+          64px
+        );
+    }
+
+    .mif-brand {
+      display: inline-flex;
+      align-items: center;
+      justify-self: start;
+      transition:
+        opacity 180ms ease;
+    }
+
+    .mif-brand:hover {
+      opacity: 0.88;
+    }
+
+    .mif-brand img {
+      width:
+        clamp(
+          210px,
+          19vw,
+          290px
+        );
+      height: auto;
+    }
+
+    /* The middle column: the one action in the footer. */
+    .mif-action {
+      justify-self: center;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.78rem,
+          1vw,
+          0.92rem
+        );
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      line-height: 1.4;
+      text-align: center;
+      white-space: nowrap;
+      transition:
+        color 180ms ease;
+    }
+
+    .mif-action:hover {
+      color: var(--mif-green);
+    }
+
+    .mif-legal {
+      display: inline-flex;
+      align-items: center;
+      justify-self: end;
+      gap: 10px;
+      font-family:
+        "Manrope",
+        Arial,
+        sans-serif;
+      font-size:
+        clamp(
+          0.78rem,
+          1vw,
+          0.92rem
+        );
+      font-weight: 700;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+
+    .mif-legal a {
+      transition:
+        color 180ms ease;
+    }
+
+    .mif-legal a:hover {
+      color: var(--mif-green);
+    }
+
+    .mif-legal span {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    #motiv-invitational-footer a:focus-visible {
+      outline:
+        3px solid
+        rgba(131, 223, 89, 0.55);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 980px) {
+      .mif-inner {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        padding-block: 32px;
+        text-align: center;
+      }
+
+      .mif-brand,
+      .mif-action,
+      .mif-legal {
+        justify-self: center;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .mif-legal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+      }
+    }
+  </style>
+
+  <div class="mif-inner">
+
+    <a
+      class="mif-brand"
+      href="/"
+      aria-label="Motiv Brands, Inc. home"
+    >
+      <img
+        src="assets/motiv-brands-logo-light.png"
+        alt="Motiv Brands, Inc. Build Momentum. Own the Market."
+        width="480"
+        height="157"
+      >
+    </a>
+
+    <a
+      class="mif-action"
+      href="/start"
+      data-mif-cta
+      data-cta-name="Footer Registration"
+      data-cta-section="Invitational Footer"
+    >
+      Request Your Invitation
+    </a>
+
+    <p class="mif-legal">
+
+      <a href="privacy-policy-registration.html">
+        Privacy Policy
+      </a>
+
+      <span aria-hidden="true">|</span>
+
+      <a href="terms-of-use-register.html">
+        Terms and Conditions
+      </a>
+    </p>
+  </div>
+
+  <script>
+    /* The footer CTA reports alongside the header and body CTAs. */
+    (function () {
+      var cta = document.querySelector("[data-mif-cta]");
+
+      if (!cta) {
+        return;
+      }
+
+      cta.addEventListener("click", function () {
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+          event: "motiv_invitational_cta_clicked",
+          page_name: "Motiv Brands Invitational",
+          cta_name: cta.getAttribute("data-cta-name"),
+          cta_section: cta.getAttribute("data-cta-section")
+        });
+      });
+    })();
+  </script>
+</footer>
+</body>
+</html>
