@@ -83,6 +83,46 @@
     padding-inline: clamp(6px, 0.55vw, 10px);
   }
 
+  /* The section CTA buttons were rendering with dark, underlined text on a
+     green fill. Two separate causes, both on the page wrapper:
+
+       #motiv-invitational-v1100 a { color: inherit }   scores (1,0,1)
+       .mi-cta { color: var(--mi-white) }               scores (0,1,0)
+
+     so every CTA inherited its panel's ink instead of white - the same
+     specificity trap as the back-links above. And the page never resets
+     text-decoration, so each one also carried the browser's default
+     underline. Fixed for every CTA on the page, not just the one that was
+     reported, since they all route through the same two rules. */
+  #motiv-invitational-v1100 a {
+    text-decoration: none;
+  }
+
+  #motiv-invitational-v1100 .mi-cta,
+  #motiv-invitational-v1100 .mi-secondary-cta {
+    color: var(--mi-white);
+  }
+
+  /* The two full-width CTA bands (Bali Hai, Prizes) sit on a navy-to-green
+     wash, where a green button read as a second gradient competing with the
+     panel behind it. Black gives the single action on each band a hard edge.
+     Scoped to those bands: the hero and registration CTAs keep the green. */
+  #motiv-invitational-v1100 .mi-section-cta .mi-cta {
+    border-color: rgba(255, 255, 255, 0.22);
+    background: #000000;
+  }
+
+  /* ::after paints a white radial over the fill; harmless on green, but it
+     lifts black to charcoal. */
+  #motiv-invitational-v1100 .mi-section-cta .mi-cta::after {
+    background: none;
+  }
+
+  #motiv-invitational-v1100 .mi-section-cta .mi-cta:hover {
+    border-color: rgba(131, 223, 89, 0.55);
+    background: #111111;
+  }
+
   /* Seven links no longer fit at the header's full clamp gap; the header
      already drops to a tight gap, but not until 1320. A single max-width
      rule covers everything below 1400 and matches the value the header
