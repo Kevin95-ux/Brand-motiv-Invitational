@@ -3,6 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5D32KK3TJT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5D32KK3TJT');
+</script>
+
 <title>The 1st Annual Motiv Brands Invitational | Bali Hai, Las Vegas</title>
 <meta name="description" content="An invitation-only Bali Hai experience combining championship golf, 27 planned prizes and the official Motiv Brands launch celebration. Presented by Lead Generation World.">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -101,26 +111,6 @@
   #motiv-invitational-v1100 .mi-cta,
   #motiv-invitational-v1100 .mi-secondary-cta {
     color: var(--mi-white);
-  }
-
-  /* The two full-width CTA bands (Bali Hai, Prizes) sit on a navy-to-green
-     wash, where a green button read as a second gradient competing with the
-     panel behind it. Black gives the single action on each band a hard edge.
-     Scoped to those bands: the hero and registration CTAs keep the green. */
-  #motiv-invitational-v1100 .mi-section-cta .mi-cta {
-    border-color: rgba(255, 255, 255, 0.22);
-    background: #000000;
-  }
-
-  /* ::after paints a white radial over the fill; harmless on green, but it
-     lifts black to charcoal. */
-  #motiv-invitational-v1100 .mi-section-cta .mi-cta::after {
-    background: none;
-  }
-
-  #motiv-invitational-v1100 .mi-section-cta .mi-cta:hover {
-    border-color: rgba(131, 223, 89, 0.55);
-    background: #111111;
   }
 
   /* Seven links no longer fit at the header's full clamp gap; the header
