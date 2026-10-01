@@ -110,831 +110,1660 @@
 </head>
 <body>
 
-<!--
-===============================================================================
-MOTIV BRANDS INVITATIONAL — REGISTRATION CONFIRMATION PAGE
-
-VERSION: 1.0.0
-UPDATED: AUGUST 14, 2026
-
-INSTALLATION
--------------------------------------------------------------------------------
-This is a single, self-contained page. Set it as the "thank you" / redirect
-page for the registration form (registration-top.html + GHL form +
-registration-bottom.html). No form lives on this page — it's shown after
-the visitor submits.
-
-PLACEHOLDER
--------------------------------------------------------------------------------
-"Back to Event Details" link and contact email are placeholders matching
-what's used elsewhere on the site — update if different.
-===============================================================================
--->
-
-<section
-  id="motiv-registration-confirmation"
-  class="rc-page"
->
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
-
-    #motiv-registration-confirmation {
-      --rc-navy-1250: #00050d;
-      --rc-navy-1150: #020c18;
-      --rc-navy-900: #0b2e49;
-      --rc-navy-850: #0e3857;
-
-      --rc-green-800: #287c24;
-      --rc-green-700: #3e962f;
-      --rc-green-500: #83df59;
-      --rc-green-400: #a7ed89;
-
-      --rc-blue-600: #0877d0;
-      --rc-blue-500: #188ee8;
-
-      --rc-red-500: #f13c4c;
-
-      --rc-gold-800: #76501c;
-      --rc-gold-500: #e7c77f;
-      --rc-gold-100: #fff8e8;
-
-      --rc-white: #ffffff;
-
-      --rc-ink: #0f263b;
-      --rc-gray-500: #6e7f8e;
-      --rc-gray-450: #8392a0;
-
-      --rc-border: rgba(5, 29, 52, 0.13);
-
-      --rc-shadow-sm:
-        0 14px 38px
-        rgba(2, 14, 29, 0.10);
-
-      --rc-shadow-md:
-        0 26px 75px
-        rgba(2, 14, 29, 0.16);
-
-      --rc-ease:
-        cubic-bezier(0.16, 1, 0.3, 1);
-
-      position: relative;
-      width: 100%;
-      overflow-x: hidden;
-      color: var(--rc-ink);
-      background: #ffffff;
-      font-family:
-        "DM Sans",
-        Arial,
-        sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    #motiv-registration-confirmation,
-    #motiv-registration-confirmation *,
-    #motiv-registration-confirmation *::before,
-    #motiv-registration-confirmation *::after {
-      box-sizing: border-box;
-    }
-
-    #motiv-registration-confirmation a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    #motiv-registration-confirmation img,
-    #motiv-registration-confirmation svg {
-      display: block;
-      max-width: 100%;
-    }
-
-    .rc-container {
-      width:
-        min(
-          calc(100% - 48px),
-          760px
-        );
-      margin-inline: auto;
-    }
-
-    /* HEADER */
-
-    .rc-header {
-      border-bottom:
-        1px solid
-        rgba(255, 255, 255, 0.10);
-      background: #05111d;
-    }
-
-    .rc-header-inner {
-      display: flex;
-      min-height: 84px;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      padding-block: 16px;
-      width:
-        min(
-          calc(100% - 48px),
-          1180px
-        );
-      margin-inline: auto;
-    }
-
-    .rc-brand-link {
-      display: inline-flex;
-      min-width: 0;
-      align-items: center;
-      gap: 13px;
-      color: var(--rc-white);
-    }
-
-    .rc-brand-image-shell {
-      display: grid;
-      width: 44px;
-      height: 44px;
-      flex: 0 0 auto;
-      place-items: center;
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.14);
-      border-radius: 14px;
-      background:
-        rgba(255, 255, 255, 0.055);
-    }
-
-    .rc-brand-image {
-      width: 30px;
-      height: 30px;
-      object-fit: contain;
-    }
-
-    .rc-brand-copy {
-      min-width: 0;
-    }
-
-    .rc-brand-primary {
-      display: block;
-      overflow: hidden;
-      color: var(--rc-white);
-      font-family:
-        "Manrope",
-        Arial,
-        sans-serif;
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.065em;
-      line-height: 1.25;
-      text-overflow: ellipsis;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .rc-brand-secondary {
-      display: block;
-      margin-top: 4px;
-      overflow: hidden;
-      color:
-        rgba(255, 255, 255, 0.52);
-      font-family:
-        "Manrope",
-        Arial,
-        sans-serif;
-      font-size: 0.44rem;
-      font-weight: 700;
-      letter-spacing: 0.11em;
-      text-overflow: ellipsis;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .rc-back-link {
-      display: inline-flex;
-      flex: 0 0 auto;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 16px;
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.14);
-      border-radius: 999px;
-      color:
-        rgba(255, 255, 255, 0.85);
-      font-family:
-        "Manrope",
-        Arial,
-        sans-serif;
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      transition:
-        color 180ms ease,
-        border-color 180ms ease,
-        background 180ms ease;
-      white-space: nowrap;
-    }
-
-    .rc-back-link:hover {
-      color: var(--rc-green-500);
-      border-color:
-        rgba(131, 223, 89, 0.35);
-      background:
-        rgba(131, 223, 89, 0.08);
-    }
-
-    .rc-back-link svg {
-      width: 14px;
-      height: 14px;
-      transform: rotate(180deg);
-    }
-
-    /* CONFIRMATION HERO */
-
-    .rc-hero {
-      position: relative;
-      padding:
-        64px 0
-        56px;
-      overflow: hidden;
-      color: var(--rc-white);
-      text-align: center;
-      background:
-        radial-gradient(
-          circle at 92% 0%,
-          rgba(62, 150, 47, 0.24),
-          transparent 42%
-        ),
-        radial-gradient(
-          circle at 4% 100%,
-          rgba(24, 142, 232, 0.20),
-          transparent 42%
-        ),
-        linear-gradient(
-          145deg,
-          var(--rc-navy-850),
-          var(--rc-navy-1150)
-        );
-    }
-
-    .rc-check-icon {
-      display: grid;
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 22px;
-      place-items: center;
-      border-radius: 999px;
-      color: var(--rc-white);
-      background:
-        linear-gradient(
-          135deg,
-          #8be963 0%,
-          var(--rc-green-500) 46%,
-          var(--rc-green-700) 100%
-        );
-      box-shadow:
-        0 18px 46px
-        rgba(99, 189, 67, 0.34);
-    }
-
-    .rc-check-icon svg {
-      width: 30px;
-      height: 30px;
-    }
-
-    .rc-hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin: 0 0 16px;
-      color:
-        rgba(255, 255, 255, 0.80);
-      font-family:
-        "Manrope",
-        Arial,
-        sans-serif;
-      font-size: 0.66rem;
-      font-weight: 800;
-      letter-spacing: 0.17em;
-      text-transform: uppercase;
-    }
-
-    .rc-hero-title {
-      max-width: 560px;
-      margin: 0 auto;
-      font-family:
-        "Playfair Display",
-        Georgia,
-        serif;
-      font-size:
-        clamp(
-          2rem,
-          4.4vw,
-          2.9rem
-        );
-      font-weight: 600;
-      letter-spacing: -0.04em;
-      line-height: 1.12;
-      text-wrap: balance;
-    }
-
-    .rc-hero-copy {
-      max-width: 520px;
-      margin: 16px auto 0;
-      color:
-        rgba(255, 255, 255, 0.70);
-      font-size: 0.94rem;
-      line-height: 1.68;
-    }
-
-    .rc-brand-stripe {
-      height: 6px;
-      background:
-        linear-gradient(
-          90deg,
-          var(--rc-red-500) 0%,
-          var(--rc-red-500) 24%,
-          var(--rc-blue-500) 24%,
-          var(--rc-blue-500) 69%,
-          var(--rc-green-500) 69%,
-          var(--rc-green-500) 100%
-        );
-    }
-
-    /* IMPORTANT NOTICE */
-
-    .rc-notice-section {
-      padding: 40px 0 8px;
-    }
-
-    .rc-notice {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 20px 24px;
-      border:
-        1px solid
-        rgba(231, 199, 127, 0.45);
-      border-radius: 18px;
-      background: var(--rc-gold-100);
-    }
-
-    .rc-notice-icon {
-      display: grid;
-      width: 32px;
-      height: 32px;
-      flex: 0 0 auto;
-      place-items: center;
-      border-radius: 10px;
-      color: var(--rc-gold-800);
-      background: #ffffff;
-    }
-
-    .rc-notice-icon svg {
-      width: 17px;
-      height: 17px;
-    }
-
-    .rc-notice p {
-      margin: 0;
-      color: var(--rc-gold-800);
-      font-size: 0.86rem;
-      line-height: 1.62;
-    }
-
-    .rc-notice p strong {
-      font-weight: 800;
-    }
-
-    /* EVENT RECAP */
-
-    .rc-recap-section {
-      padding: 40px 0 70px;
-    }
-
-    .rc-recap-card {
-      position: relative;
-      padding:
-        clamp(28px, 4vw, 42px);
-      overflow: hidden;
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.10);
-      border-radius: 30px;
-      color: #ffffff;
-      background:
-        radial-gradient(
-          circle at 100% 0%,
-          rgba(62, 150, 47, 0.26),
-          transparent 40%
-        ),
-        radial-gradient(
-          circle at 0% 100%,
-          rgba(24, 142, 232, 0.18),
-          transparent 40%
-        ),
-        linear-gradient(
-          145deg,
-          var(--rc-navy-850),
-          var(--rc-navy-1150)
-        );
-      box-shadow:
-        var(--rc-shadow-md);
-    }
-
-    .rc-recap-eyebrow {
-      color: var(--rc-green-400);
-      font-family:
-        "Manrope",
-        Arial,
-        sans-serif;
-      font-size: 0.55rem;
-      font-weight: 800;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-
-    .rc-recap-title {
-      max-width: 480px;
-      margin: 12px 0 0;
-      font-family:
-        "Playfair Display",
-        Georgia,
-        serif;
-      font-size:
-        clamp(1.4rem, 2.6vw, 1.9rem);
-      font-weight: 600;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-    }
-
-    .rc-recap-grid {
-      display: grid;
-      margin-top: 24px;
-      grid-template-columns:
-        repeat(
-          4,
-          minmax(0, 1fr)
-        );
-      gap: 12px;
-    }
-
-    .rc-recap-item {
-      padding: 16px;
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.10);
-      border-radius: 16px;
-      background:
-        rgba(255, 255, 255, 0.055);
-    }
-
-    .rc-recap-item small {
-      display: block;
-      color: var(--rc-green-400);
-      font-family:
-        "Manrope",
-        Arial,
-        sans-serif;
-      font-size: 0.44rem;
-      font-weight: 800;
-      letter-spacing: 0.11em;
-      text-transform: uppercase;
-    }
-
-    .rc-recap-item strong {
-      display: block;
-      margin-top: 7px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      line-height: 1.35;
-    }
-
-    .rc-recap-item span {
-      display: block;
-      margin-top: 5px;
-      color:
-        rgba(255, 255, 255, 0.55);
-      font-size: 0.65rem;
-      line-height: 1.45;
-    }
-
-    /* FOOTER */
-
-    .rc-footer {
-      padding: 30px 0 46px;
-      border-top:
-        1px solid
-        var(--rc-border);
-    }
-
-    .rc-footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .rc-footer-sponsor {
-      color: var(--rc-gray-500);
-      font-size: 0.72rem;
-    }
-
-    .rc-footer-sponsor strong {
-      color: var(--rc-navy-900);
-      font-weight: 700;
-    }
-
-    .rc-footer-contact {
-      color: var(--rc-gray-450);
-      font-size: 0.72rem;
-    }
-
-    .rc-footer-contact a {
-      color: var(--rc-blue-600);
-      font-weight: 600;
-      transition: color 180ms ease;
-    }
-
-    .rc-footer-contact a:hover {
-      color: var(--rc-blue-500);
-    }
-
-    @media (max-width: 900px) {
-      .rc-recap-grid {
-        grid-template-columns:
-          repeat(
-            2,
-            minmax(0, 1fr)
-          );
-      }
-    }
-
-    @media (max-width: 640px) {
-      .rc-header-inner {
-        flex-wrap: wrap;
-        min-height: auto;
-        gap: 14px;
-      }
-
-      .rc-back-link span {
-        display: none;
-      }
-
-      .rc-hero {
-        padding: 48px 0 40px;
-      }
-
-      .rc-notice {
-        flex-direction: column;
-      }
-
-      .rc-recap-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .rc-footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      #motiv-registration-confirmation *,
-      #motiv-registration-confirmation *::before,
-      #motiv-registration-confirmation *::after {
-        animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-  </style>
-
-  <header class="rc-header">
-    <div class="rc-header-inner">
-
-      <a
-        class="rc-brand-link"
-        href="/"
-        aria-label="Back to the Motiv Brands Invitational overview"
-      >
-        <span class="rc-brand-image-shell">
-
-          <img
-            class="rc-brand-image"
-            src="assets/brand-mark.png"
-            alt=""
-            aria-hidden="true"
-          >
-        </span>
-
-        <span class="rc-brand-copy">
-
-          <span class="rc-brand-primary">
-            Motiv Brands Invitational
-          </span>
-
-          <span class="rc-brand-secondary">
-            January 27, 2027 · Bali Hai Golf Club
-          </span>
-        </span>
-      </a>
-
-      <a
-        class="rc-back-link"
-        href="/"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M5 12h14M13 6l6 6-6 6"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-
-        <span>
-          Back to Event Details
-        </span>
-      </a>
-    </div>
-  </header>
-
-  <section class="rc-hero">
-    <div class="rc-container">
-
-      <span class="rc-check-icon">
-
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="m5 13 5 5L20 7"
-            stroke="currentColor"
-            stroke-width="2.4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </span>
-
-      <p class="rc-hero-eyebrow">
-        Invitational Registration
-      </p>
-
-      <h1 class="rc-hero-title">
-        Your invite request has been received.
-      </h1>
-
-      <p class="rc-hero-copy">
-        We will reach out shortly to discuss your interest and answer all
-        your questions about the 1st Annual Motiv Brands Invitational.
-      </p>
-    </div>
-  </section>
-
-  <div
-    class="rc-brand-stripe"
-    aria-hidden="true"
-  ></div>
-
-  <section class="rc-notice-section">
-    <div class="rc-container">
-
-      <div class="rc-notice">
-
-        <span class="rc-notice-icon">
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-          >
-            <path
-              d="M12 9v4m0 4h.01M10.3 3.86 1.8 18a2 2 0 0 0 1.75 3h16.9a2 2 0 0 0 1.75-3L13.7 3.86a2 2 0 0 0-3.4 0Z"
-              stroke="currentColor"
-              stroke-width="1.7"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </span>
-
-        <p>
-          <strong>This is not a confirmation that you are registered for the Event.</strong>
-          The Motiv Brands Invitational is invitation-only, and our team will
-          review your request before confirming your place in the 72-player
-          field. We'll follow up with next steps shortly.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="rc-recap-section">
-    <div class="rc-container">
-
-      <div class="rc-recap-card">
-
-        <p class="rc-recap-eyebrow">
-          Event Snapshot
-        </p>
-
-        <h2 class="rc-recap-title">
-          Here's what you just requested to join.
-        </h2>
-
-        <div class="rc-recap-grid">
-
-          <div class="rc-recap-item">
-
-            <small>
-              Date
-            </small>
-
-            <strong>
-              January 27, 2027
-            </strong>
-
-            <span>
-              The first annual Invitational.
-            </span>
-          </div>
-
-          <div class="rc-recap-item">
-
-            <small>
-              Format
-            </small>
-
-            <strong>
-              12:00 PM Shotgun
-            </strong>
-
-            <span>
-              Modified shotgun start.
-            </span>
-          </div>
-
-          <div class="rc-recap-item">
-
-            <small>
-              Venue
-            </small>
-
-            <strong>
-              Bali Hai Golf Club
-            </strong>
-
-            <span>
-              5160 S. Las Vegas Boulevard.
-            </span>
-          </div>
-
-          <div class="rc-recap-item">
-
-            <small>
-              Prizes
-            </small>
-
-            <strong>
-              27 Planned Drawings
-            </strong>
-
-            <span>
-              Eight revealed, 19 more to come.
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="rc-footer">
-    <div class="rc-container rc-footer-inner">
-
-      <p class="rc-footer-sponsor">
-        Presented by
-        <strong>
-          Lead Generation World
-        </strong>
-      </p>
-
-      <p class="rc-footer-contact">
-        Questions? Email
-        <a href="mailto:invitational@motivbrands.co">
-          invitational@motivbrands.co
-        </a>
-      </p>
-    </div>
-  </footer>
-</section>
+<!--
+
+===============================================================================
+
+MOTIV BRANDS INVITATIONAL — REGISTRATION CONFIRMATION PAGE
+
+
+
+VERSION: 1.0.0
+
+UPDATED: AUGUST 14, 2026
+
+
+
+INSTALLATION
+
+-------------------------------------------------------------------------------
+
+This is a single, self-contained page. Set it as the "thank you" / redirect
+
+page for the registration form (registration-top.html + GHL form +
+
+registration-bottom.html). No form lives on this page — it's shown after
+
+the visitor submits.
+
+
+
+PLACEHOLDER
+
+-------------------------------------------------------------------------------
+
+"Back to Event Details" link and contact email are placeholders matching
+
+what's used elsewhere on the site — update if different.
+
+===============================================================================
+
+-->
+
+
+
+<section
+
+  id="motiv-registration-confirmation"
+
+  class="rc-page"
+
+>
+
+  <style>
+
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+
+
+
+    #motiv-registration-confirmation {
+
+      --rc-navy-1250: #00050d;
+
+      --rc-navy-1150: #020c18;
+
+      --rc-navy-900: #0b2e49;
+
+      --rc-navy-850: #0e3857;
+
+
+
+      --rc-green-800: #287c24;
+
+      --rc-green-700: #3e962f;
+
+      --rc-green-500: #83df59;
+
+      --rc-green-400: #a7ed89;
+
+
+
+      --rc-blue-600: #0877d0;
+
+      --rc-blue-500: #188ee8;
+
+
+
+      --rc-red-500: #f13c4c;
+
+
+
+      --rc-gold-800: #76501c;
+
+      --rc-gold-500: #e7c77f;
+
+      --rc-gold-100: #fff8e8;
+
+
+
+      --rc-white: #ffffff;
+
+
+
+      --rc-ink: #0f263b;
+
+      --rc-gray-500: #6e7f8e;
+
+      --rc-gray-450: #8392a0;
+
+
+
+      --rc-border: rgba(5, 29, 52, 0.13);
+
+
+
+      --rc-shadow-sm:
+
+        0 14px 38px
+
+        rgba(2, 14, 29, 0.10);
+
+
+
+      --rc-shadow-md:
+
+        0 26px 75px
+
+        rgba(2, 14, 29, 0.16);
+
+
+
+      --rc-ease:
+
+        cubic-bezier(0.16, 1, 0.3, 1);
+
+
+
+      position: relative;
+
+      width: 100%;
+
+      overflow-x: hidden;
+
+      color: var(--rc-ink);
+
+      background: #ffffff;
+
+      font-family:
+
+        "DM Sans",
+
+        Arial,
+
+        sans-serif;
+
+      -webkit-font-smoothing: antialiased;
+
+    }
+
+
+
+    #motiv-registration-confirmation,
+
+    #motiv-registration-confirmation *,
+
+    #motiv-registration-confirmation *::before,
+
+    #motiv-registration-confirmation *::after {
+
+      box-sizing: border-box;
+
+    }
+
+
+
+    #motiv-registration-confirmation a {
+
+      color: inherit;
+
+      text-decoration: none;
+
+    }
+
+
+
+    #motiv-registration-confirmation img,
+
+    #motiv-registration-confirmation svg {
+
+      display: block;
+
+      max-width: 100%;
+
+    }
+
+
+
+    .rc-container {
+
+      width:
+
+        min(
+
+          calc(100% - 48px),
+
+          760px
+
+        );
+
+      margin-inline: auto;
+
+    }
+
+
+
+    /* HEADER */
+
+
+
+    .rc-header {
+
+      border-bottom:
+
+        1px solid
+
+        rgba(255, 255, 255, 0.10);
+
+      background: #05111d;
+
+    }
+
+
+
+    .rc-header-inner {
+
+      display: flex;
+
+      min-height: 84px;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 24px;
+
+      padding-block: 16px;
+
+      width:
+
+        min(
+
+          calc(100% - 48px),
+
+          1180px
+
+        );
+
+      margin-inline: auto;
+
+    }
+
+
+
+    .rc-brand-link {
+
+      display: inline-flex;
+
+      min-width: 0;
+
+      align-items: center;
+
+      gap: 13px;
+
+      color: var(--rc-white);
+
+    }
+
+
+
+    .rc-brand-image-shell {
+
+      display: grid;
+
+      width: 44px;
+
+      height: 44px;
+
+      flex: 0 0 auto;
+
+      place-items: center;
+
+      border:
+
+        1px solid
+
+        rgba(255, 255, 255, 0.14);
+
+      border-radius: 14px;
+
+      background:
+
+        rgba(255, 255, 255, 0.055);
+
+    }
+
+
+
+    .rc-brand-image {
+
+      width: 30px;
+
+      height: 30px;
+
+      object-fit: contain;
+
+    }
+
+
+
+    .rc-brand-copy {
+
+      min-width: 0;
+
+    }
+
+
+
+    .rc-brand-primary {
+
+      display: block;
+
+      overflow: hidden;
+
+      color: var(--rc-white);
+
+      font-family:
+
+        "Manrope",
+
+        Arial,
+
+        sans-serif;
+
+      font-size: 0.72rem;
+
+      font-weight: 800;
+
+      letter-spacing: 0.065em;
+
+      line-height: 1.25;
+
+      text-overflow: ellipsis;
+
+      text-transform: uppercase;
+
+      white-space: nowrap;
+
+    }
+
+
+
+    .rc-brand-secondary {
+
+      display: block;
+
+      margin-top: 4px;
+
+      overflow: hidden;
+
+      color:
+
+        rgba(255, 255, 255, 0.52);
+
+      font-family:
+
+        "Manrope",
+
+        Arial,
+
+        sans-serif;
+
+      font-size: 0.44rem;
+
+      font-weight: 700;
+
+      letter-spacing: 0.11em;
+
+      text-overflow: ellipsis;
+
+      text-transform: uppercase;
+
+      white-space: nowrap;
+
+    }
+
+
+
+    .rc-back-link {
+
+      display: inline-flex;
+
+      flex: 0 0 auto;
+
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 10px 16px;
+
+      border:
+
+        1px solid
+
+        rgba(255, 255, 255, 0.14);
+
+      border-radius: 999px;
+
+      color:
+
+        rgba(255, 255, 255, 0.85);
+
+      font-family:
+
+        "Manrope",
+
+        Arial,
+
+        sans-serif;
+
+      font-size: 0.62rem;
+
+      font-weight: 700;
+
+      letter-spacing: 0.05em;
+
+      text-transform: uppercase;
+
+      transition:
+
+        color 180ms ease,
+
+        border-color 180ms ease,
+
+        background 180ms ease;
+
+      white-space: nowrap;
+
+    }
+
+
+
+    .rc-back-link:hover {
+
+      color: var(--rc-green-500);
+
+      border-color:
+
+        rgba(131, 223, 89, 0.35);
+
+      background:
+
+        rgba(131, 223, 89, 0.08);
+
+    }
+
+
+
+    .rc-back-link svg {
+
+      width: 14px;
+
+      height: 14px;
+
+      transform: rotate(180deg);
+
+    }
+
+
+
+    /* CONFIRMATION HERO */
+
+
+
+    .rc-hero {
+
+      position: relative;
+
+      padding:
+
+        64px 0
+
+        56px;
+
+      overflow: hidden;
+
+      color: var(--rc-white);
+
+      text-align: center;
+
+      background:
+
+        radial-gradient(
+
+          circle at 92% 0%,
+
+          rgba(62, 150, 47, 0.24),
+
+          transparent 42%
+
+        ),
+
+        radial-gradient(
+
+          circle at 4% 100%,
+
+          rgba(24, 142, 232, 0.20),
+
+          transparent 42%
+
+        ),
+
+        linear-gradient(
+
+          145deg,
+
+          var(--rc-navy-850),
+
+          var(--rc-navy-1150)
+
+        );
+
+    }
+
+
+
+    .rc-check-icon {
+
+      display: grid;
+
+      width: 64px;
+
+      height: 64px;
+
+      margin: 0 auto 22px;
+
+      place-items: center;
+
+      border-radius: 999px;
+
+      color: var(--rc-white);
+
+      background:
+
+        linear-gradient(
+
+          135deg,
+
+          #8be963 0%,
+
+          var(--rc-green-500) 46%,
+
+          var(--rc-green-700) 100%
+
+        );
+
+      box-shadow:
+
+        0 18px 46px
+
+        rgba(99, 189, 67, 0.34);
+
+    }
+
+
+
+    .rc-check-icon svg {
+
+      width: 30px;
+
+      height: 30px;
+
+    }
+
+
+
+    .rc-hero-eyebrow {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 12px;
+
+      margin: 0 0 16px;
+
+      color:
+
+        rgba(255, 255, 255, 0.80);
+
+      font-family:
+
+        "Manrope",
+
+        Arial,
+
+        sans-serif;
+
+      font-size: 0.66rem;
+
+      font-weight: 800;
+
+      letter-spacing: 0.17em;
+
+      text-transform: uppercase;
+
+    }
+
+
+
+    .rc-hero-title {
+
+      max-width: 560px;
+
+      margin: 0 auto;
+
+      font-family:
+
+        "Playfair Display",
+
+        Georgia,
+
+        serif;
+
+      font-size:
+
+        clamp(
+
+          2rem,
+
+          4.4vw,
+
+          2.9rem
+
+        );
+
+      font-weight: 600;
+
+      letter-spacing: -0.04em;
+
+      line-height: 1.12;
+
+      text-wrap: balance;
+
+    }
+
+
+
+    .rc-hero-copy {
+
+      max-width: 520px;
+
+      margin: 16px auto 0;
+
+      color:
+
+        rgba(255, 255, 255, 0.70);
+
+      font-size: 0.94rem;
+
+      line-height: 1.68;
+
+    }
+
+
+
+    .rc-brand-stripe {
+
+      height: 6px;
+
+      background:
+
+        linear-gradient(
+
+          90deg,
+
+          var(--rc-red-500) 0%,
+
+          var(--rc-red-500) 24%,
+
+          var(--rc-blue-500) 24%,
+
+          var(--rc-blue-500) 69%,
+
+          var(--rc-green-500) 69%,
+
+          var(--rc-green-500) 100%
+
+        );
+
+    }
+
+
+
+    /* IMPORTANT NOTICE */
+
+
+
+    .rc-notice-section {
+
+      padding: 40px 0 8px;
+
+    }
+
+
+
+    .rc-notice {
+
+      display: flex;
+
+      align-items: flex-start;
+
+      gap: 14px;
+
+      padding: 20px 24px;
+
+      border:
+
+        1px solid
+
+        rgba(231, 199, 127, 0.45);
+
+      border-radius: 18px;
+
+      background: var(--rc-gold-100);
+
+    }
+
+
+
+    .rc-notice-icon {
+
+      display: grid;
+
+      width: 32px;
+
+      height: 32px;
+
+      flex: 0 0 auto;
+
+      place-items: center;
+
+      border-radius: 10px;
+
+      color: var(--rc-gold-800);
+
+      background: #ffffff;
+
+    }
+
+
+
+    .rc-notice-icon svg {
+
+      width: 17px;
+
+      height: 17px;
+
+    }
+
+
+
+    .rc-notice p {
+
+      margin: 0;
+
+      color: var(--rc-gold-800);
+
+      font-size: 0.86rem;
+
+      line-height: 1.62;
+
+    }
+
+
+
+    .rc-notice p strong {
+
+      font-weight: 800;
+
+    }
+
+
+
+    /* EVENT RECAP */
+
+
+
+    .rc-recap-section {
+
+      padding: 40px 0 70px;
+
+    }
+
+
+
+    .rc-recap-card {
+
+      position: relative;
+
+      padding:
+
+        clamp(28px, 4vw, 42px);
+
+      overflow: hidden;
+
+      border:
+
+        1px solid
+
+        rgba(255, 255, 255, 0.10);
+
+      border-radius: 30px;
+
+      color: #ffffff;
+
+      background:
+
+        radial-gradient(
+
+          circle at 100% 0%,
+
+          rgba(62, 150, 47, 0.26),
+
+          transparent 40%
+
+        ),
+
+        radial-gradient(
+
+          circle at 0% 100%,
+
+          rgba(24, 142, 232, 0.18),
+
+          transparent 40%
+
+        ),
+
+        linear-gradient(
+
+          145deg,
+
+          var(--rc-navy-850),
+
+          var(--rc-navy-1150)
+
+        );
+
+      box-shadow:
+
+        var(--rc-shadow-md);
+
+    }
+
+
+
+    .rc-recap-eyebrow {
+
+      color: var(--rc-green-400);
+
+      font-family:
+
+        "Manrope",
+
+        Arial,
+
+        sans-serif;
+
+      font-size: 0.55rem;
+
+      font-weight: 800;
+
+      letter-spacing: 0.15em;
+
+      text-transform: uppercase;
+
+    }
+
+
+
+    .rc-recap-title {
+
+      max-width: 480px;
+
+      margin: 12px 0 0;
+
+      font-family:
+
+        "Playfair Display",
+
+        Georgia,
+
+        serif;
+
+      font-size:
+
+        clamp(1.4rem, 2.6vw, 1.9rem);
+
+      font-weight: 600;
+
+      letter-spacing: -0.03em;
+
+      line-height: 1.15;
+
+    }
+
+
+
+    .rc-recap-grid {
+
+      display: grid;
+
+      margin-top: 24px;
+
+      grid-template-columns:
+
+        repeat(
+
+          4,
+
+          minmax(0, 1fr)
+
+        );
+
+      gap: 12px;
+
+    }
+
+
+
+    .rc-recap-item {
+
+      padding: 16px;
+
+      border:
+
+        1px solid
+
+        rgba(255, 255, 255, 0.10);
+
+      border-radius: 16px;
+
+      background:
+
+        rgba(255, 255, 255, 0.055);
+
+    }
+
+
+
+    .rc-recap-item small {
+
+      display: block;
+
+      color: var(--rc-green-400);
+
+      font-family:
+
+        "Manrope",
+
+        Arial,
+
+        sans-serif;
+
+      font-size: 0.44rem;
+
+      font-weight: 800;
+
+      letter-spacing: 0.11em;
+
+      text-transform: uppercase;
+
+    }
+
+
+
+    .rc-recap-item strong {
+
+      display: block;
+
+      margin-top: 7px;
+
+      font-size: 0.82rem;
+
+      font-weight: 700;
+
+      line-height: 1.35;
+
+    }
+
+
+
+    .rc-recap-item span {
+
+      display: block;
+
+      margin-top: 5px;
+
+      color:
+
+        rgba(255, 255, 255, 0.55);
+
+      font-size: 0.65rem;
+
+      line-height: 1.45;
+
+    }
+
+
+
+    /* FOOTER */
+
+
+
+    .rc-footer {
+
+      padding: 30px 0 46px;
+
+      border-top:
+
+        1px solid
+
+        var(--rc-border);
+
+    }
+
+
+
+    .rc-footer-inner {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 12px;
+
+    }
+
+
+
+    .rc-footer-sponsor {
+
+      color: var(--rc-gray-500);
+
+      font-size: 0.72rem;
+
+    }
+
+
+
+    .rc-footer-sponsor strong {
+
+      color: var(--rc-navy-900);
+
+      font-weight: 700;
+
+    }
+
+
+
+    .rc-footer-contact {
+
+      color: var(--rc-gray-450);
+
+      font-size: 0.72rem;
+
+    }
+
+
+
+    .rc-footer-contact a {
+
+      color: var(--rc-blue-600);
+
+      font-weight: 600;
+
+      transition: color 180ms ease;
+
+    }
+
+
+
+    .rc-footer-contact a:hover {
+
+      color: var(--rc-blue-500);
+
+    }
+
+
+
+    @media (max-width: 900px) {
+
+      .rc-recap-grid {
+
+        grid-template-columns:
+
+          repeat(
+
+            2,
+
+            minmax(0, 1fr)
+
+          );
+
+      }
+
+    }
+
+
+
+    @media (max-width: 640px) {
+
+      .rc-header-inner {
+
+        flex-wrap: wrap;
+
+        min-height: auto;
+
+        gap: 14px;
+
+      }
+
+
+
+      .rc-back-link span {
+
+        display: none;
+
+      }
+
+
+
+      .rc-hero {
+
+        padding: 48px 0 40px;
+
+      }
+
+
+
+      .rc-notice {
+
+        flex-direction: column;
+
+      }
+
+
+
+      .rc-recap-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+
+      .rc-footer-inner {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+      }
+
+    }
+
+
+
+    @media (prefers-reduced-motion: reduce) {
+
+      #motiv-registration-confirmation *,
+
+      #motiv-registration-confirmation *::before,
+
+      #motiv-registration-confirmation *::after {
+
+        animation-duration: 0.01ms !important;
+
+        transition-duration: 0.01ms !important;
+
+      }
+
+    }
+
+  </style>
+
+
+
+  <header class="rc-header">
+
+    <div class="rc-header-inner">
+
+
+
+      <a
+
+        class="rc-brand-link"
+
+        href="/"
+
+        aria-label="Back to the Motiv Brands Invitational overview"
+
+      >
+
+        <span class="rc-brand-image-shell">
+
+
+
+          <img
+
+            class="rc-brand-image"
+
+            src="assets/brand-mark.png"
+
+            alt=""
+
+            aria-hidden="true"
+
+          >
+
+        </span>
+
+
+
+        <span class="rc-brand-copy">
+
+
+
+          <span class="rc-brand-primary">
+
+            Motiv Brands Invitational
+
+          </span>
+
+
+
+          <span class="rc-brand-secondary">
+
+            January 27, 2027 · Bali Hai Golf Club
+
+          </span>
+
+        </span>
+
+      </a>
+
+
+
+      <a
+
+        class="rc-back-link"
+
+        href="/"
+
+      >
+
+        <svg
+
+          viewBox="0 0 24 24"
+
+          fill="none"
+
+          aria-hidden="true"
+
+        >
+
+          <path
+
+            d="M5 12h14M13 6l6 6-6 6"
+
+            stroke="currentColor"
+
+            stroke-width="1.8"
+
+            stroke-linecap="round"
+
+            stroke-linejoin="round"
+
+          />
+
+        </svg>
+
+
+
+        <span>
+
+          Back to Event Details
+
+        </span>
+
+      </a>
+
+    </div>
+
+  </header>
+
+
+
+  <section class="rc-hero">
+
+    <div class="rc-container">
+
+
+
+      <span class="rc-check-icon">
+
+
+
+        <svg
+
+          viewBox="0 0 24 24"
+
+          fill="none"
+
+          aria-hidden="true"
+
+        >
+
+          <path
+
+            d="m5 13 5 5L20 7"
+
+            stroke="currentColor"
+
+            stroke-width="2.4"
+
+            stroke-linecap="round"
+
+            stroke-linejoin="round"
+
+          />
+
+        </svg>
+
+      </span>
+
+
+
+      <p class="rc-hero-eyebrow">
+
+        Invitational Registration
+
+      </p>
+
+
+
+      <h1 class="rc-hero-title">
+
+        Your invite request has been received.
+
+      </h1>
+
+
+
+      <p class="rc-hero-copy">
+
+        We will reach out shortly to discuss your interest and answer all
+
+        your questions about the 1st Annual Motiv Brands Invitational.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <div
+
+    class="rc-brand-stripe"
+
+    aria-hidden="true"
+
+  ></div>
+
+
+
+  <section class="rc-notice-section">
+
+    <div class="rc-container">
+
+
+
+      <div class="rc-notice">
+
+
+
+        <span class="rc-notice-icon">
+
+
+
+          <svg
+
+            viewBox="0 0 24 24"
+
+            fill="none"
+
+            aria-hidden="true"
+
+          >
+
+            <path
+
+              d="M12 9v4m0 4h.01M10.3 3.86 1.8 18a2 2 0 0 0 1.75 3h16.9a2 2 0 0 0 1.75-3L13.7 3.86a2 2 0 0 0-3.4 0Z"
+
+              stroke="currentColor"
+
+              stroke-width="1.7"
+
+              stroke-linecap="round"
+
+              stroke-linejoin="round"
+
+            />
+
+          </svg>
+
+        </span>
+
+
+
+        <p>
+
+          <strong>This is not a confirmation that you are registered for the Event.</strong>
+
+          The Motiv Brands Invitational is invitation-only, and our team will
+
+          review your request before confirming your place in the 72-player
+
+          field. We'll follow up with next steps shortly.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="rc-recap-section">
+
+    <div class="rc-container">
+
+
+
+      <div class="rc-recap-card">
+
+
+
+        <p class="rc-recap-eyebrow">
+
+          Event Snapshot
+
+        </p>
+
+
+
+        <h2 class="rc-recap-title">
+
+          Here's what you just requested to join.
+
+        </h2>
+
+
+
+        <div class="rc-recap-grid">
+
+
+
+          <div class="rc-recap-item">
+
+
+
+            <small>
+
+              Date
+
+            </small>
+
+
+
+            <strong>
+
+              January 27, 2027
+
+            </strong>
+
+
+
+            <span>
+
+              The first annual Invitational.
+
+            </span>
+
+          </div>
+
+
+
+          <div class="rc-recap-item">
+
+
+
+            <small>
+
+              Format
+
+            </small>
+
+
+
+            <strong>
+
+              12:00 PM Shotgun
+
+            </strong>
+
+
+
+            <span>
+
+              Modified shotgun start.
+
+            </span>
+
+          </div>
+
+
+
+          <div class="rc-recap-item">
+
+
+
+            <small>
+
+              Venue
+
+            </small>
+
+
+
+            <strong>
+
+              Bali Hai Golf Club
+
+            </strong>
+
+
+
+            <span>
+
+              5160 S. Las Vegas Boulevard.
+
+            </span>
+
+          </div>
+
+
+
+          <div class="rc-recap-item">
+
+
+
+            <small>
+
+              Prizes
+
+            </small>
+
+
+
+            <strong>
+
+              27 Planned Drawings
+
+            </strong>
+
+
+
+            <span>
+
+              Eight revealed, 19 more to come.
+
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <footer class="rc-footer">
+
+    <div class="rc-container rc-footer-inner">
+
+
+
+      <p class="rc-footer-sponsor">
+
+        Presented by
+
+        <strong>
+
+          Lead Generation World
+
+        </strong>
+        <span aria-hidden="true">&middot;</span>
+        <strong>
+          Troutman Amin, LLP
+        </strong>
+
+      </p>
+
+
+
+      <p class="rc-footer-contact">
+
+        Questions? Email
+
+        <a href="mailto:invitational@motivbrands.co">
+
+          invitational@motivbrands.co
+
+        </a>
+
+      </p>
+
+    </div>
+
+  </footer>
+
+</section>
+
 <!--
 ===============================================================================
 MOTIV BRANDS INVITATIONAL — SITE FOOTER
