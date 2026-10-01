@@ -96,6 +96,30 @@
       var formUrl=new URL(frame.src);
       new URLSearchParams(location.search).forEach(function(value,key){if(/^utm_(source|medium|campaign|content|term)$/.test(key))formUrl.searchParams.set(key,value);});
       frame.src=formUrl.toString();
+
+      // On submit, send the guest to the shared thank-you page carrying this
+      // sponsor's slug. This is the belt; the braces is the form's own
+      // "On Submit -> Redirect to URL" setting inside GoHighLevel, which
+      // should be set to the same address. That one is currently pointing at
+      // a page that does not exist, which is the 404 people are hitting.
+      var SPONSOR = 'troutman-amin';
+      var DESTINATION = '/invited/thank-you?sponsor=' + SPONSOR;
+      var sent = false;
+      window.addEventListener('message', function (event) {
+        if (sent) { return; }
+        var host;
+        try { host = new URL(event.origin).hostname; } catch (e) { return; }
+        if (!/(^|\.)(leadconnectorhq|msgsndr)\.com$/.test(host)) { return; }
+        var payload;
+        try {
+          payload = typeof event.data === 'string'
+            ? event.data : JSON.stringify(event.data || '');
+        } catch (e) { return; }
+        if (/setHeight|resize|scroll/i.test(payload)) { return; }
+        if (!/submit/i.test(payload)) { return; }
+        sent = true;
+        window.location.href = DESTINATION;
+      });
     })();
   </script>
 </body>
