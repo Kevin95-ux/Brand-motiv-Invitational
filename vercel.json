@@ -3,18 +3,46 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/start", "destination": "/request" }
+    {
+      "source": "/start",
+      "destination": "/request"
+    }
   ],
   "redirects": [
-    { "source": "/our-sponsor", "destination": "/sponsorships", "permanent": true },
-    { "source": "/our-partner-offers", "destination": "/sponsorships", "permanent": true },
-    { "source": "/home-992457", "destination": "/", "permanent": true }
+    {
+      "source": "/sponsorships",
+      "destination": "/sponsor",
+      "permanent": true
+    },
+    {
+      "source": "/sponsorship-confirm",
+      "destination": "/sponsor-confirm",
+      "permanent": true
+    },
+    {
+      "source": "/our-sponsor",
+      "destination": "/sponsor",
+      "permanent": true
+    },
+    {
+      "source": "/our-partner-offers",
+      "destination": "/sponsor",
+      "permanent": true
+    },
+    {
+      "source": "/home-992457",
+      "destination": "/",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     }
   ]
